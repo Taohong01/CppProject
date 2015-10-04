@@ -1,0 +1,16 @@
+/*
+ * PrimitiveDataTypePractice.cpp
+ * this is a memo for practicing primitive data types
+ *  Created on: Oct 4, 2015
+ *      Author: Tao
+ */
+#include <iostream>
+using namespace std;
+int main(){
+
+
+	return 0;
+}
+
+
+

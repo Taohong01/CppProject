@@ -3761,3 +3761,410 @@ Invoking: MacOS X C++ Linker
 g++  -o "DataStructures"  ./src/LinkedList.o   
 Finished building target: DataStructures
  
+07:04:26 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+../src/LinkedList.cpp:40:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int Length = 0;
+                   ^
+../src/LinkedList.cpp:113:17: warning: unused variable 'BooleanB' [-Wunused-variable]
+        bool BooleanA, BooleanB;
+                       ^
+2 warnings generated.
+Finished building: ../src/LinkedList.cpp
+ 
+Building target: DataStructures
+Invoking: MacOS X C++ Linker
+g++  -o "DataStructures"  ./src/LinkedList.o   
+Finished building target: DataStructures
+ 
+07:05:38 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+../src/LinkedList.cpp:40:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int Length = 0;
+                   ^
+../src/LinkedList.cpp:113:17: warning: unused variable 'BooleanB' [-Wunused-variable]
+        bool BooleanA, BooleanB;
+                       ^
+2 warnings generated.
+Finished building: ../src/LinkedList.cpp
+ 
+Building target: DataStructures
+Invoking: MacOS X C++ Linker
+g++  -o "DataStructures"  ./src/LinkedList.o   
+Finished building target: DataStructures
+ 
+07:07:45 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+../src/LinkedList.cpp:40:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int Length = 0;
+                   ^
+1 warning generated.
+Finished building: ../src/LinkedList.cpp
+ 
+Building target: DataStructures
+Invoking: MacOS X C++ Linker
+g++  -o "DataStructures"  ./src/LinkedList.o   
+Finished building target: DataStructures
+ 
+07:18:27 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+../src/LinkedList.cpp:40:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int Length = 0;
+                   ^
+../src/LinkedList.cpp:120:8: error: assigning to 'char' from incompatible type 'const char [2]'
+        CharA = "N";
+              ^ ~~~
+../src/LinkedList.cpp:121:8: error: assigning to 'char' from incompatible type 'const char [2]'
+        CharB = "o";
+              ^ ~~~
+1 warning and 2 errors generated.
+make: *** [src/LinkedList.o] Error 1
+07:19:00 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+../src/LinkedList.cpp:40:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int Length = 0;
+                   ^
+1 warning generated.
+Finished building: ../src/LinkedList.cpp
+ 
+Building target: DataStructures
+Invoking: MacOS X C++ Linker
+g++  -o "DataStructures"  ./src/LinkedList.o   
+Finished building target: DataStructures
+ 
+07:20:10 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+../src/LinkedList.cpp:40:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int Length = 0;
+                   ^
+1 warning generated.
+Finished building: ../src/LinkedList.cpp
+ 
+Building target: DataStructures
+Invoking: MacOS X C++ Linker
+g++  -o "DataStructures"  ./src/LinkedList.o   
+Finished building target: DataStructures
+ 
+07:21:33 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+../src/LinkedList.cpp:40:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int Length = 0;
+                   ^
+1 warning generated.
+Finished building: ../src/LinkedList.cpp
+ 
+Building target: DataStructures
+Invoking: MacOS X C++ Linker
+g++  -o "DataStructures"  ./src/LinkedList.o   
+Finished building target: DataStructures
+ 
+07:23:39 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+../src/LinkedList.cpp:40:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int Length = 0;
+                   ^
+1 warning generated.
+Finished building: ../src/LinkedList.cpp
+ 
+Building target: DataStructures
+Invoking: MacOS X C++ Linker
+g++  -o "DataStructures"  ./src/LinkedList.o   
+Finished building target: DataStructures
+ 
+07:36:12 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+../src/LinkedList.cpp:40:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int Length = 0;
+                   ^
+1 warning generated.
+Finished building: ../src/LinkedList.cpp
+ 
+Building target: DataStructures
+Invoking: MacOS X C++ Linker
+g++  -o "DataStructures"  ./src/LinkedList.o   
+Finished building target: DataStructures
+ 
+07:38:33 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+../src/LinkedList.cpp:40:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int Length = 0;
+                   ^
+1 warning generated.
+Finished building: ../src/LinkedList.cpp
+ 
+Building target: DataStructures
+Invoking: MacOS X C++ Linker
+g++  -o "DataStructures"  ./src/LinkedList.o   
+Finished building target: DataStructures
+ 
+07:40:08 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+../src/LinkedList.cpp:40:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int Length = 0;
+                   ^
+1 warning generated.
+Finished building: ../src/LinkedList.cpp
+ 
+Building target: DataStructures
+Invoking: MacOS X C++ Linker
+g++  -o "DataStructures"  ./src/LinkedList.o   
+Finished building target: DataStructures
+ 
+07:42:21 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+../src/LinkedList.cpp:40:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int Length = 0;
+                   ^
+1 warning generated.
+Finished building: ../src/LinkedList.cpp
+ 
+Building target: DataStructures
+Invoking: MacOS X C++ Linker
+g++  -o "DataStructures"  ./src/LinkedList.o   
+Finished building target: DataStructures
+ 
+07:46:43 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+../src/LinkedList.cpp:40:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int Length = 0;
+                   ^
+1 warning generated.
+Finished building: ../src/LinkedList.cpp
+ 
+Building target: DataStructures
+Invoking: MacOS X C++ Linker
+g++  -o "DataStructures"  ./src/LinkedList.o   
+Finished building target: DataStructures
+ 
+07:48:15 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+../src/LinkedList.cpp:40:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int Length = 0;
+                   ^
+1 warning generated.
+Finished building: ../src/LinkedList.cpp
+ 
+Building target: DataStructures
+Invoking: MacOS X C++ Linker
+g++  -o "DataStructures"  ./src/LinkedList.o   
+Finished building target: DataStructures
+ 
+07:49:43 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+../src/LinkedList.cpp:40:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int Length = 0;
+                   ^
+1 warning generated.
+Finished building: ../src/LinkedList.cpp
+ 
+Building target: DataStructures
+Invoking: MacOS X C++ Linker
+g++  -o "DataStructures"  ./src/LinkedList.o   
+Finished building target: DataStructures
+ 
+07:52:27 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+make: Nothing to be done for `all'.
+07:54:00 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+../src/LinkedList.cpp:40:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int Length = 0;
+                   ^
+1 warning generated.
+Finished building: ../src/LinkedList.cpp
+ 
+Building target: DataStructures
+Invoking: MacOS X C++ Linker
+g++  -o "DataStructures"  ./src/LinkedList.o   
+Finished building target: DataStructures
+ 
+07:56:14 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+../src/LinkedList.cpp:40:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int Length = 0;
+                   ^
+1 warning generated.
+Finished building: ../src/LinkedList.cpp
+ 
+Building target: DataStructures
+Invoking: MacOS X C++ Linker
+g++  -o "DataStructures"  ./src/LinkedList.o   
+Finished building target: DataStructures
+ 
+07:57:17 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+../src/LinkedList.cpp:40:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int Length = 0;
+                   ^
+1 warning generated.
+Finished building: ../src/LinkedList.cpp
+ 
+Building target: DataStructures
+Invoking: MacOS X C++ Linker
+g++  -o "DataStructures"  ./src/LinkedList.o   
+Finished building target: DataStructures
+ 
+07:58:08 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+../src/LinkedList.cpp:40:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int Length = 0;
+                   ^
+1 warning generated.
+Finished building: ../src/LinkedList.cpp
+ 
+Building target: DataStructures
+Invoking: MacOS X C++ Linker
+g++  -o "DataStructures"  ./src/LinkedList.o   
+Finished building target: DataStructures
+ 
+07:59:16 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+../src/LinkedList.cpp:40:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int Length = 0;
+                   ^
+1 warning generated.
+Finished building: ../src/LinkedList.cpp
+ 
+Building target: DataStructures
+Invoking: MacOS X C++ Linker
+g++  -o "DataStructures"  ./src/LinkedList.o   
+Finished building target: DataStructures
+ 
+08:08:26 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+make: Nothing to be done for `all'.
+08:08:26 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+08:08:26 **** Incremental Build of configuration Debug for project MorningTest ****
+make all 
+make: Nothing to be done for `all'.
+08:08:26 **** Incremental Build of configuration Debug for project My2ndNewProject ****
+make all 
+Building file: ../mysourcefilefolder/mysourcefilewithcppExtension.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"mysourcefilefolder/mysourcefilewithcppExtension.d" -MT"mysourcefilefolder/mysourcefilewithcppExtension.d" -o "mysourcefilefolder/mysourcefilewithcppExtension.o" "../mysourcefilefolder/mysourcefilewithcppExtension.cpp"
+Finished building: ../mysourcefilefolder/mysourcefilewithcppExtension.cpp
+ 
+Building target: My2ndNewProject
+Invoking: MacOS X C++ Linker
+g++  -o "My2ndNewProject"  ./mysourcefilefolder/mysourcefilewithcppExtension.o   
+Finished building target: My2ndNewProject
+ 
+08:08:28 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+make: *** No rule to make target `DisplayImage.o', needed by `OpenCVtest'.  Stop.
+08:08:28 **** Build of configuration Debug for project PrimitiveDataTypePractice ****
+make all 
+Building file: ../src/PrimitiveDataTypePractice.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PrimitiveDataTypePractice.d" -MT"src/PrimitiveDataTypePractice.d" -o "src/PrimitiveDataTypePractice.o" "../src/PrimitiveDataTypePractice.cpp"
+Finished building: ../src/PrimitiveDataTypePractice.cpp
+ 
+Building target: PrimitiveDataTypePractice
+Invoking: MacOS X C++ Linker
+g++  -o "PrimitiveDataTypePractice"  ./src/PrimitiveDataTypePractice.o   
+Finished building target: PrimitiveDataTypePractice
+ 
+08:08:28 **** Incremental Build of configuration Debug for project TestUsingNameSpaceSTDIssue ****
+make all 
+make: Nothing to be done for `all'.
+08:08:35 **** Incremental Build of configuration Debug for project PrimitiveDataTypePractice ****
+make all 
+make: Nothing to be done for `all'.
+08:13:07 **** Incremental Build of configuration Debug for project PrimitiveDataTypePractice ****
+make all 
+Building file: ../src/PrimitiveDataTypePractice.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PrimitiveDataTypePractice.d" -MT"src/PrimitiveDataTypePractice.d" -o "src/PrimitiveDataTypePractice.o" "../src/PrimitiveDataTypePractice.cpp"
+Finished building: ../src/PrimitiveDataTypePractice.cpp
+ 
+Building target: PrimitiveDataTypePractice
+Invoking: MacOS X C++ Linker
+g++  -o "PrimitiveDataTypePractice"  ./src/PrimitiveDataTypePractice.o   
+Finished building target: PrimitiveDataTypePractice
+ 
+08:15:23 **** Incremental Build of configuration Debug for project PrimitiveDataTypePractice ****
+make all 
+Building file: ../src/PrimitiveDataTypePractice.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PrimitiveDataTypePractice.d" -MT"src/PrimitiveDataTypePractice.d" -o "src/PrimitiveDataTypePractice.o" "../src/PrimitiveDataTypePractice.cpp"
+Finished building: ../src/PrimitiveDataTypePractice.cpp
+ 
+Building target: PrimitiveDataTypePractice
+Invoking: MacOS X C++ Linker
+g++  -o "PrimitiveDataTypePractice"  ./src/PrimitiveDataTypePractice.o   
+Finished building target: PrimitiveDataTypePractice
+ 
+08:17:03 **** Incremental Build of configuration Debug for project My2ndNewProject ****
+make all 
+Building file: ../mysourcefilefolder/mysourcefilewithcppExtension.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"mysourcefilefolder/mysourcefilewithcppExtension.d" -MT"mysourcefilefolder/mysourcefilewithcppExtension.d" -o "mysourcefilefolder/mysourcefilewithcppExtension.o" "../mysourcefilefolder/mysourcefilewithcppExtension.cpp"
+Finished building: ../mysourcefilefolder/mysourcefilewithcppExtension.cpp
+ 
+Building target: My2ndNewProject
+Invoking: MacOS X C++ Linker
+g++  -o "My2ndNewProject"  ./mysourcefilefolder/mysourcefilewithcppExtension.o   
+Finished building target: My2ndNewProject
+ 

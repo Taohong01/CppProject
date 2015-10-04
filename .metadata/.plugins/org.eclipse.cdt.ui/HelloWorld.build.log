@@ -1,6 +1,6 @@
-21:35:59 **** Incremental Build of configuration Debug for project HelloWorld ****
+08:08:26 **** Incremental Build of configuration Debug for project HelloWorld ****
 make all 
 make: Nothing to be done for `all'.
 
-21:35:59 Build Finished (took 155ms)
+08:08:26 Build Finished (took 82ms)
 

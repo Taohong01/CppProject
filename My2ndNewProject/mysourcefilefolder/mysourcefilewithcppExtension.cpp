@@ -1,6 +1,6 @@
 /*
  * mysourcefilewithcppExtension.cpp
- * This is a memo file for showing how I sovle the using namespace std error message issue.
+ * This is a memo file for showing how I solve the using namespace std error message issue.
  *  Created on: Oct 3, 2015
  *      Author: Tao
  */
@@ -19,6 +19,7 @@ int main(){
 // an error message shows up that the main() function can't be void type, it must be int type and require a return value;
 // then i change it to int type. the error message still persists, but after build all again, it disappeared.
 // run the program and it runs pretty well. no more problems.
+
 
 
 

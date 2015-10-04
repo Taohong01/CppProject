@@ -63,7 +63,7 @@ public:
 	}
 
 };
-/**/
+
 
 
 int main(){
@@ -83,6 +83,8 @@ int main(){
 	cout <<"the value of node D is :" << NodeD.Value<< endl;
 	// the result shows that the assignment of the node B address to the node A next node pointer was successful.
 	// the
+
+
 
 
 	cout << "test"<< endl;
