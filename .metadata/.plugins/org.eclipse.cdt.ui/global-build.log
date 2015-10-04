@@ -1,0 +1,3763 @@
+16:16:56 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+Building file: ../src/HelloWorld.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.d" -o "src/HelloWorld.o" "../src/HelloWorld.cpp"
+../src/HelloWorld.cpp:31:16: warning: empty parentheses interpreted as a function declaration [-Wvexing-parse]
+                Vector SumVec();
+                             ^~
+../src/HelloWorld.cpp:31:16: note: remove parentheses to declare a variable
+                Vector SumVec();
+                             ^~
+../src/HelloWorld.cpp:32:3: error: base of member reference is a function; perhaps you meant to call it with no arguments?
+                SumVec.x = x + Vecin.x;
+                ^~~~~~
+                      ()
+../src/HelloWorld.cpp:32:18: error: base of member reference is a function; perhaps you meant to call it with no arguments?
+                SumVec.x = x + Vecin.x;
+                               ^~~~~
+                                    ()
+../src/HelloWorld.cpp:32:12: error: expression is not assignable
+                SumVec.x = x + Vecin.x;
+                ~~~~~~~~ ^
+../src/HelloWorld.cpp:33:3: error: base of member reference is a function; perhaps you meant to call it with no arguments?
+                SumVec.y = y + Vecin.y;
+                ^~~~~~
+                      ()
+../src/HelloWorld.cpp:33:18: error: base of member reference is a function; perhaps you meant to call it with no arguments?
+                SumVec.y = y + Vecin.y;
+                               ^~~~~
+                                    ()
+../src/HelloWorld.cpp:33:12: error: expression is not assignable
+                SumVec.y = y + Vecin.y;
+                ~~~~~~~~ ^
+../src/HelloWorld.cpp:34:3: error: base of member reference is a function; perhaps you meant to call it with no arguments?
+                SumVec.z = z + Vecin.z;
+                ^~~~~~
+                      ()
+../src/HelloWorld.cpp:34:18: error: base of member reference is a function; perhaps you meant to call it with no arguments?
+                SumVec.z = z + Vecin.z;
+                               ^~~~~
+                                    ()
+../src/HelloWorld.cpp:34:12: error: expression is not assignable
+                SumVec.z = z + Vecin.z;
+                ~~~~~~~~ ^
+../src/HelloWorld.cpp:35:10: error: no viable conversion from 'Vector ()' to 'Vector'
+                return SumVec;
+                       ^~~~~~
+../src/HelloWorld.cpp:12:7: note: candidate constructor (the implicit copy constructor) not viable: no known conversion from 'Vector ()' to 'const Vector &' for 1st argument
+class Vector{
+      ^
+../src/HelloWorld.cpp:38:16: warning: empty parentheses interpreted as a function declaration [-Wvexing-parse]
+                Vector SumVec();
+                             ^~
+../src/HelloWorld.cpp:38:16: note: remove parentheses to declare a variable
+                Vector SumVec();
+                             ^~
+../src/HelloWorld.cpp:39:3: error: base of member reference is a function; perhaps you meant to call it with no arguments?
+                SumVec.x = x - Vecin.x;
+                ^~~~~~
+                      ()
+../src/HelloWorld.cpp:39:12: error: expression is not assignable
+                SumVec.x = x - Vecin.x;
+                ~~~~~~~~ ^
+../src/HelloWorld.cpp:40:3: error: base of member reference is a function; perhaps you meant to call it with no arguments?
+                SumVec.y = y - Vecin.y;
+                ^~~~~~
+                      ()
+../src/HelloWorld.cpp:40:12: error: expression is not assignable
+                SumVec.y = y - Vecin.y;
+                ~~~~~~~~ ^
+../src/HelloWorld.cpp:41:3: error: base of member reference is a function; perhaps you meant to call it with no arguments?
+                SumVec.z = z - Vecin.z;
+                ^~~~~~
+                      ()
+../src/HelloWorld.cpp:41:12: error: expression is not assignable
+                SumVec.z = z - Vecin.z;
+                ~~~~~~~~ ^
+../src/HelloWorld.cpp:42:10: error: no viable conversion from 'Vector ()' to 'Vector'
+                return SumVec;
+                       ^~~~~~
+../src/HelloWorld.cpp:12:7: note: candidate constructor (the implicit copy constructor) not viable: no known conversion from 'Vector ()' to 'const Vector &' for 1st argument
+class Vector{
+      ^
+../src/HelloWorld.cpp:59:9: warning: private field 'x' is not used [-Wunused-private-field]
+        double x, y, z;
+               ^
+../src/HelloWorld.cpp:59:12: warning: private field 'y' is not used [-Wunused-private-field]
+        double x, y, z;
+                  ^
+../src/HelloWorld.cpp:59:15: warning: private field 'z' is not used [-Wunused-private-field]
+        double x, y, z;
+                     ^
+../src/HelloWorld.cpp:63:9: warning: private field 'atomMass' is not used [-Wunused-private-field]
+        double atomMass;
+               ^
+../src/HelloWorld.cpp:64:6: warning: private field 'atomicNumber' is not used [-Wunused-private-field]
+        int atomicNumber;
+            ^
+7 warnings and 17 errors generated.
+make: *** [src/HelloWorld.o] Error 1
+16:18:43 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+Building file: ../src/HelloWorld.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.d" -o "src/HelloWorld.o" "../src/HelloWorld.cpp"
+../src/HelloWorld.cpp:31:16: warning: empty parentheses interpreted as a function declaration [-Wvexing-parse]
+                Vector SumVec();
+                             ^~
+../src/HelloWorld.cpp:31:16: note: remove parentheses to declare a variable
+                Vector SumVec();
+                             ^~
+../src/HelloWorld.cpp:37:10: error: no viable conversion from 'Vector ()' to 'Vector'
+                return SumVec;
+                       ^~~~~~
+../src/HelloWorld.cpp:12:7: note: candidate constructor (the implicit copy constructor) not viable: no known conversion from 'Vector ()' to 'const Vector &' for 1st argument
+class Vector{
+      ^
+../src/HelloWorld.cpp:40:16: warning: empty parentheses interpreted as a function declaration [-Wvexing-parse]
+                Vector SumVec();
+                             ^~
+../src/HelloWorld.cpp:40:16: note: remove parentheses to declare a variable
+                Vector SumVec();
+                             ^~
+../src/HelloWorld.cpp:46:10: error: no viable conversion from 'Vector ()' to 'Vector'
+                return SumVec;
+                       ^~~~~~
+../src/HelloWorld.cpp:12:7: note: candidate constructor (the implicit copy constructor) not viable: no known conversion from 'Vector ()' to 'const Vector &' for 1st argument
+class Vector{
+      ^
+../src/HelloWorld.cpp:49:17: warning: empty parentheses interpreted as a function declaration [-Wvexing-parse]
+                Vector testVec();
+                              ^~
+../src/HelloWorld.cpp:49:17: note: remove parentheses to declare a variable
+                Vector testVec();
+                              ^~
+../src/HelloWorld.cpp:64:9: warning: private field 'x' is not used [-Wunused-private-field]
+        double x, y, z;
+               ^
+../src/HelloWorld.cpp:64:12: warning: private field 'y' is not used [-Wunused-private-field]
+        double x, y, z;
+                  ^
+../src/HelloWorld.cpp:64:15: warning: private field 'z' is not used [-Wunused-private-field]
+        double x, y, z;
+                     ^
+../src/HelloWorld.cpp:68:9: warning: private field 'atomMass' is not used [-Wunused-private-field]
+        double atomMass;
+               ^
+../src/HelloWorld.cpp:69:6: warning: private field 'atomicNumber' is not used [-Wunused-private-field]
+        int atomicNumber;
+            ^
+8 warnings and 2 errors generated.
+make: *** [src/HelloWorld.o] Error 1
+16:20:27 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+Building file: ../src/HelloWorld.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.d" -o "src/HelloWorld.o" "../src/HelloWorld.cpp"
+../src/HelloWorld.cpp:31:16: warning: empty parentheses interpreted as a function declaration [-Wvexing-parse]
+                Vector SumVec();
+                             ^~
+../src/HelloWorld.cpp:31:16: note: remove parentheses to declare a variable
+                Vector SumVec();
+                             ^~
+../src/HelloWorld.cpp:37:10: error: base of member reference is a function; perhaps you meant to call it with no arguments?
+                return SumVec.x;
+                       ^~~~~~
+                             ()
+../src/HelloWorld.cpp:40:16: warning: empty parentheses interpreted as a function declaration [-Wvexing-parse]
+                Vector SumVec();
+                             ^~
+../src/HelloWorld.cpp:40:16: note: remove parentheses to declare a variable
+                Vector SumVec();
+                             ^~
+../src/HelloWorld.cpp:46:10: error: base of member reference is a function; perhaps you meant to call it with no arguments?
+                return SumVec.x;
+                       ^~~~~~
+                             ()
+../src/HelloWorld.cpp:49:17: warning: empty parentheses interpreted as a function declaration [-Wvexing-parse]
+                Vector testVec();
+                              ^~
+../src/HelloWorld.cpp:49:17: note: remove parentheses to declare a variable
+                Vector testVec();
+                              ^~
+../src/HelloWorld.cpp:64:9: warning: private field 'x' is not used [-Wunused-private-field]
+        double x, y, z;
+               ^
+../src/HelloWorld.cpp:64:12: warning: private field 'y' is not used [-Wunused-private-field]
+        double x, y, z;
+                  ^
+../src/HelloWorld.cpp:64:15: warning: private field 'z' is not used [-Wunused-private-field]
+        double x, y, z;
+                     ^
+../src/HelloWorld.cpp:68:9: warning: private field 'atomMass' is not used [-Wunused-private-field]
+        double atomMass;
+               ^
+../src/HelloWorld.cpp:69:6: warning: private field 'atomicNumber' is not used [-Wunused-private-field]
+        int atomicNumber;
+            ^
+8 warnings and 2 errors generated.
+make: *** [src/HelloWorld.o] Error 1
+16:22:15 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+Building file: ../src/HelloWorld.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.d" -o "src/HelloWorld.o" "../src/HelloWorld.cpp"
+../src/HelloWorld.cpp:37:10: error: base of member reference is a function; perhaps you meant to call it with no arguments?
+                return Vecin.x;
+                       ^~~~~
+                            ()
+../src/HelloWorld.cpp:49:17: warning: empty parentheses interpreted as a function declaration [-Wvexing-parse]
+                Vector testVec();
+                              ^~
+../src/HelloWorld.cpp:49:17: note: remove parentheses to declare a variable
+                Vector testVec();
+                              ^~
+../src/HelloWorld.cpp:64:9: warning: private field 'x' is not used [-Wunused-private-field]
+        double x, y, z;
+               ^
+../src/HelloWorld.cpp:64:12: warning: private field 'y' is not used [-Wunused-private-field]
+        double x, y, z;
+                  ^
+../src/HelloWorld.cpp:64:15: warning: private field 'z' is not used [-Wunused-private-field]
+        double x, y, z;
+                     ^
+../src/HelloWorld.cpp:68:9: warning: private field 'atomMass' is not used [-Wunused-private-field]
+        double atomMass;
+               ^
+../src/HelloWorld.cpp:69:6: warning: private field 'atomicNumber' is not used [-Wunused-private-field]
+        int atomicNumber;
+            ^
+6 warnings and 1 error generated.
+make: *** [src/HelloWorld.o] Error 1
+16:22:42 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+Building file: ../src/HelloWorld.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.d" -o "src/HelloWorld.o" "../src/HelloWorld.cpp"
+../src/HelloWorld.cpp:49:17: warning: empty parentheses interpreted as a function declaration [-Wvexing-parse]
+                Vector testVec();
+                              ^~
+../src/HelloWorld.cpp:49:17: note: remove parentheses to declare a variable
+                Vector testVec();
+                              ^~
+../src/HelloWorld.cpp:64:9: warning: private field 'x' is not used [-Wunused-private-field]
+        double x, y, z;
+               ^
+../src/HelloWorld.cpp:64:12: warning: private field 'y' is not used [-Wunused-private-field]
+        double x, y, z;
+                  ^
+../src/HelloWorld.cpp:64:15: warning: private field 'z' is not used [-Wunused-private-field]
+        double x, y, z;
+                     ^
+../src/HelloWorld.cpp:68:9: warning: private field 'atomMass' is not used [-Wunused-private-field]
+        double atomMass;
+               ^
+../src/HelloWorld.cpp:69:6: warning: private field 'atomicNumber' is not used [-Wunused-private-field]
+        int atomicNumber;
+            ^
+6 warnings generated.
+Finished building: ../src/HelloWorld.cpp
+ 
+Building target: HelloWorld
+Invoking: MacOS X C++ Linker
+g++  -o "HelloWorld"  ./src/HelloWorld.o   
+Finished building target: HelloWorld
+ 
+16:24:37 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+Building file: ../src/HelloWorld.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.d" -o "src/HelloWorld.o" "../src/HelloWorld.cpp"
+../src/HelloWorld.cpp:33:16: warning: empty parentheses interpreted as a function declaration [-Wvexing-parse]
+                Vector SumVec();
+                             ^~
+../src/HelloWorld.cpp:33:16: note: remove parentheses to declare a variable
+                Vector SumVec();
+                             ^~
+../src/HelloWorld.cpp:35:3: error: base of member reference is a function; perhaps you meant to call it with no arguments?
+                SumVec.x = x + Vecin.x;
+                ^~~~~~
+                      ()
+../src/HelloWorld.cpp:35:12: error: expression is not assignable
+                SumVec.x = x + Vecin.x;
+                ~~~~~~~~ ^
+../src/HelloWorld.cpp:36:3: error: base of member reference is a function; perhaps you meant to call it with no arguments?
+                SumVec.y = y + Vecin.y;
+                ^~~~~~
+                      ()
+../src/HelloWorld.cpp:36:12: error: expression is not assignable
+                SumVec.y = y + Vecin.y;
+                ~~~~~~~~ ^
+../src/HelloWorld.cpp:37:3: error: base of member reference is a function; perhaps you meant to call it with no arguments?
+                SumVec.z = z + Vecin.z;
+                ^~~~~~
+                      ()
+../src/HelloWorld.cpp:37:12: error: expression is not assignable
+                SumVec.z = z + Vecin.z;
+                ~~~~~~~~ ^
+../src/HelloWorld.cpp:51:17: warning: empty parentheses interpreted as a function declaration [-Wvexing-parse]
+                Vector testVec();
+                              ^~
+../src/HelloWorld.cpp:51:17: note: remove parentheses to declare a variable
+                Vector testVec();
+                              ^~
+../src/HelloWorld.cpp:66:9: warning: private field 'x' is not used [-Wunused-private-field]
+        double x, y, z;
+               ^
+../src/HelloWorld.cpp:66:12: warning: private field 'y' is not used [-Wunused-private-field]
+        double x, y, z;
+                  ^
+../src/HelloWorld.cpp:66:15: warning: private field 'z' is not used [-Wunused-private-field]
+        double x, y, z;
+                     ^
+../src/HelloWorld.cpp:70:9: warning: private field 'atomMass' is not used [-Wunused-private-field]
+        double atomMass;
+               ^
+../src/HelloWorld.cpp:71:6: warning: private field 'atomicNumber' is not used [-Wunused-private-field]
+        int atomicNumber;
+            ^
+7 warnings and 6 errors generated.
+make: *** [src/HelloWorld.o] Error 1
+16:26:48 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+Building file: ../src/HelloWorld.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.d" -o "src/HelloWorld.o" "../src/HelloWorld.cpp"
+../src/HelloWorld.cpp:34:16: warning: empty parentheses interpreted as a function declaration [-Wvexing-parse]
+                Vector SumVec();
+                             ^~
+../src/HelloWorld.cpp:34:16: note: remove parentheses to declare a variable
+                Vector SumVec();
+                             ^~
+../src/HelloWorld.cpp:54:17: warning: empty parentheses interpreted as a function declaration [-Wvexing-parse]
+                Vector testVec();
+                              ^~
+../src/HelloWorld.cpp:54:17: note: remove parentheses to declare a variable
+                Vector testVec();
+                              ^~
+../src/HelloWorld.cpp:69:9: warning: private field 'x' is not used [-Wunused-private-field]
+        double x, y, z;
+               ^
+../src/HelloWorld.cpp:69:12: warning: private field 'y' is not used [-Wunused-private-field]
+        double x, y, z;
+                  ^
+../src/HelloWorld.cpp:69:15: warning: private field 'z' is not used [-Wunused-private-field]
+        double x, y, z;
+                     ^
+../src/HelloWorld.cpp:73:9: warning: private field 'atomMass' is not used [-Wunused-private-field]
+        double atomMass;
+               ^
+../src/HelloWorld.cpp:74:6: warning: private field 'atomicNumber' is not used [-Wunused-private-field]
+        int atomicNumber;
+            ^
+7 warnings generated.
+Finished building: ../src/HelloWorld.cpp
+ 
+Building target: HelloWorld
+Invoking: MacOS X C++ Linker
+g++  -o "HelloWorld"  ./src/HelloWorld.o   
+Finished building target: HelloWorld
+ 
+16:27:37 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+Building file: ../src/HelloWorld.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.d" -o "src/HelloWorld.o" "../src/HelloWorld.cpp"
+../src/HelloWorld.cpp:34:16: warning: empty parentheses interpreted as a function declaration [-Wvexing-parse]
+                Vector SumVec();
+                             ^~
+../src/HelloWorld.cpp:34:16: note: remove parentheses to declare a variable
+                Vector SumVec();
+                             ^~
+../src/HelloWorld.cpp:54:17: warning: empty parentheses interpreted as a function declaration [-Wvexing-parse]
+                Vector testVec();
+                              ^~
+../src/HelloWorld.cpp:54:17: note: remove parentheses to declare a variable
+                Vector testVec();
+                              ^~
+../src/HelloWorld.cpp:69:9: warning: private field 'x' is not used [-Wunused-private-field]
+        double x, y, z;
+               ^
+../src/HelloWorld.cpp:69:12: warning: private field 'y' is not used [-Wunused-private-field]
+        double x, y, z;
+                  ^
+../src/HelloWorld.cpp:69:15: warning: private field 'z' is not used [-Wunused-private-field]
+        double x, y, z;
+                     ^
+../src/HelloWorld.cpp:73:9: warning: private field 'atomMass' is not used [-Wunused-private-field]
+        double atomMass;
+               ^
+../src/HelloWorld.cpp:74:6: warning: private field 'atomicNumber' is not used [-Wunused-private-field]
+        int atomicNumber;
+            ^
+7 warnings generated.
+Finished building: ../src/HelloWorld.cpp
+ 
+Building target: HelloWorld
+Invoking: MacOS X C++ Linker
+g++  -o "HelloWorld"  ./src/HelloWorld.o   
+Finished building target: HelloWorld
+ 
+16:28:25 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+Building file: ../src/HelloWorld.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.d" -o "src/HelloWorld.o" "../src/HelloWorld.cpp"
+../src/HelloWorld.cpp:34:16: warning: empty parentheses interpreted as a function declaration [-Wvexing-parse]
+                Vector SumVec();
+                             ^~
+../src/HelloWorld.cpp:34:16: note: remove parentheses to declare a variable
+                Vector SumVec();
+                             ^~
+../src/HelloWorld.cpp:54:17: warning: empty parentheses interpreted as a function declaration [-Wvexing-parse]
+                Vector testVec();
+                              ^~
+../src/HelloWorld.cpp:54:17: note: remove parentheses to declare a variable
+                Vector testVec();
+                              ^~
+../src/HelloWorld.cpp:69:9: warning: private field 'x' is not used [-Wunused-private-field]
+        double x, y, z;
+               ^
+../src/HelloWorld.cpp:69:12: warning: private field 'y' is not used [-Wunused-private-field]
+        double x, y, z;
+                  ^
+../src/HelloWorld.cpp:69:15: warning: private field 'z' is not used [-Wunused-private-field]
+        double x, y, z;
+                     ^
+../src/HelloWorld.cpp:73:9: warning: private field 'atomMass' is not used [-Wunused-private-field]
+        double atomMass;
+               ^
+../src/HelloWorld.cpp:74:6: warning: private field 'atomicNumber' is not used [-Wunused-private-field]
+        int atomicNumber;
+            ^
+7 warnings generated.
+Finished building: ../src/HelloWorld.cpp
+ 
+Building target: HelloWorld
+Invoking: MacOS X C++ Linker
+g++  -o "HelloWorld"  ./src/HelloWorld.o   
+Finished building target: HelloWorld
+ 
+16:32:20 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+Building file: ../src/HelloWorld.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.d" -o "src/HelloWorld.o" "../src/HelloWorld.cpp"
+../src/HelloWorld.cpp:36:16: warning: empty parentheses interpreted as a function declaration [-Wvexing-parse]
+                Vector SumVec();
+                             ^~
+../src/HelloWorld.cpp:36:16: note: remove parentheses to declare a variable
+                Vector SumVec();
+                             ^~
+../src/HelloWorld.cpp:38:43: error: base of member reference is a function; perhaps you meant to call it with no arguments?
+                cout << "see if sumvec components: " << SumVec.x << endl;
+                                                        ^~~~~~
+                                                              ()
+../src/HelloWorld.cpp:56:17: warning: empty parentheses interpreted as a function declaration [-Wvexing-parse]
+                Vector testVec();
+                              ^~
+../src/HelloWorld.cpp:56:17: note: remove parentheses to declare a variable
+                Vector testVec();
+                              ^~
+../src/HelloWorld.cpp:71:9: warning: private field 'x' is not used [-Wunused-private-field]
+        double x, y, z;
+               ^
+../src/HelloWorld.cpp:71:12: warning: private field 'y' is not used [-Wunused-private-field]
+        double x, y, z;
+                  ^
+../src/HelloWorld.cpp:71:15: warning: private field 'z' is not used [-Wunused-private-field]
+        double x, y, z;
+                     ^
+../src/HelloWorld.cpp:75:9: warning: private field 'atomMass' is not used [-Wunused-private-field]
+        double atomMass;
+               ^
+../src/HelloWorld.cpp:76:6: warning: private field 'atomicNumber' is not used [-Wunused-private-field]
+        int atomicNumber;
+            ^
+7 warnings and 1 error generated.
+make: *** [src/HelloWorld.o] Error 1
+16:34:27 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+Building file: ../src/HelloWorld.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.d" -o "src/HelloWorld.o" "../src/HelloWorld.cpp"
+../src/HelloWorld.cpp:36:10: error: no matching constructor for initialization of 'Vector'
+                Vector SumVec(1,0, 2.0, 3.0);
+                       ^      ~~~~~~~~~~~~~
+../src/HelloWorld.cpp:19:2: note: candidate constructor not viable: requires 3 arguments, but 4 were provided
+        Vector(double xin, double yin, double zin){
+        ^
+../src/HelloWorld.cpp:12:7: note: candidate constructor (the implicit copy constructor) not viable: requires 1 argument, but 4 were provided
+class Vector{
+      ^
+../src/HelloWorld.cpp:24:2: note: candidate constructor not viable: requires 0 arguments, but 4 were provided
+        Vector(){
+        ^
+../src/HelloWorld.cpp:58:17: warning: empty parentheses interpreted as a function declaration [-Wvexing-parse]
+                Vector testVec();
+                              ^~
+../src/HelloWorld.cpp:58:17: note: remove parentheses to declare a variable
+                Vector testVec();
+                              ^~
+../src/HelloWorld.cpp:73:9: warning: private field 'x' is not used [-Wunused-private-field]
+        double x, y, z;
+               ^
+../src/HelloWorld.cpp:73:12: warning: private field 'y' is not used [-Wunused-private-field]
+        double x, y, z;
+                  ^
+../src/HelloWorld.cpp:73:15: warning: private field 'z' is not used [-Wunused-private-field]
+        double x, y, z;
+                     ^
+../src/HelloWorld.cpp:77:9: warning: private field 'atomMass' is not used [-Wunused-private-field]
+        double atomMass;
+               ^
+../src/HelloWorld.cpp:78:6: warning: private field 'atomicNumber' is not used [-Wunused-private-field]
+        int atomicNumber;
+            ^
+6 warnings and 1 error generated.
+make: *** [src/HelloWorld.o] Error 1
+16:39:13 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+Building file: ../src/HelloWorld.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.d" -o "src/HelloWorld.o" "../src/HelloWorld.cpp"
+../src/HelloWorld.cpp:38:10: error: no matching constructor for initialization of 'Vector'
+                Vector SumVec(1,0, 2.0, 3.0);
+                       ^      ~~~~~~~~~~~~~
+../src/HelloWorld.cpp:21:2: note: candidate constructor not viable: requires 3 arguments, but 4 were provided
+        Vector(double xin, double yin, double zin){
+        ^
+../src/HelloWorld.cpp:14:7: note: candidate constructor (the implicit copy constructor) not viable: requires 1 argument, but 4 were provided
+class Vector{
+      ^
+../src/HelloWorld.cpp:26:2: note: candidate constructor not viable: requires 0 arguments, but 4 were provided
+        Vector(){
+        ^
+../src/HelloWorld.cpp:60:17: warning: empty parentheses interpreted as a function declaration [-Wvexing-parse]
+                Vector testVec();
+                              ^~
+../src/HelloWorld.cpp:60:17: note: remove parentheses to declare a variable
+                Vector testVec();
+                              ^~
+../src/HelloWorld.cpp:75:9: warning: private field 'x' is not used [-Wunused-private-field]
+        double x, y, z;
+               ^
+../src/HelloWorld.cpp:75:12: warning: private field 'y' is not used [-Wunused-private-field]
+        double x, y, z;
+                  ^
+../src/HelloWorld.cpp:75:15: warning: private field 'z' is not used [-Wunused-private-field]
+        double x, y, z;
+                     ^
+../src/HelloWorld.cpp:79:9: warning: private field 'atomMass' is not used [-Wunused-private-field]
+        double atomMass;
+               ^
+../src/HelloWorld.cpp:80:6: warning: private field 'atomicNumber' is not used [-Wunused-private-field]
+        int atomicNumber;
+            ^
+6 warnings and 1 error generated.
+make: *** [src/HelloWorld.o] Error 1
+16:45:10 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+Building file: ../src/HelloWorld.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.d" -o "src/HelloWorld.o" "../src/HelloWorld.cpp"
+../src/HelloWorld.cpp:60:17: warning: empty parentheses interpreted as a function declaration [-Wvexing-parse]
+                Vector testVec();
+                              ^~
+../src/HelloWorld.cpp:60:17: note: remove parentheses to declare a variable
+                Vector testVec();
+                              ^~
+../src/HelloWorld.cpp:76:16: error: return type of out-of-line definition of 'Vector::operator+' differs from that in the declaration
+Vector Vector::operator + (Vector Vecin):{
+~~~~~~         ^
+../src/HelloWorld.cpp:34:9: note: previous definition is here
+        double operator + (Vector Vecin){
+        ~~~~~~ ^
+../src/HelloWorld.cpp:76:42: error: expected class member or base class name
+Vector Vector::operator + (Vector Vecin):{
+                                         ^
+../src/HelloWorld.cpp:76:41: error: only constructors take base initializers
+Vector Vector::operator + (Vector Vecin):{
+                                        ^
+../src/HelloWorld.cpp:77:15: warning: empty parentheses interpreted as a function declaration [-Wvexing-parse]
+        Vector SumVec();
+                     ^~
+../src/HelloWorld.cpp:77:15: note: remove parentheses to declare a variable
+        Vector SumVec();
+                     ^~
+../src/HelloWorld.cpp:78:2: error: base of member reference is a function; perhaps you meant to call it with no arguments?
+        SumVec.x = x + Vecin.x;
+        ^~~~~~
+              ()
+../src/HelloWorld.cpp:78:11: error: expression is not assignable
+        SumVec.x = x + Vecin.x;
+        ~~~~~~~~ ^
+../src/HelloWorld.cpp:79:2: error: base of member reference is a function; perhaps you meant to call it with no arguments?
+        SumVec.y = y + Vecin.y;
+        ^~~~~~
+              ()
+../src/HelloWorld.cpp:79:11: error: expression is not assignable
+        SumVec.y = y + Vecin.y;
+        ~~~~~~~~ ^
+../src/HelloWorld.cpp:80:2: error: base of member reference is a function; perhaps you meant to call it with no arguments?
+        SumVec.z = z + Vecin.z;
+        ^~~~~~
+              ()
+../src/HelloWorld.cpp:80:11: error: expression is not assignable
+        SumVec.z = z + Vecin.z;
+        ~~~~~~~~ ^
+../src/HelloWorld.cpp:81:9: error: no viable conversion from 'Vector ()' to 'Vector'
+        return SumVec;
+               ^~~~~~
+../src/HelloWorld.cpp:14:7: note: candidate constructor (the implicit copy constructor) not viable: no known conversion from 'Vector ()' to 'const Vector &' for 1st argument
+class Vector{
+      ^
+../src/HelloWorld.cpp:84:9: warning: private field 'x' is not used [-Wunused-private-field]
+        double x, y, z;
+               ^
+../src/HelloWorld.cpp:84:12: warning: private field 'y' is not used [-Wunused-private-field]
+        double x, y, z;
+                  ^
+../src/HelloWorld.cpp:84:15: warning: private field 'z' is not used [-Wunused-private-field]
+        double x, y, z;
+                     ^
+../src/HelloWorld.cpp:88:9: warning: private field 'atomMass' is not used [-Wunused-private-field]
+        double atomMass;
+               ^
+../src/HelloWorld.cpp:89:6: warning: private field 'atomicNumber' is not used [-Wunused-private-field]
+        int atomicNumber;
+            ^
+7 warnings and 10 errors generated.
+make: *** [src/HelloWorld.o] Error 1
+17:08:04 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+Building file: ../src/HelloWorld.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.d" -o "src/HelloWorld.o" "../src/HelloWorld.cpp"
+../src/HelloWorld.cpp:61:17: warning: empty parentheses interpreted as a function declaration [-Wvexing-parse]
+                Vector testVec();
+                              ^~
+../src/HelloWorld.cpp:61:17: note: remove parentheses to declare a variable
+                Vector testVec();
+                              ^~
+../src/HelloWorld.cpp:126:7: error: invalid operands to binary expression ('ostream' (aka 'basic_ostream<char>') and 'Vector')
+        cout << Vec1 + Vec2<< endl;
+        ~~~~ ^  ~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:179:20: note: candidate function not viable: no known conversion from 'Vector' to 'std::__1::basic_ostream<char> &(*)(std::__1::basic_ostream<char> &)' for 1st argument
+    basic_ostream& operator<<(basic_ostream& (*__pf)(basic_ostream&));
+                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:180:20: note: candidate function not viable: no known conversion from 'Vector' to 'basic_ios<char_type, traits_type> &(*)(basic_ios<char_type, traits_type> &)' for 1st argument
+    basic_ostream& operator<<(basic_ios<char_type, traits_type>&
+                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:182:20: note: candidate function not viable: no known conversion from 'Vector' to 'std::__1::ios_base &(*)(std::__1::ios_base &)' for 1st argument
+    basic_ostream& operator<<(ios_base& (*__pf)(ios_base&));
+                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:183:20: note: candidate function not viable: no known conversion from 'Vector' to 'bool' for 1st argument
+    basic_ostream& operator<<(bool __n);
+                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:184:20: note: candidate function not viable: no known conversion from 'Vector' to 'short' for 1st argument
+    basic_ostream& operator<<(short __n);
+                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:185:20: note: candidate function not viable: no known conversion from 'Vector' to 'unsigned short' for 1st argument
+    basic_ostream& operator<<(unsigned short __n);
+                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:186:20: note: candidate function not viable: no known conversion from 'Vector' to 'int' for 1st argument
+    basic_ostream& operator<<(int __n);
+                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:187:20: note: candidate function not viable: no known conversion from 'Vector' to 'unsigned int' for 1st argument
+    basic_ostream& operator<<(unsigned int __n);
+                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:188:20: note: candidate function not viable: no known conversion from 'Vector' to 'long' for 1st argument
+    basic_ostream& operator<<(long __n);
+                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:189:20: note: candidate function not viable: no known conversion from 'Vector' to 'unsigned long' for 1st argument
+    basic_ostream& operator<<(unsigned long __n);
+                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:190:20: note: candidate function not viable: no known conversion from 'Vector' to 'long long' for 1st argument
+    basic_ostream& operator<<(long long __n);
+                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:191:20: note: candidate function not viable: no known conversion from 'Vector' to 'unsigned long long' for 1st argument
+    basic_ostream& operator<<(unsigned long long __n);
+                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:192:20: note: candidate function not viable: no known conversion from 'Vector' to 'float' for 1st argument
+    basic_ostream& operator<<(float __f);
+                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:193:20: note: candidate function not viable: no known conversion from 'Vector' to 'double' for 1st argument
+    basic_ostream& operator<<(double __f);
+                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:194:20: note: candidate function not viable: no known conversion from 'Vector' to 'long double' for 1st argument
+    basic_ostream& operator<<(long double __f);
+                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:195:20: note: candidate function not viable: no known conversion from 'Vector' to 'const void *' for 1st argument
+    basic_ostream& operator<<(const void* __p);
+                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:196:20: note: candidate function not viable: no known conversion from 'Vector' to 'basic_streambuf<char_type, traits_type> *' for 1st argument
+    basic_ostream& operator<<(basic_streambuf<char_type, traits_type>* __sb);
+                   ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:773:1: note: candidate function [with _CharT = char, _Traits = std::__1::char_traits<char>] not viable: no known conversion from 'Vector' to 'char' for 2nd argument
+operator<<(basic_ostream<_CharT, _Traits>& __os, char __cn)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:806:1: note: candidate function [with _Traits = std::__1::char_traits<char>] not viable: no known conversion from 'Vector' to 'char' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, char __c)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:813:1: note: candidate function [with _Traits = std::__1::char_traits<char>] not viable: no known conversion from 'Vector' to 'signed char' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, signed char __c)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:820:1: note: candidate function [with _Traits = std::__1::char_traits<char>] not viable: no known conversion from 'Vector' to 'unsigned char' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, unsigned char __c)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:834:1: note: candidate function [with _CharT = char, _Traits = std::__1::char_traits<char>] not viable: no known conversion from 'Vector' to 'const char *' for 2nd argument
+operator<<(basic_ostream<_CharT, _Traits>& __os, const char* __strn)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:880:1: note: candidate function [with _Traits = std::__1::char_traits<char>] not viable: no known conversion from 'Vector' to 'const char *' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, const char* __str)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:887:1: note: candidate function [with _Traits = std::__1::char_traits<char>] not viable: no known conversion from 'Vector' to 'const signed char *' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, const signed char* __str)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:895:1: note: candidate function [with _Traits = std::__1::char_traits<char>] not viable: no known conversion from 'Vector' to 'const unsigned char *' for 2nd argument
+operator<<(basic_ostream<char, _Traits>& __os, const unsigned char* __str)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:1074:1: note: candidate function [with _CharT = char, _Traits = std::__1::char_traits<char>] not viable: no known conversion from 'Vector' to 'const std::__1::error_code' for 2nd argument
+operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __ec)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:766:1: note: candidate template ignored: deduced conflicting types for parameter '_CharT' ('char' vs. 'Vector')
+operator<<(basic_ostream<_CharT, _Traits>& __os, _CharT __c)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:827:1: note: candidate template ignored: could not match 'const _CharT *' against 'Vector'
+operator<<(basic_ostream<_CharT, _Traits>& __os, const _CharT* __str)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:1065:1: note: candidate template ignored: could not match 'basic_string<type-parameter-0-0, type-parameter-0-1, type-parameter-0-2>' against 'Vector'
+operator<<(basic_ostream<_CharT, _Traits>& __os,
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:1082:1: note: candidate template ignored: could not match 'shared_ptr<type-parameter-0-2>' against 'Vector'
+operator<<(basic_ostream<_CharT, _Traits>& __os, shared_ptr<_Yp> const& __p)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:1089:1: note: candidate template ignored: could not match 'bitset<_Size>' against 'Vector'
+operator<<(basic_ostream<_CharT, _Traits>& __os, const bitset<_Size>& __x)
+^
+../src/HelloWorld.cpp:101:9: warning: private field 'x' is not used [-Wunused-private-field]
+        double x, y, z;
+               ^
+../src/HelloWorld.cpp:101:12: warning: private field 'y' is not used [-Wunused-private-field]
+        double x, y, z;
+                  ^
+../src/HelloWorld.cpp:101:15: warning: private field 'z' is not used [-Wunused-private-field]
+        double x, y, z;
+                     ^
+../src/HelloWorld.cpp:105:9: warning: private field 'atomMass' is not used [-Wunused-private-field]
+        double atomMass;
+               ^
+../src/HelloWorld.cpp:106:6: warning: private field 'atomicNumber' is not used [-Wunused-private-field]
+        int atomicNumber;
+            ^
+6 warnings and 1 error generated.
+make: *** [src/HelloWorld.o] Error 1
+17:09:26 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+Building file: ../src/HelloWorld.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.d" -o "src/HelloWorld.o" "../src/HelloWorld.cpp"
+../src/HelloWorld.cpp:61:17: warning: empty parentheses interpreted as a function declaration [-Wvexing-parse]
+                Vector testVec();
+                              ^~
+../src/HelloWorld.cpp:61:17: note: remove parentheses to declare a variable
+                Vector testVec();
+                              ^~
+../src/HelloWorld.cpp:101:9: warning: private field 'x' is not used [-Wunused-private-field]
+        double x, y, z;
+               ^
+../src/HelloWorld.cpp:101:12: warning: private field 'y' is not used [-Wunused-private-field]
+        double x, y, z;
+                  ^
+../src/HelloWorld.cpp:101:15: warning: private field 'z' is not used [-Wunused-private-field]
+        double x, y, z;
+                     ^
+../src/HelloWorld.cpp:105:9: warning: private field 'atomMass' is not used [-Wunused-private-field]
+        double atomMass;
+               ^
+../src/HelloWorld.cpp:106:6: warning: private field 'atomicNumber' is not used [-Wunused-private-field]
+        int atomicNumber;
+            ^
+6 warnings generated.
+Finished building: ../src/HelloWorld.cpp
+ 
+Building target: HelloWorld
+Invoking: MacOS X C++ Linker
+g++  -o "HelloWorld"  ./src/HelloWorld.o   
+Finished building target: HelloWorld
+ 
+17:10:23 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+Building file: ../src/HelloWorld.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.d" -o "src/HelloWorld.o" "../src/HelloWorld.cpp"
+../src/HelloWorld.cpp:61:17: warning: empty parentheses interpreted as a function declaration [-Wvexing-parse]
+                Vector testVec();
+                              ^~
+../src/HelloWorld.cpp:61:17: note: remove parentheses to declare a variable
+                Vector testVec();
+                              ^~
+../src/HelloWorld.cpp:101:9: warning: private field 'x' is not used [-Wunused-private-field]
+        double x, y, z;
+               ^
+../src/HelloWorld.cpp:101:12: warning: private field 'y' is not used [-Wunused-private-field]
+        double x, y, z;
+                  ^
+../src/HelloWorld.cpp:101:15: warning: private field 'z' is not used [-Wunused-private-field]
+        double x, y, z;
+                     ^
+../src/HelloWorld.cpp:105:9: warning: private field 'atomMass' is not used [-Wunused-private-field]
+        double atomMass;
+               ^
+../src/HelloWorld.cpp:106:6: warning: private field 'atomicNumber' is not used [-Wunused-private-field]
+        int atomicNumber;
+            ^
+6 warnings generated.
+Finished building: ../src/HelloWorld.cpp
+ 
+Building target: HelloWorld
+Invoking: MacOS X C++ Linker
+g++  -o "HelloWorld"  ./src/HelloWorld.o   
+Finished building target: HelloWorld
+ 
+17:10:56 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+Building file: ../src/HelloWorld.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.d" -o "src/HelloWorld.o" "../src/HelloWorld.cpp"
+../src/HelloWorld.cpp:61:17: warning: empty parentheses interpreted as a function declaration [-Wvexing-parse]
+                Vector testVec();
+                              ^~
+../src/HelloWorld.cpp:61:17: note: remove parentheses to declare a variable
+                Vector testVec();
+                              ^~
+../src/HelloWorld.cpp:101:9: warning: private field 'x' is not used [-Wunused-private-field]
+        double x, y, z;
+               ^
+../src/HelloWorld.cpp:101:12: warning: private field 'y' is not used [-Wunused-private-field]
+        double x, y, z;
+                  ^
+../src/HelloWorld.cpp:101:15: warning: private field 'z' is not used [-Wunused-private-field]
+        double x, y, z;
+                     ^
+../src/HelloWorld.cpp:105:9: warning: private field 'atomMass' is not used [-Wunused-private-field]
+        double atomMass;
+               ^
+../src/HelloWorld.cpp:106:6: warning: private field 'atomicNumber' is not used [-Wunused-private-field]
+        int atomicNumber;
+            ^
+6 warnings generated.
+Finished building: ../src/HelloWorld.cpp
+ 
+Building target: HelloWorld
+Invoking: MacOS X C++ Linker
+g++  -o "HelloWorld"  ./src/HelloWorld.o   
+Finished building target: HelloWorld
+ 
+17:12:25 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+Building file: ../src/HelloWorld.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.d" -o "src/HelloWorld.o" "../src/HelloWorld.cpp"
+../src/HelloWorld.cpp:61:17: warning: empty parentheses interpreted as a function declaration [-Wvexing-parse]
+                Vector testVec();
+                              ^~
+../src/HelloWorld.cpp:61:17: note: remove parentheses to declare a variable
+                Vector testVec();
+                              ^~
+../src/HelloWorld.cpp:101:9: warning: private field 'x' is not used [-Wunused-private-field]
+        double x, y, z;
+               ^
+../src/HelloWorld.cpp:101:12: warning: private field 'y' is not used [-Wunused-private-field]
+        double x, y, z;
+                  ^
+../src/HelloWorld.cpp:101:15: warning: private field 'z' is not used [-Wunused-private-field]
+        double x, y, z;
+                     ^
+../src/HelloWorld.cpp:105:9: warning: private field 'atomMass' is not used [-Wunused-private-field]
+        double atomMass;
+               ^
+../src/HelloWorld.cpp:106:6: warning: private field 'atomicNumber' is not used [-Wunused-private-field]
+        int atomicNumber;
+            ^
+6 warnings generated.
+Finished building: ../src/HelloWorld.cpp
+ 
+Building target: HelloWorld
+Invoking: MacOS X C++ Linker
+g++  -o "HelloWorld"  ./src/HelloWorld.o   
+Finished building target: HelloWorld
+ 
+17:14:31 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+Building file: ../src/HelloWorld.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.d" -o "src/HelloWorld.o" "../src/HelloWorld.cpp"
+../src/HelloWorld.cpp:55:17: warning: empty parentheses interpreted as a function declaration [-Wvexing-parse]
+                Vector testVec();
+                              ^~
+../src/HelloWorld.cpp:55:17: note: remove parentheses to declare a variable
+                Vector testVec();
+                              ^~
+../src/HelloWorld.cpp:95:9: warning: private field 'x' is not used [-Wunused-private-field]
+        double x, y, z;
+               ^
+../src/HelloWorld.cpp:95:12: warning: private field 'y' is not used [-Wunused-private-field]
+        double x, y, z;
+                  ^
+../src/HelloWorld.cpp:95:15: warning: private field 'z' is not used [-Wunused-private-field]
+        double x, y, z;
+                     ^
+../src/HelloWorld.cpp:99:9: warning: private field 'atomMass' is not used [-Wunused-private-field]
+        double atomMass;
+               ^
+../src/HelloWorld.cpp:100:6: warning: private field 'atomicNumber' is not used [-Wunused-private-field]
+        int atomicNumber;
+            ^
+6 warnings generated.
+Finished building: ../src/HelloWorld.cpp
+ 
+Building target: HelloWorld
+Invoking: MacOS X C++ Linker
+g++  -o "HelloWorld"  ./src/HelloWorld.o   
+Finished building target: HelloWorld
+ 
+17:15:39 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+Building file: ../src/HelloWorld.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.d" -o "src/HelloWorld.o" "../src/HelloWorld.cpp"
+../src/HelloWorld.cpp:38:18: error: base of member reference is a function; perhaps you meant to call it with no arguments?
+                SumVec.x = x + Vecin.x;
+                               ^~~~~
+                                    ()
+../src/HelloWorld.cpp:39:18: error: base of member reference is a function; perhaps you meant to call it with no arguments?
+                SumVec.y = y + Vecin.y;
+                               ^~~~~
+                                    ()
+../src/HelloWorld.cpp:40:18: error: base of member reference is a function; perhaps you meant to call it with no arguments?
+                SumVec.z = z + Vecin.z;
+                               ^~~~~
+                                    ()
+../src/HelloWorld.cpp:55:17: warning: empty parentheses interpreted as a function declaration [-Wvexing-parse]
+                Vector testVec();
+                              ^~
+../src/HelloWorld.cpp:55:17: note: remove parentheses to declare a variable
+                Vector testVec();
+                              ^~
+../src/HelloWorld.cpp:103:14: error: invalid operands to binary expression ('Vector' and 'Vector')
+        Vec4 = Vec1 + Vec2;
+               ~~~~ ^ ~~~~
+../src/HelloWorld.cpp:34:9: note: candidate function not viable: no known conversion from 'Vector' to 'Vector (*)()' for 1st argument
+        Vector operator + (Vector Vecin()){
+               ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/iterator:629:1: note: candidate template ignored: could not match 'reverse_iterator<type-parameter-0-0>' against 'Vector'
+operator+(typename reverse_iterator<_Iter>::difference_type __n, const reverse_iterator<_Iter>& __x)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/iterator:1033:1: note: candidate template ignored: could not match 'move_iterator<type-parameter-0-0>' against 'Vector'
+operator+(typename move_iterator<_Iter>::difference_type __n, const move_iterator<_Iter>& __x)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/iterator:1389:1: note: candidate template ignored: could not match '__wrap_iter<type-parameter-0-0>' against 'Vector'
+operator+(typename __wrap_iter<_Iter>::difference_type __n,
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/string:3991:1: note: candidate template ignored: could not match 'basic_string<type-parameter-0-0, type-parameter-0-1, type-parameter-0-2>' against 'Vector'
+operator+(const basic_string<_CharT, _Traits, _Allocator>& __lhs,
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/string:4004:1: note: candidate template ignored: could not match 'const _CharT *' against 'Vector'
+operator+(const _CharT* __lhs , const basic_string<_CharT,_Traits,_Allocator>& __rhs)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/string:4016:1: note: candidate template ignored: could not match 'basic_string<type-parameter-0-0, type-parameter-0-1, type-parameter-0-2>' against 'Vector'
+operator+(_CharT __lhs, const basic_string<_CharT,_Traits,_Allocator>& __rhs)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/string:4027:1: note: candidate template ignored: could not match 'basic_string<type-parameter-0-0, type-parameter-0-1, type-parameter-0-2>' against 'Vector'
+operator+(const basic_string<_CharT, _Traits, _Allocator>& __lhs, const _CharT* __rhs)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/string:4039:1: note: candidate template ignored: could not match 'basic_string<type-parameter-0-0, type-parameter-0-1, type-parameter-0-2>' against 'Vector'
+operator+(const basic_string<_CharT, _Traits, _Allocator>& __lhs, _CharT __rhs)
+^
+../src/HelloWorld.cpp:81:9: warning: private field 'x' is not used [-Wunused-private-field]
+        double x, y, z;
+               ^
+../src/HelloWorld.cpp:81:12: warning: private field 'y' is not used [-Wunused-private-field]
+        double x, y, z;
+                  ^
+../src/HelloWorld.cpp:81:15: warning: private field 'z' is not used [-Wunused-private-field]
+        double x, y, z;
+                     ^
+../src/HelloWorld.cpp:85:9: warning: private field 'atomMass' is not used [-Wunused-private-field]
+        double atomMass;
+               ^
+../src/HelloWorld.cpp:86:6: warning: private field 'atomicNumber' is not used [-Wunused-private-field]
+        int atomicNumber;
+            ^
+6 warnings and 4 errors generated.
+make: *** [src/HelloWorld.o] Error 1
+17:15:53 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+Building file: ../src/HelloWorld.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.d" -o "src/HelloWorld.o" "../src/HelloWorld.cpp"
+../src/HelloWorld.cpp:55:17: warning: empty parentheses interpreted as a function declaration [-Wvexing-parse]
+                Vector testVec();
+                              ^~
+../src/HelloWorld.cpp:55:17: note: remove parentheses to declare a variable
+                Vector testVec();
+                              ^~
+../src/HelloWorld.cpp:81:9: warning: private field 'x' is not used [-Wunused-private-field]
+        double x, y, z;
+               ^
+../src/HelloWorld.cpp:81:12: warning: private field 'y' is not used [-Wunused-private-field]
+        double x, y, z;
+                  ^
+../src/HelloWorld.cpp:81:15: warning: private field 'z' is not used [-Wunused-private-field]
+        double x, y, z;
+                     ^
+../src/HelloWorld.cpp:85:9: warning: private field 'atomMass' is not used [-Wunused-private-field]
+        double atomMass;
+               ^
+../src/HelloWorld.cpp:86:6: warning: private field 'atomicNumber' is not used [-Wunused-private-field]
+        int atomicNumber;
+            ^
+6 warnings generated.
+Finished building: ../src/HelloWorld.cpp
+ 
+Building target: HelloWorld
+Invoking: MacOS X C++ Linker
+g++  -o "HelloWorld"  ./src/HelloWorld.o   
+Finished building target: HelloWorld
+ 
+17:16:21 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+Building file: ../src/HelloWorld.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.d" -o "src/HelloWorld.o" "../src/HelloWorld.cpp"
+../src/HelloWorld.cpp:37:16: warning: empty parentheses interpreted as a function declaration [-Wvexing-parse]
+                Vector SumVec();//
+                             ^~
+../src/HelloWorld.cpp:37:16: note: remove parentheses to declare a variable
+                Vector SumVec();//
+                             ^~
+../src/HelloWorld.cpp:38:3: error: base of member reference is a function; perhaps you meant to call it with no arguments?
+                SumVec.x = x + Vecin.x;
+                ^~~~~~
+                      ()
+../src/HelloWorld.cpp:38:12: error: expression is not assignable
+                SumVec.x = x + Vecin.x;
+                ~~~~~~~~ ^
+../src/HelloWorld.cpp:39:3: error: base of member reference is a function; perhaps you meant to call it with no arguments?
+                SumVec.y = y + Vecin.y;
+                ^~~~~~
+                      ()
+../src/HelloWorld.cpp:39:12: error: expression is not assignable
+                SumVec.y = y + Vecin.y;
+                ~~~~~~~~ ^
+../src/HelloWorld.cpp:40:3: error: base of member reference is a function; perhaps you meant to call it with no arguments?
+                SumVec.z = z + Vecin.z;
+                ^~~~~~
+                      ()
+../src/HelloWorld.cpp:40:12: error: expression is not assignable
+                SumVec.z = z + Vecin.z;
+                ~~~~~~~~ ^
+../src/HelloWorld.cpp:42:10: error: no viable conversion from 'Vector ()' to 'Vector'
+                return SumVec;
+                       ^~~~~~
+../src/HelloWorld.cpp:14:7: note: candidate constructor (the implicit copy constructor) not viable: no known conversion from 'Vector ()' to 'const Vector &' for 1st argument
+class Vector{
+      ^
+../src/HelloWorld.cpp:55:17: warning: empty parentheses interpreted as a function declaration [-Wvexing-parse]
+                Vector testVec();
+                              ^~
+../src/HelloWorld.cpp:55:17: note: remove parentheses to declare a variable
+                Vector testVec();
+                              ^~
+../src/HelloWorld.cpp:81:9: warning: private field 'x' is not used [-Wunused-private-field]
+        double x, y, z;
+               ^
+../src/HelloWorld.cpp:81:12: warning: private field 'y' is not used [-Wunused-private-field]
+        double x, y, z;
+                  ^
+../src/HelloWorld.cpp:81:15: warning: private field 'z' is not used [-Wunused-private-field]
+        double x, y, z;
+                     ^
+../src/HelloWorld.cpp:85:9: warning: private field 'atomMass' is not used [-Wunused-private-field]
+        double atomMass;
+               ^
+../src/HelloWorld.cpp:86:6: warning: private field 'atomicNumber' is not used [-Wunused-private-field]
+        int atomicNumber;
+            ^
+7 warnings and 7 errors generated.
+make: *** [src/HelloWorld.o] Error 1
+17:17:10 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+Building file: ../src/HelloWorld.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.d" -o "src/HelloWorld.o" "../src/HelloWorld.cpp"
+../src/HelloWorld.cpp:55:17: warning: empty parentheses interpreted as a function declaration [-Wvexing-parse]
+                Vector testVec();
+                              ^~
+../src/HelloWorld.cpp:55:17: note: remove parentheses to declare a variable
+                Vector testVec();
+                              ^~
+../src/HelloWorld.cpp:81:9: warning: private field 'x' is not used [-Wunused-private-field]
+        double x, y, z;
+               ^
+../src/HelloWorld.cpp:81:12: warning: private field 'y' is not used [-Wunused-private-field]
+        double x, y, z;
+                  ^
+../src/HelloWorld.cpp:81:15: warning: private field 'z' is not used [-Wunused-private-field]
+        double x, y, z;
+                     ^
+../src/HelloWorld.cpp:85:9: warning: private field 'atomMass' is not used [-Wunused-private-field]
+        double atomMass;
+               ^
+../src/HelloWorld.cpp:86:6: warning: private field 'atomicNumber' is not used [-Wunused-private-field]
+        int atomicNumber;
+            ^
+6 warnings generated.
+Finished building: ../src/HelloWorld.cpp
+ 
+Building target: HelloWorld
+Invoking: MacOS X C++ Linker
+g++  -o "HelloWorld"  ./src/HelloWorld.o   
+Finished building target: HelloWorld
+ 
+17:19:22 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+Building file: ../src/HelloWorld.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.d" -o "src/HelloWorld.o" "../src/HelloWorld.cpp"
+../src/HelloWorld.cpp:55:17: warning: empty parentheses interpreted as a function declaration [-Wvexing-parse]
+                Vector testVec();
+                              ^~
+../src/HelloWorld.cpp:55:17: note: remove parentheses to declare a variable
+                Vector testVec();
+                              ^~
+../src/HelloWorld.cpp:81:9: warning: private field 'x' is not used [-Wunused-private-field]
+        double x, y, z;
+               ^
+../src/HelloWorld.cpp:81:12: warning: private field 'y' is not used [-Wunused-private-field]
+        double x, y, z;
+                  ^
+../src/HelloWorld.cpp:81:15: warning: private field 'z' is not used [-Wunused-private-field]
+        double x, y, z;
+                     ^
+../src/HelloWorld.cpp:85:9: warning: private field 'atomMass' is not used [-Wunused-private-field]
+        double atomMass;
+               ^
+../src/HelloWorld.cpp:86:6: warning: private field 'atomicNumber' is not used [-Wunused-private-field]
+        int atomicNumber;
+            ^
+6 warnings generated.
+Finished building: ../src/HelloWorld.cpp
+ 
+Building target: HelloWorld
+Invoking: MacOS X C++ Linker
+g++  -o "HelloWorld"  ./src/HelloWorld.o   
+Finished building target: HelloWorld
+ 
+17:24:23 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+Building file: ../src/HelloWorld.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.d" -o "src/HelloWorld.o" "../src/HelloWorld.cpp"
+../src/HelloWorld.cpp:65:9: warning: private field 'x' is not used [-Wunused-private-field]
+        double x, y, z;
+               ^
+../src/HelloWorld.cpp:65:12: warning: private field 'y' is not used [-Wunused-private-field]
+        double x, y, z;
+                  ^
+../src/HelloWorld.cpp:65:15: warning: private field 'z' is not used [-Wunused-private-field]
+        double x, y, z;
+                     ^
+../src/HelloWorld.cpp:69:9: warning: private field 'atomMass' is not used [-Wunused-private-field]
+        double atomMass;
+               ^
+../src/HelloWorld.cpp:70:6: warning: private field 'atomicNumber' is not used [-Wunused-private-field]
+        int atomicNumber;
+            ^
+5 warnings generated.
+Finished building: ../src/HelloWorld.cpp
+ 
+Building target: HelloWorld
+Invoking: MacOS X C++ Linker
+g++  -o "HelloWorld"  ./src/HelloWorld.o   
+Finished building target: HelloWorld
+ 
+17:26:15 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+Building file: ../src/HelloWorld.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.d" -o "src/HelloWorld.o" "../src/HelloWorld.cpp"
+../src/HelloWorld.cpp:84:13: warning: empty parentheses interpreted as a function declaration [-Wvexing-parse]
+        Vector Vec4(), Vec5();
+                   ^~
+../src/HelloWorld.cpp:84:13: note: remove parentheses to declare a variable
+        Vector Vec4(), Vec5();
+                   ^~
+../src/HelloWorld.cpp:84:21: warning: empty parentheses interpreted as a function declaration [-Wvexing-parse]
+        Vector Vec4(), Vec5();
+                           ^~
+../src/HelloWorld.cpp:84:21: note: remove parentheses to declare a variable
+        Vector Vec4(), Vec5();
+                           ^~
+../src/HelloWorld.cpp:87:7: error: non-object type 'Vector ()' is not assignable
+        Vec4 = Vec1 + Vec2;
+        ~~~~ ^
+../src/HelloWorld.cpp:88:7: error: non-object type 'Vector ()' is not assignable
+        Vec5 = Vec1 - Vec2;
+        ~~~~ ^
+../src/HelloWorld.cpp:90:10: error: base of member reference is a function; perhaps you meant to call it with no arguments?
+        cout << Vec4.y << endl;
+                ^~~~
+                    ()
+../src/HelloWorld.cpp:91:10: error: base of member reference is a function; perhaps you meant to call it with no arguments?
+        cout << Vec5.x << endl;
+                ^~~~
+                    ()
+../src/HelloWorld.cpp:65:9: warning: private field 'x' is not used [-Wunused-private-field]
+        double x, y, z;
+               ^
+../src/HelloWorld.cpp:65:12: warning: private field 'y' is not used [-Wunused-private-field]
+        double x, y, z;
+                  ^
+../src/HelloWorld.cpp:65:15: warning: private field 'z' is not used [-Wunused-private-field]
+        double x, y, z;
+                     ^
+../src/HelloWorld.cpp:69:9: warning: private field 'atomMass' is not used [-Wunused-private-field]
+        double atomMass;
+               ^
+../src/HelloWorld.cpp:70:6: warning: private field 'atomicNumber' is not used [-Wunused-private-field]
+        int atomicNumber;
+            ^
+7 warnings and 4 errors generated.
+make: *** [src/HelloWorld.o] Error 1
+17:26:37 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+Building file: ../src/HelloWorld.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.d" -o "src/HelloWorld.o" "../src/HelloWorld.cpp"
+../src/HelloWorld.cpp:65:9: warning: private field 'x' is not used [-Wunused-private-field]
+        double x, y, z;
+               ^
+../src/HelloWorld.cpp:65:12: warning: private field 'y' is not used [-Wunused-private-field]
+        double x, y, z;
+                  ^
+../src/HelloWorld.cpp:65:15: warning: private field 'z' is not used [-Wunused-private-field]
+        double x, y, z;
+                     ^
+../src/HelloWorld.cpp:69:9: warning: private field 'atomMass' is not used [-Wunused-private-field]
+        double atomMass;
+               ^
+../src/HelloWorld.cpp:70:6: warning: private field 'atomicNumber' is not used [-Wunused-private-field]
+        int atomicNumber;
+            ^
+5 warnings generated.
+Finished building: ../src/HelloWorld.cpp
+ 
+Building target: HelloWorld
+Invoking: MacOS X C++ Linker
+g++  -o "HelloWorld"  ./src/HelloWorld.o   
+Finished building target: HelloWorld
+ 
+17:31:47 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+Building file: ../src/HelloWorld.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.d" -o "src/HelloWorld.o" "../src/HelloWorld.cpp"
+../src/HelloWorld.cpp:64:9: warning: private field 'x' is not used [-Wunused-private-field]
+        double x, y, z;
+               ^
+../src/HelloWorld.cpp:64:12: warning: private field 'y' is not used [-Wunused-private-field]
+        double x, y, z;
+                  ^
+../src/HelloWorld.cpp:64:15: warning: private field 'z' is not used [-Wunused-private-field]
+        double x, y, z;
+                     ^
+../src/HelloWorld.cpp:68:9: warning: private field 'atomMass' is not used [-Wunused-private-field]
+        double atomMass;
+               ^
+../src/HelloWorld.cpp:69:6: warning: private field 'atomicNumber' is not used [-Wunused-private-field]
+        int atomicNumber;
+            ^
+5 warnings generated.
+Finished building: ../src/HelloWorld.cpp
+ 
+Building target: HelloWorld
+Invoking: MacOS X C++ Linker
+g++  -o "HelloWorld"  ./src/HelloWorld.o   
+Finished building target: HelloWorld
+ 
+17:32:22 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+Building file: ../src/HelloWorld.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.d" -o "src/HelloWorld.o" "../src/HelloWorld.cpp"
+../src/HelloWorld.cpp:64:9: warning: private field 'x' is not used [-Wunused-private-field]
+        double x, y, z;
+               ^
+../src/HelloWorld.cpp:64:12: warning: private field 'y' is not used [-Wunused-private-field]
+        double x, y, z;
+                  ^
+../src/HelloWorld.cpp:64:15: warning: private field 'z' is not used [-Wunused-private-field]
+        double x, y, z;
+                     ^
+../src/HelloWorld.cpp:68:9: warning: private field 'atomMass' is not used [-Wunused-private-field]
+        double atomMass;
+               ^
+../src/HelloWorld.cpp:69:6: warning: private field 'atomicNumber' is not used [-Wunused-private-field]
+        int atomicNumber;
+            ^
+5 warnings generated.
+Finished building: ../src/HelloWorld.cpp
+ 
+Building target: HelloWorld
+Invoking: MacOS X C++ Linker
+g++  -o "HelloWorld"  ./src/HelloWorld.o   
+Finished building target: HelloWorld
+ 
+20:27:14 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+20:33:04 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+21:25:21 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+Building file: ../src/HelloWorld.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.d" -o "src/HelloWorld.o" "../src/HelloWorld.cpp"
+../src/HelloWorld.cpp:64:9: warning: private field 'x' is not used [-Wunused-private-field]
+        double x, y, z;
+               ^
+../src/HelloWorld.cpp:64:12: warning: private field 'y' is not used [-Wunused-private-field]
+        double x, y, z;
+                  ^
+../src/HelloWorld.cpp:64:15: warning: private field 'z' is not used [-Wunused-private-field]
+        double x, y, z;
+                     ^
+../src/HelloWorld.cpp:68:9: warning: private field 'atomMass' is not used [-Wunused-private-field]
+        double atomMass;
+               ^
+../src/HelloWorld.cpp:69:6: warning: private field 'atomicNumber' is not used [-Wunused-private-field]
+        int atomicNumber;
+            ^
+5 warnings generated.
+Finished building: ../src/HelloWorld.cpp
+ 
+Building target: HelloWorld
+Invoking: MacOS X C++ Linker
+g++  -o "HelloWorld"  ./src/HelloWorld.o   
+Finished building target: HelloWorld
+ 
+21:27:37 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+Building file: ../src/HelloWorld.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.d" -o "src/HelloWorld.o" "../src/HelloWorld.cpp"
+../src/HelloWorld.cpp:64:9: warning: private field 'x' is not used [-Wunused-private-field]
+        double x, y, z;
+               ^
+../src/HelloWorld.cpp:64:12: warning: private field 'y' is not used [-Wunused-private-field]
+        double x, y, z;
+                  ^
+../src/HelloWorld.cpp:64:15: warning: private field 'z' is not used [-Wunused-private-field]
+        double x, y, z;
+                     ^
+../src/HelloWorld.cpp:68:9: warning: private field 'atomMass' is not used [-Wunused-private-field]
+        double atomMass;
+               ^
+../src/HelloWorld.cpp:69:6: warning: private field 'atomicNumber' is not used [-Wunused-private-field]
+        int atomicNumber;
+            ^
+5 warnings generated.
+Finished building: ../src/HelloWorld.cpp
+ 
+Building target: HelloWorld
+Invoking: MacOS X C++ Linker
+g++  -o "HelloWorld"  ./src/HelloWorld.o   
+Finished building target: HelloWorld
+ 
+21:28:50 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+Building file: ../src/HelloWorld.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.d" -o "src/HelloWorld.o" "../src/HelloWorld.cpp"
+../src/HelloWorld.cpp:64:9: warning: private field 'x' is not used [-Wunused-private-field]
+        double x, y, z;
+               ^
+../src/HelloWorld.cpp:64:12: warning: private field 'y' is not used [-Wunused-private-field]
+        double x, y, z;
+                  ^
+../src/HelloWorld.cpp:64:15: warning: private field 'z' is not used [-Wunused-private-field]
+        double x, y, z;
+                     ^
+../src/HelloWorld.cpp:68:9: warning: private field 'atomMass' is not used [-Wunused-private-field]
+        double atomMass;
+               ^
+../src/HelloWorld.cpp:69:6: warning: private field 'atomicNumber' is not used [-Wunused-private-field]
+        int atomicNumber;
+            ^
+5 warnings generated.
+Finished building: ../src/HelloWorld.cpp
+ 
+Building target: HelloWorld
+Invoking: MacOS X C++ Linker
+g++  -o "HelloWorld"  ./src/HelloWorld.o   
+Finished building target: HelloWorld
+ 
+21:30:45 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+Building file: ../src/HelloWorld.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.d" -o "src/HelloWorld.o" "../src/HelloWorld.cpp"
+../src/HelloWorld.cpp:64:9: warning: private field 'x' is not used [-Wunused-private-field]
+        double x, y, z;
+               ^
+../src/HelloWorld.cpp:64:12: warning: private field 'y' is not used [-Wunused-private-field]
+        double x, y, z;
+                  ^
+../src/HelloWorld.cpp:64:15: warning: private field 'z' is not used [-Wunused-private-field]
+        double x, y, z;
+                     ^
+../src/HelloWorld.cpp:68:9: warning: private field 'atomMass' is not used [-Wunused-private-field]
+        double atomMass;
+               ^
+../src/HelloWorld.cpp:69:6: warning: private field 'atomicNumber' is not used [-Wunused-private-field]
+        int atomicNumber;
+            ^
+5 warnings generated.
+Finished building: ../src/HelloWorld.cpp
+ 
+Building target: HelloWorld
+Invoking: MacOS X C++ Linker
+g++  -o "HelloWorld"  ./src/HelloWorld.o   
+Finished building target: HelloWorld
+ 
+21:35:54 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+Building file: ../src/HelloWorld.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.d" -o "src/HelloWorld.o" "../src/HelloWorld.cpp"
+../src/HelloWorld.cpp:64:9: warning: private field 'x' is not used [-Wunused-private-field]
+        double x, y, z;
+               ^
+../src/HelloWorld.cpp:64:12: warning: private field 'y' is not used [-Wunused-private-field]
+        double x, y, z;
+                  ^
+../src/HelloWorld.cpp:64:15: warning: private field 'z' is not used [-Wunused-private-field]
+        double x, y, z;
+                     ^
+../src/HelloWorld.cpp:68:9: warning: private field 'atomMass' is not used [-Wunused-private-field]
+        double atomMass;
+               ^
+../src/HelloWorld.cpp:69:6: warning: private field 'atomicNumber' is not used [-Wunused-private-field]
+        int atomicNumber;
+            ^
+5 warnings generated.
+Finished building: ../src/HelloWorld.cpp
+ 
+Building target: HelloWorld
+Invoking: MacOS X C++ Linker
+g++  -o "HelloWorld"  ./src/HelloWorld.o   
+Finished building target: HelloWorld
+ 
+22:17:34 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+Building file: ../src/HelloWorld.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.d" -o "src/HelloWorld.o" "../src/HelloWorld.cpp"
+../src/HelloWorld.cpp:85:12: warning: implicit conversion of NULL constant to 'double' [-Wnull-conversion]
+                _value = NULL;
+                       ~ ^~~~
+                         0.0
+../src/HelloWorld.cpp:102:12: error: assigning to 'Node *' from incompatible type 'Node **'; remove &
+                _subNode = &subNode;
+                         ^ ~~~~~~~~
+../src/HelloWorld.cpp:105:43: error: 'Node' does not refer to a value
+                cout << "node instance at address:" << &Node
+                                                        ^
+../src/HelloWorld.cpp:77:7: note: declared here
+class Node{
+      ^
+../src/HelloWorld.cpp:116:14: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int _Length = 0;
+                    ^
+../src/HelloWorld.cpp:122:3: error: expected unqualified-id
+                for (int i=0; i<_Length; i++){
+                ^
+../src/HelloWorld.cpp:64:9: warning: private field 'x' is not used [-Wunused-private-field]
+        double x, y, z;
+               ^
+../src/HelloWorld.cpp:64:12: warning: private field 'y' is not used [-Wunused-private-field]
+        double x, y, z;
+                  ^
+../src/HelloWorld.cpp:64:15: warning: private field 'z' is not used [-Wunused-private-field]
+        double x, y, z;
+                     ^
+../src/HelloWorld.cpp:68:9: warning: private field 'atomMass' is not used [-Wunused-private-field]
+        double atomMass;
+               ^
+../src/HelloWorld.cpp:69:6: warning: private field 'atomicNumber' is not used [-Wunused-private-field]
+        int atomicNumber;
+            ^
+../src/HelloWorld.cpp:117:8: warning: private field 'Node0' is not used [-Wunused-private-field]
+        Node *Node0;
+              ^
+8 warnings and 3 errors generated.
+make: *** [src/HelloWorld.o] Error 1
+22:19:48 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+Building file: ../src/HelloWorld.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.d" -o "src/HelloWorld.o" "../src/HelloWorld.cpp"
+../src/HelloWorld.cpp:85:12: warning: implicit conversion of NULL constant to 'double' [-Wnull-conversion]
+                _value = NULL;
+                       ~ ^~~~
+                         0.0
+../src/HelloWorld.cpp:102:12: error: assigning to 'Node *' from incompatible type 'Node **'; remove &
+                _subNode = &subNode;
+                         ^ ~~~~~~~~
+../src/HelloWorld.cpp:105:43: error: 'Node' does not refer to a value
+                cout << "node instance at address:" << &Node
+                                                        ^
+../src/HelloWorld.cpp:77:7: note: declared here
+class Node{
+      ^
+../src/HelloWorld.cpp:116:14: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int _Length = 0;
+                    ^
+../src/HelloWorld.cpp:64:9: warning: private field 'x' is not used [-Wunused-private-field]
+        double x, y, z;
+               ^
+../src/HelloWorld.cpp:64:12: warning: private field 'y' is not used [-Wunused-private-field]
+        double x, y, z;
+                  ^
+../src/HelloWorld.cpp:64:15: warning: private field 'z' is not used [-Wunused-private-field]
+        double x, y, z;
+                     ^
+../src/HelloWorld.cpp:68:9: warning: private field 'atomMass' is not used [-Wunused-private-field]
+        double atomMass;
+               ^
+../src/HelloWorld.cpp:69:6: warning: private field 'atomicNumber' is not used [-Wunused-private-field]
+        int atomicNumber;
+            ^
+../src/HelloWorld.cpp:117:8: warning: private field 'Node0' is not used [-Wunused-private-field]
+        Node *Node0;
+              ^
+8 warnings and 2 errors generated.
+make: *** [src/HelloWorld.o] Error 1
+22:20:30 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+Building file: ../src/HelloWorld.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.d" -o "src/HelloWorld.o" "../src/HelloWorld.cpp"
+../src/HelloWorld.cpp:85:12: warning: implicit conversion of NULL constant to 'double' [-Wnull-conversion]
+                _value = NULL;
+                       ~ ^~~~
+                         0.0
+../src/HelloWorld.cpp:102:12: error: assigning to 'Node *' from incompatible type 'Node **'; remove &
+                _subNode = &subNode;
+                         ^ ~~~~~~~~
+../src/HelloWorld.cpp:105:43: error: 'Node' does not refer to a value
+                cout << "node instance at address:" << &Node << "with value of" << _value << " is deleted." << endl;
+                                                        ^
+../src/HelloWorld.cpp:77:7: note: declared here
+class Node{
+      ^
+../src/HelloWorld.cpp:115:14: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int _Length = 0;
+                    ^
+../src/HelloWorld.cpp:64:9: warning: private field 'x' is not used [-Wunused-private-field]
+        double x, y, z;
+               ^
+../src/HelloWorld.cpp:64:12: warning: private field 'y' is not used [-Wunused-private-field]
+        double x, y, z;
+                  ^
+../src/HelloWorld.cpp:64:15: warning: private field 'z' is not used [-Wunused-private-field]
+        double x, y, z;
+                     ^
+../src/HelloWorld.cpp:68:9: warning: private field 'atomMass' is not used [-Wunused-private-field]
+        double atomMass;
+               ^
+../src/HelloWorld.cpp:69:6: warning: private field 'atomicNumber' is not used [-Wunused-private-field]
+        int atomicNumber;
+            ^
+../src/HelloWorld.cpp:116:8: warning: private field 'Node0' is not used [-Wunused-private-field]
+        Node *Node0;
+              ^
+8 warnings and 2 errors generated.
+make: *** [src/HelloWorld.o] Error 1
+22:23:03 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+Building file: ../src/HelloWorld.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.d" -o "src/HelloWorld.o" "../src/HelloWorld.cpp"
+../src/HelloWorld.cpp:85:12: warning: implicit conversion of NULL constant to 'double' [-Wnull-conversion]
+                _value = NULL;
+                       ~ ^~~~
+                         0.0
+../src/HelloWorld.cpp:105:43: error: 'Node' does not refer to a value
+                cout << "node instance at address:" << &Node;
+                                                        ^
+../src/HelloWorld.cpp:77:7: note: declared here
+class Node{
+      ^
+../src/HelloWorld.cpp:116:14: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int _Length = 0;
+                    ^
+../src/HelloWorld.cpp:64:9: warning: private field 'x' is not used [-Wunused-private-field]
+        double x, y, z;
+               ^
+../src/HelloWorld.cpp:64:12: warning: private field 'y' is not used [-Wunused-private-field]
+        double x, y, z;
+                  ^
+../src/HelloWorld.cpp:64:15: warning: private field 'z' is not used [-Wunused-private-field]
+        double x, y, z;
+                     ^
+../src/HelloWorld.cpp:68:9: warning: private field 'atomMass' is not used [-Wunused-private-field]
+        double atomMass;
+               ^
+../src/HelloWorld.cpp:69:6: warning: private field 'atomicNumber' is not used [-Wunused-private-field]
+        int atomicNumber;
+            ^
+../src/HelloWorld.cpp:117:8: warning: private field 'Node0' is not used [-Wunused-private-field]
+        Node *Node0;
+              ^
+8 warnings and 1 error generated.
+make: *** [src/HelloWorld.o] Error 1
+22:23:30 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+Building file: ../src/HelloWorld.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.d" -o "src/HelloWorld.o" "../src/HelloWorld.cpp"
+../src/HelloWorld.cpp:85:12: warning: implicit conversion of NULL constant to 'double' [-Wnull-conversion]
+                _value = NULL;
+                       ~ ^~~~
+                         0.0
+../src/HelloWorld.cpp:116:14: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int _Length = 0;
+                    ^
+../src/HelloWorld.cpp:64:9: warning: private field 'x' is not used [-Wunused-private-field]
+        double x, y, z;
+               ^
+../src/HelloWorld.cpp:64:12: warning: private field 'y' is not used [-Wunused-private-field]
+        double x, y, z;
+                  ^
+../src/HelloWorld.cpp:64:15: warning: private field 'z' is not used [-Wunused-private-field]
+        double x, y, z;
+                     ^
+../src/HelloWorld.cpp:68:9: warning: private field 'atomMass' is not used [-Wunused-private-field]
+        double atomMass;
+               ^
+../src/HelloWorld.cpp:69:6: warning: private field 'atomicNumber' is not used [-Wunused-private-field]
+        int atomicNumber;
+            ^
+../src/HelloWorld.cpp:117:8: warning: private field 'Node0' is not used [-Wunused-private-field]
+        Node *Node0;
+              ^
+8 warnings generated.
+Finished building: ../src/HelloWorld.cpp
+ 
+Building target: HelloWorld
+Invoking: MacOS X C++ Linker
+g++  -o "HelloWorld"  ./src/HelloWorld.o   
+Finished building target: HelloWorld
+ 
+22:24:15 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+Building file: ../src/HelloWorld.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.d" -o "src/HelloWorld.o" "../src/HelloWorld.cpp"
+../src/HelloWorld.cpp:85:12: warning: implicit conversion of NULL constant to 'double' [-Wnull-conversion]
+                _value = NULL;
+                       ~ ^~~~
+                         0.0
+../src/HelloWorld.cpp:105:43: error: 'Node' does not refer to a value
+                cout << "node instance at address:" << &Node;
+                                                        ^
+../src/HelloWorld.cpp:77:7: note: declared here
+class Node{
+      ^
+../src/HelloWorld.cpp:116:14: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int _Length = 0;
+                    ^
+../src/HelloWorld.cpp:64:9: warning: private field 'x' is not used [-Wunused-private-field]
+        double x, y, z;
+               ^
+../src/HelloWorld.cpp:64:12: warning: private field 'y' is not used [-Wunused-private-field]
+        double x, y, z;
+                  ^
+../src/HelloWorld.cpp:64:15: warning: private field 'z' is not used [-Wunused-private-field]
+        double x, y, z;
+                     ^
+../src/HelloWorld.cpp:68:9: warning: private field 'atomMass' is not used [-Wunused-private-field]
+        double atomMass;
+               ^
+../src/HelloWorld.cpp:69:6: warning: private field 'atomicNumber' is not used [-Wunused-private-field]
+        int atomicNumber;
+            ^
+../src/HelloWorld.cpp:117:8: warning: private field 'Node0' is not used [-Wunused-private-field]
+        Node *Node0;
+              ^
+8 warnings and 1 error generated.
+make: *** [src/HelloWorld.o] Error 1
+22:25:23 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+Building file: ../src/HelloWorld.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.d" -o "src/HelloWorld.o" "../src/HelloWorld.cpp"
+../src/HelloWorld.cpp:85:12: warning: implicit conversion of NULL constant to 'double' [-Wnull-conversion]
+                _value = NULL;
+                       ~ ^~~~
+                         0.0
+../src/HelloWorld.cpp:115:14: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int _Length = 0;
+                    ^
+../src/HelloWorld.cpp:64:9: warning: private field 'x' is not used [-Wunused-private-field]
+        double x, y, z;
+               ^
+../src/HelloWorld.cpp:64:12: warning: private field 'y' is not used [-Wunused-private-field]
+        double x, y, z;
+                  ^
+../src/HelloWorld.cpp:64:15: warning: private field 'z' is not used [-Wunused-private-field]
+        double x, y, z;
+                     ^
+../src/HelloWorld.cpp:68:9: warning: private field 'atomMass' is not used [-Wunused-private-field]
+        double atomMass;
+               ^
+../src/HelloWorld.cpp:69:6: warning: private field 'atomicNumber' is not used [-Wunused-private-field]
+        int atomicNumber;
+            ^
+../src/HelloWorld.cpp:116:8: warning: private field 'Node0' is not used [-Wunused-private-field]
+        Node *Node0;
+              ^
+8 warnings generated.
+Finished building: ../src/HelloWorld.cpp
+ 
+Building target: HelloWorld
+Invoking: MacOS X C++ Linker
+g++  -o "HelloWorld"  ./src/HelloWorld.o   
+Finished building target: HelloWorld
+ 
+22:25:54 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+Building file: ../src/HelloWorld.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.d" -o "src/HelloWorld.o" "../src/HelloWorld.cpp"
+../src/HelloWorld.cpp:85:12: warning: implicit conversion of NULL constant to 'double' [-Wnull-conversion]
+                _value = NULL;
+                       ~ ^~~~
+                         0.0
+../src/HelloWorld.cpp:115:14: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int _Length = 0;
+                    ^
+../src/HelloWorld.cpp:64:9: warning: private field 'x' is not used [-Wunused-private-field]
+        double x, y, z;
+               ^
+../src/HelloWorld.cpp:64:12: warning: private field 'y' is not used [-Wunused-private-field]
+        double x, y, z;
+                  ^
+../src/HelloWorld.cpp:64:15: warning: private field 'z' is not used [-Wunused-private-field]
+        double x, y, z;
+                     ^
+../src/HelloWorld.cpp:68:9: warning: private field 'atomMass' is not used [-Wunused-private-field]
+        double atomMass;
+               ^
+../src/HelloWorld.cpp:69:6: warning: private field 'atomicNumber' is not used [-Wunused-private-field]
+        int atomicNumber;
+            ^
+../src/HelloWorld.cpp:116:8: warning: private field 'Node0' is not used [-Wunused-private-field]
+        Node *Node0;
+              ^
+8 warnings generated.
+Finished building: ../src/HelloWorld.cpp
+ 
+Building target: HelloWorld
+Invoking: MacOS X C++ Linker
+g++  -o "HelloWorld"  ./src/HelloWorld.o   
+Finished building target: HelloWorld
+ 
+22:54:27 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+Building file: ../src/HelloWorld.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.d" -o "src/HelloWorld.o" "../src/HelloWorld.cpp"
+../src/HelloWorld.cpp:85:12: warning: implicit conversion of NULL constant to 'double' [-Wnull-conversion]
+                _value = NULL;
+                       ~ ^~~~
+                         0.0
+../src/HelloWorld.cpp:118:14: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int _Length = 0;
+                    ^
+../src/HelloWorld.cpp:137:2: error: reference to overloaded function could not be resolved; did you mean to call it?
+        count << *testNode2.getSubNode();
+        ^~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/algorithm:1112:1: note: possible target for call
+count(_InputIterator __first, _InputIterator __last, const _Tp& __value_)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__bit_reference:312:1: note: possible target for call
+count(__bit_iterator<_Cp, _IsConst> __first, __bit_iterator<_Cp, _IsConst> __last, const _Tp& __value_)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:766:1: note: candidate template ignored: couldn't infer template argument '_Traits'
+operator<<(basic_ostream<_CharT, _Traits>& __os, _CharT __c)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:773:1: note: candidate template ignored: couldn't infer template argument '_CharT'
+operator<<(basic_ostream<_CharT, _Traits>& __os, char __cn)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:806:1: note: candidate template ignored: couldn't infer template argument '_Traits'
+operator<<(basic_ostream<char, _Traits>& __os, char __c)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:813:1: note: candidate template ignored: couldn't infer template argument '_Traits'
+operator<<(basic_ostream<char, _Traits>& __os, signed char __c)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:820:1: note: candidate template ignored: couldn't infer template argument '_Traits'
+operator<<(basic_ostream<char, _Traits>& __os, unsigned char __c)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:834:1: note: candidate template ignored: couldn't infer template argument '_CharT'
+operator<<(basic_ostream<_CharT, _Traits>& __os, const char* __strn)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:880:1: note: candidate template ignored: couldn't infer template argument '_Traits'
+operator<<(basic_ostream<char, _Traits>& __os, const char* __str)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:887:1: note: candidate template ignored: couldn't infer template argument '_Traits'
+operator<<(basic_ostream<char, _Traits>& __os, const signed char* __str)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:895:1: note: candidate template ignored: couldn't infer template argument '_Traits'
+operator<<(basic_ostream<char, _Traits>& __os, const unsigned char* __str)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:1074:1: note: candidate template ignored: couldn't infer template argument '_CharT'
+operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __ec)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:827:1: note: candidate template ignored: could not match 'const _CharT *' against 'Node'
+operator<<(basic_ostream<_CharT, _Traits>& __os, const _CharT* __str)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:1065:1: note: candidate template ignored: could not match 'basic_string<type-parameter-0-0, type-parameter-0-1, type-parameter-0-2>' against 'Node'
+operator<<(basic_ostream<_CharT, _Traits>& __os,
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:1082:1: note: candidate template ignored: could not match 'shared_ptr<type-parameter-0-2>' against 'Node'
+operator<<(basic_ostream<_CharT, _Traits>& __os, shared_ptr<_Yp> const& __p)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:1089:1: note: candidate template ignored: could not match 'bitset<_Size>' against 'Node'
+operator<<(basic_ostream<_CharT, _Traits>& __os, const bitset<_Size>& __x)
+^
+../src/HelloWorld.cpp:64:9: warning: private field 'x' is not used [-Wunused-private-field]
+        double x, y, z;
+               ^
+../src/HelloWorld.cpp:64:12: warning: private field 'y' is not used [-Wunused-private-field]
+        double x, y, z;
+                  ^
+../src/HelloWorld.cpp:64:15: warning: private field 'z' is not used [-Wunused-private-field]
+        double x, y, z;
+                     ^
+../src/HelloWorld.cpp:68:9: warning: private field 'atomMass' is not used [-Wunused-private-field]
+        double atomMass;
+               ^
+../src/HelloWorld.cpp:69:6: warning: private field 'atomicNumber' is not used [-Wunused-private-field]
+        int atomicNumber;
+            ^
+../src/HelloWorld.cpp:119:8: warning: private field 'Node0' is not used [-Wunused-private-field]
+        Node *Node0;
+              ^
+8 warnings and 1 error generated.
+make: *** [src/HelloWorld.o] Error 1
+22:56:49 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+Building file: ../src/HelloWorld.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.d" -o "src/HelloWorld.o" "../src/HelloWorld.cpp"
+../src/HelloWorld.cpp:85:12: warning: implicit conversion of NULL constant to 'double' [-Wnull-conversion]
+                _value = NULL;
+                       ~ ^~~~
+                         0.0
+../src/HelloWorld.cpp:118:14: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int _Length = 0;
+                    ^
+../src/HelloWorld.cpp:137:2: error: reference to overloaded function could not be resolved; did you mean to call it?
+        count << *(testNode2.getSubNode());
+        ^~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/algorithm:1112:1: note: possible target for call
+count(_InputIterator __first, _InputIterator __last, const _Tp& __value_)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__bit_reference:312:1: note: possible target for call
+count(__bit_iterator<_Cp, _IsConst> __first, __bit_iterator<_Cp, _IsConst> __last, const _Tp& __value_)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:766:1: note: candidate template ignored: couldn't infer template argument '_Traits'
+operator<<(basic_ostream<_CharT, _Traits>& __os, _CharT __c)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:773:1: note: candidate template ignored: couldn't infer template argument '_CharT'
+operator<<(basic_ostream<_CharT, _Traits>& __os, char __cn)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:806:1: note: candidate template ignored: couldn't infer template argument '_Traits'
+operator<<(basic_ostream<char, _Traits>& __os, char __c)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:813:1: note: candidate template ignored: couldn't infer template argument '_Traits'
+operator<<(basic_ostream<char, _Traits>& __os, signed char __c)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:820:1: note: candidate template ignored: couldn't infer template argument '_Traits'
+operator<<(basic_ostream<char, _Traits>& __os, unsigned char __c)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:834:1: note: candidate template ignored: couldn't infer template argument '_CharT'
+operator<<(basic_ostream<_CharT, _Traits>& __os, const char* __strn)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:880:1: note: candidate template ignored: couldn't infer template argument '_Traits'
+operator<<(basic_ostream<char, _Traits>& __os, const char* __str)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:887:1: note: candidate template ignored: couldn't infer template argument '_Traits'
+operator<<(basic_ostream<char, _Traits>& __os, const signed char* __str)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:895:1: note: candidate template ignored: couldn't infer template argument '_Traits'
+operator<<(basic_ostream<char, _Traits>& __os, const unsigned char* __str)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:1074:1: note: candidate template ignored: couldn't infer template argument '_CharT'
+operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __ec)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:827:1: note: candidate template ignored: could not match 'const _CharT *' against 'Node'
+operator<<(basic_ostream<_CharT, _Traits>& __os, const _CharT* __str)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:1065:1: note: candidate template ignored: could not match 'basic_string<type-parameter-0-0, type-parameter-0-1, type-parameter-0-2>' against 'Node'
+operator<<(basic_ostream<_CharT, _Traits>& __os,
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:1082:1: note: candidate template ignored: could not match 'shared_ptr<type-parameter-0-2>' against 'Node'
+operator<<(basic_ostream<_CharT, _Traits>& __os, shared_ptr<_Yp> const& __p)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:1089:1: note: candidate template ignored: could not match 'bitset<_Size>' against 'Node'
+operator<<(basic_ostream<_CharT, _Traits>& __os, const bitset<_Size>& __x)
+^
+../src/HelloWorld.cpp:64:9: warning: private field 'x' is not used [-Wunused-private-field]
+        double x, y, z;
+               ^
+../src/HelloWorld.cpp:64:12: warning: private field 'y' is not used [-Wunused-private-field]
+        double x, y, z;
+                  ^
+../src/HelloWorld.cpp:64:15: warning: private field 'z' is not used [-Wunused-private-field]
+        double x, y, z;
+                     ^
+../src/HelloWorld.cpp:68:9: warning: private field 'atomMass' is not used [-Wunused-private-field]
+        double atomMass;
+               ^
+../src/HelloWorld.cpp:69:6: warning: private field 'atomicNumber' is not used [-Wunused-private-field]
+        int atomicNumber;
+            ^
+../src/HelloWorld.cpp:119:8: warning: private field 'Node0' is not used [-Wunused-private-field]
+        Node *Node0;
+              ^
+8 warnings and 1 error generated.
+make: *** [src/HelloWorld.o] Error 1
+23:00:47 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+Building file: ../src/HelloWorld.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.d" -o "src/HelloWorld.o" "../src/HelloWorld.cpp"
+../src/HelloWorld.cpp:85:12: warning: implicit conversion of NULL constant to 'double' [-Wnull-conversion]
+                _value = NULL;
+                       ~ ^~~~
+                         0.0
+../src/HelloWorld.cpp:118:14: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int _Length = 0;
+                    ^
+../src/HelloWorld.cpp:138:2: error: reference to overloaded function could not be resolved; did you mean to call it?
+        count << testNode2.getSubNode()->getValue();
+        ^~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/algorithm:1112:1: note: possible target for call
+count(_InputIterator __first, _InputIterator __last, const _Tp& __value_)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__bit_reference:312:1: note: possible target for call
+count(__bit_iterator<_Cp, _IsConst> __first, __bit_iterator<_Cp, _IsConst> __last, const _Tp& __value_)
+^
+../src/HelloWorld.cpp:64:9: warning: private field 'x' is not used [-Wunused-private-field]
+        double x, y, z;
+               ^
+../src/HelloWorld.cpp:64:12: warning: private field 'y' is not used [-Wunused-private-field]
+        double x, y, z;
+                  ^
+../src/HelloWorld.cpp:64:15: warning: private field 'z' is not used [-Wunused-private-field]
+        double x, y, z;
+                     ^
+../src/HelloWorld.cpp:68:9: warning: private field 'atomMass' is not used [-Wunused-private-field]
+        double atomMass;
+               ^
+../src/HelloWorld.cpp:69:6: warning: private field 'atomicNumber' is not used [-Wunused-private-field]
+        int atomicNumber;
+            ^
+../src/HelloWorld.cpp:119:8: warning: private field 'Node0' is not used [-Wunused-private-field]
+        Node *Node0;
+              ^
+8 warnings and 1 error generated.
+make: *** [src/HelloWorld.o] Error 1
+23:04:36 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+Building file: ../src/HelloWorld.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.d" -o "src/HelloWorld.o" "../src/HelloWorld.cpp"
+../src/HelloWorld.cpp:85:12: warning: implicit conversion of NULL constant to 'double' [-Wnull-conversion]
+                _value = NULL;
+                       ~ ^~~~
+                         0.0
+../src/HelloWorld.cpp:118:14: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int _Length = 0;
+                    ^
+../src/HelloWorld.cpp:64:9: warning: private field 'x' is not used [-Wunused-private-field]
+        double x, y, z;
+               ^
+../src/HelloWorld.cpp:64:12: warning: private field 'y' is not used [-Wunused-private-field]
+        double x, y, z;
+                  ^
+../src/HelloWorld.cpp:64:15: warning: private field 'z' is not used [-Wunused-private-field]
+        double x, y, z;
+                     ^
+../src/HelloWorld.cpp:68:9: warning: private field 'atomMass' is not used [-Wunused-private-field]
+        double atomMass;
+               ^
+../src/HelloWorld.cpp:69:6: warning: private field 'atomicNumber' is not used [-Wunused-private-field]
+        int atomicNumber;
+            ^
+../src/HelloWorld.cpp:119:8: warning: private field 'Node0' is not used [-Wunused-private-field]
+        Node *Node0;
+              ^
+8 warnings generated.
+Finished building: ../src/HelloWorld.cpp
+ 
+Building target: HelloWorld
+Invoking: MacOS X C++ Linker
+g++  -o "HelloWorld"  ./src/HelloWorld.o   
+Finished building target: HelloWorld
+ 
+21:49:41 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+21:49:42 **** Build of configuration Debug for project ImageProcessing ****
+make all 
+Building file: ../src/DisplayImage.cpp
+Invoking: GCC C++ Compiler
+g++ -I/Applications/opencv-3.0.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/DisplayImage.d" -MT"src/DisplayImage.d" -o "src/DisplayImage.o" "../src/DisplayImage.cpp"
+../src/DisplayImage.cpp:1:10: fatal error: 'cv.h' file not found
+#include <cv.h>
+         ^
+1 error generated.
+make: *** [src/DisplayImage.o] Error 1
+21:49:45 **** Build of configuration Debug for project OpenCVtest ****
+make all 
+Building file: ../DisplayImage.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"DisplayImage.d" -MT"DisplayImage.d" -o "DisplayImage.o" "../DisplayImage.cpp"
+Finished building: ../DisplayImage.cpp
+ 
+Building target: OpenCVtest
+Invoking: MacOS X C++ Linker
+g++ -L/usr/local/lib -o "OpenCVtest"  ./DisplayImage.o   -lopencv_core -lopencv_highgui -lopencv_imgproc 
+Undefined symbols for architecture x86_64:
+  "_main", referenced from:
+     implicit entry/start for main executable
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [OpenCVtest] Error 1
+22:30:42 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+22:30:42 **** Incremental Build of configuration Debug for project ImageProcessing ****
+make all 
+Building file: ../src/DisplayImage.cpp
+Invoking: GCC C++ Compiler
+g++ -I/Applications/opencv-3.0.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/DisplayImage.d" -MT"src/DisplayImage.d" -o "src/DisplayImage.o" "../src/DisplayImage.cpp"
+../src/DisplayImage.cpp:1:10: fatal error: 'cv.h' file not found
+#include <cv.h>
+         ^
+1 error generated.
+make: *** [src/DisplayImage.o] Error 1
+22:30:43 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+Building target: OpenCVtest
+Invoking: MacOS X C++ Linker
+g++ -L/usr/local/lib -o "OpenCVtest"  ./DisplayImage.o   -lopencv_core -lopencv_highgui -lopencv_imgproc 
+Undefined symbols for architecture x86_64:
+  "_main", referenced from:
+     implicit entry/start for main executable
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [OpenCVtest] Error 1
+05:53:13 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+05:53:13 **** Incremental Build of configuration Debug for project ImageProcessing ****
+make all 
+Building file: ../src/DisplayImage.cpp
+Invoking: GCC C++ Compiler
+g++ -I/Applications/opencv-3.0.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/DisplayImage.d" -MT"src/DisplayImage.d" -o "src/DisplayImage.o" "../src/DisplayImage.cpp"
+../src/DisplayImage.cpp:1:10: fatal error: 'cv.h' file not found
+#include <cv.h>
+         ^
+1 error generated.
+make: *** [src/DisplayImage.o] Error 1
+05:53:14 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+Building target: OpenCVtest
+Invoking: MacOS X C++ Linker
+g++ -L/usr/local/lib -o "OpenCVtest"  ./DisplayImage.o   -lopencv_core -lopencv_highgui -lopencv_imgproc 
+Undefined symbols for architecture x86_64:
+  "_main", referenced from:
+     implicit entry/start for main executable
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [OpenCVtest] Error 1
+06:03:21 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+06:03:21 **** Incremental Build of configuration Debug for project ImageProcessing ****
+make all 
+Building file: ../src/DisplayImage.cpp
+Invoking: GCC C++ Compiler
+g++ -I/Applications/opencv-3.0.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/DisplayImage.d" -MT"src/DisplayImage.d" -o "src/DisplayImage.o" "../src/DisplayImage.cpp"
+../src/DisplayImage.cpp:1:10: fatal error: 'cv.h' file not found
+#include <cv.h>
+         ^
+1 error generated.
+make: *** [src/DisplayImage.o] Error 1
+06:03:22 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+Building file: ../DisplayImage.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"DisplayImage.d" -MT"DisplayImage.d" -o "DisplayImage.o" "../DisplayImage.cpp"
+Finished building: ../DisplayImage.cpp
+ 
+Building target: OpenCVtest
+Invoking: MacOS X C++ Linker
+g++ -L/usr/local/lib -o "OpenCVtest"  ./DisplayImage.o   -lopencv_core -lopencv_highgui -lopencv_imgproc  -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d  -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Undefined symbols for architecture x86_64:
+  "_main", referenced from:
+     implicit entry/start for main executable
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [OpenCVtest] Error 1
+06:06:26 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+06:06:26 **** Incremental Build of configuration Debug for project ImageProcessing ****
+make all 
+Building file: ../src/DisplayImage.cpp
+Invoking: GCC C++ Compiler
+g++ -I/Applications/opencv-3.0.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/DisplayImage.d" -MT"src/DisplayImage.d" -o "src/DisplayImage.o" "../src/DisplayImage.cpp"
+../src/DisplayImage.cpp:1:10: fatal error: 'cv.h' file not found
+#include <cv.h>
+         ^
+1 error generated.
+make: *** [src/DisplayImage.o] Error 1
+06:06:27 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+Building target: OpenCVtest
+Invoking: MacOS X C++ Linker
+g++ -L/usr/local/lib -o "OpenCVtest"  ./DisplayImage.o   -lopencv_core -lopencv_highgui -lopencv_imgproc  -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d  -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Undefined symbols for architecture x86_64:
+  "_main", referenced from:
+     implicit entry/start for main executable
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [OpenCVtest] Error 1
+06:18:00 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+06:18:00 **** Incremental Build of configuration Debug for project ImageProcessing ****
+make all 
+Building file: ../src/DisplayImage.cpp
+Invoking: GCC C++ Compiler
+g++ -I/Applications/opencv-3.0.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/DisplayImage.d" -MT"src/DisplayImage.d" -o "src/DisplayImage.o" "../src/DisplayImage.cpp"
+../src/DisplayImage.cpp:1:10: fatal error: 'cv.h' file not found
+#include <cv.h>
+         ^
+1 error generated.
+make: *** [src/DisplayImage.o] Error 1
+06:18:01 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+Building target: OpenCVtest
+Invoking: MacOS X C++ Linker
+g++ -L/usr/local/lib -o "OpenCVtest"  ./DisplayImage.o   -llibopencv_core -lopencv_highgui -lopencv_imgproc  -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d  -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+ld: library not found for -llibopencv_core
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [OpenCVtest] Error 1
+06:27:24 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+06:27:25 **** Incremental Build of configuration Debug for project ImageProcessing ****
+make all 
+Building file: ../src/DisplayImage.cpp
+Invoking: GCC C++ Compiler
+g++ -I/Applications/opencv-3.0.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/DisplayImage.d" -MT"src/DisplayImage.d" -o "src/DisplayImage.o" "../src/DisplayImage.cpp"
+../src/DisplayImage.cpp:1:10: fatal error: 'cv.h' file not found
+#include <cv.h>
+         ^
+1 error generated.
+make: *** [src/DisplayImage.o] Error 1
+06:27:25 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+Building file: ../DisplayImage.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"DisplayImage.d" -MT"DisplayImage.d" -o "DisplayImage.o" "../DisplayImage.cpp"
+Finished building: ../DisplayImage.cpp
+ 
+Building target: OpenCVtest
+Invoking: MacOS X C++ Linker
+g++ -L/usr/local/lib -o "OpenCVtest"  ./DisplayImage.o   -llibopencv_core -lopencv_highgui -lopencv_imgproc  -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d  -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+ld: library not found for -llibopencv_core
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [OpenCVtest] Error 1
+06:33:48 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+06:33:48 **** Incremental Build of configuration Debug for project ImageProcessing ****
+make all 
+Building file: ../src/DisplayImage.cpp
+Invoking: GCC C++ Compiler
+g++ -I/Applications/opencv-3.0.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/DisplayImage.d" -MT"src/DisplayImage.d" -o "src/DisplayImage.o" "../src/DisplayImage.cpp"
+../src/DisplayImage.cpp:1:10: fatal error: 'cv.h' file not found
+#include <cv.h>
+         ^
+1 error generated.
+make: *** [src/DisplayImage.o] Error 1
+06:33:48 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+Building file: ../DisplayImage.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"DisplayImage.d" -MT"DisplayImage.d" -o "DisplayImage.o" "../DisplayImage.cpp"
+Finished building: ../DisplayImage.cpp
+ 
+Building target: OpenCVtest
+Invoking: MacOS X C++ Linker
+g++ -L/usr/local/lib -o "OpenCVtest"  ./DisplayImage.o   -llibopencv_core -lopencv_highgui -lopencv_imgproc  -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d  -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+ld: library not found for -llibopencv_core
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [OpenCVtest] Error 1
+06:35:33 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+06:35:33 **** Incremental Build of configuration Debug for project ImageProcessing ****
+make all 
+Building file: ../src/DisplayImage.cpp
+Invoking: GCC C++ Compiler
+g++ -I/Applications/opencv-3.0.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/DisplayImage.d" -MT"src/DisplayImage.d" -o "src/DisplayImage.o" "../src/DisplayImage.cpp"
+../src/DisplayImage.cpp:1:10: fatal error: 'cv.h' file not found
+#include <cv.h>
+         ^
+1 error generated.
+make: *** [src/DisplayImage.o] Error 1
+06:35:33 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+Building target: OpenCVtest
+Invoking: MacOS X C++ Linker
+g++ -L/usr/local/lib -o "OpenCVtest"  ./DisplayImage.o   -lopencv_core -lopencv_highgui -lopencv_imgproc  -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d  -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Undefined symbols for architecture x86_64:
+  "cv::imread(cv::String const&, int)", referenced from:
+      _main in DisplayImage.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [OpenCVtest] Error 1
+06:37:43 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+06:37:43 **** Incremental Build of configuration Debug for project ImageProcessing ****
+make all 
+Building file: ../src/DisplayImage.cpp
+Invoking: GCC C++ Compiler
+g++ -I/Applications/opencv-3.0.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/DisplayImage.d" -MT"src/DisplayImage.d" -o "src/DisplayImage.o" "../src/DisplayImage.cpp"
+../src/DisplayImage.cpp:1:10: fatal error: 'cv.h' file not found
+#include <cv.h>
+         ^
+1 error generated.
+make: *** [src/DisplayImage.o] Error 1
+06:37:44 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+Building target: OpenCVtest
+Invoking: MacOS X C++ Linker
+g++ -L/usr/local/lib -o "OpenCVtest"  ./DisplayImage.o   -lopencv_core -lopencv_highgui -lopencv_imgproc  -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d  -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Undefined symbols for architecture x86_64:
+  "cv::imread(cv::String const&, int)", referenced from:
+      _main in DisplayImage.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [OpenCVtest] Error 1
+06:38:53 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+06:38:53 **** Incremental Build of configuration Debug for project ImageProcessing ****
+make all 
+Building file: ../src/DisplayImage.cpp
+Invoking: GCC C++ Compiler
+g++ -I/Applications/opencv-3.0.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/DisplayImage.d" -MT"src/DisplayImage.d" -o "src/DisplayImage.o" "../src/DisplayImage.cpp"
+../src/DisplayImage.cpp:1:10: fatal error: 'cv.h' file not found
+#include <cv.h>
+         ^
+1 error generated.
+make: *** [src/DisplayImage.o] Error 1
+06:38:54 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+Building target: OpenCVtest
+Invoking: MacOS X C++ Linker
+g++ -L/usr/local/lib -o "OpenCVtest"  ./DisplayImage.o   -lopencv_core -lopencv_highgui -lopencv_imgproc  -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d  -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Undefined symbols for architecture x86_64:
+  "cv::imread(cv::String const&, int)", referenced from:
+      _main in DisplayImage.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [OpenCVtest] Error 1
+06:40:05 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+06:40:05 **** Incremental Build of configuration Debug for project ImageProcessing ****
+make all 
+Building file: ../src/DisplayImage.cpp
+Invoking: GCC C++ Compiler
+g++ -I/Applications/opencv-3.0.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/DisplayImage.d" -MT"src/DisplayImage.d" -o "src/DisplayImage.o" "../src/DisplayImage.cpp"
+../src/DisplayImage.cpp:1:10: fatal error: 'cv.h' file not found
+#include <cv.h>
+         ^
+1 error generated.
+make: *** [src/DisplayImage.o] Error 1
+06:40:05 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+Building target: OpenCVtest
+Invoking: MacOS X C++ Linker
+g++ -L/usr/local/lib -o "OpenCVtest"  ./DisplayImage.o   -lopencv_core -lopencv_highgui -lopencv_imgproc  -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d  -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Undefined symbols for architecture x86_64:
+  "cv::imread(cv::String const&, int)", referenced from:
+      _main in DisplayImage.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [OpenCVtest] Error 1
+06:40:39 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+06:40:39 **** Incremental Build of configuration Debug for project ImageProcessing ****
+make all 
+Building file: ../src/DisplayImage.cpp
+Invoking: GCC C++ Compiler
+g++ -I/Applications/opencv-3.0.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/DisplayImage.d" -MT"src/DisplayImage.d" -o "src/DisplayImage.o" "../src/DisplayImage.cpp"
+../src/DisplayImage.cpp:1:10: fatal error: 'cv.h' file not found
+#include <cv.h>
+         ^
+1 error generated.
+make: *** [src/DisplayImage.o] Error 1
+06:40:39 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+Building target: OpenCVtest
+Invoking: MacOS X C++ Linker
+g++ -L/usr/local/lib -o "OpenCVtest"  ./DisplayImage.o   -lopencv_core -lopencv_highgui -lopencv_imgproc  -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d  -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Undefined symbols for architecture x86_64:
+  "cv::imread(cv::String const&, int)", referenced from:
+      _main in DisplayImage.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [OpenCVtest] Error 1
+06:41:59 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+06:41:59 **** Incremental Build of configuration Debug for project ImageProcessing ****
+make all 
+Building file: ../src/DisplayImage.cpp
+Invoking: GCC C++ Compiler
+g++ -I/Applications/opencv-3.0.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/DisplayImage.d" -MT"src/DisplayImage.d" -o "src/DisplayImage.o" "../src/DisplayImage.cpp"
+../src/DisplayImage.cpp:1:10: fatal error: 'cv.h' file not found
+#include <cv.h>
+         ^
+1 error generated.
+make: *** [src/DisplayImage.o] Error 1
+06:42:00 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+Building target: OpenCVtest
+Invoking: MacOS X C++ Linker
+g++ -L/usr/local/lib -o "OpenCVtest"  ./DisplayImage.o   -lopencv_core -lopencv_highgui -lopencv_imgproc  -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d  -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Undefined symbols for architecture x86_64:
+  "cv::imread(cv::String const&, int)", referenced from:
+      _main in DisplayImage.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [OpenCVtest] Error 1
+06:44:31 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+06:44:31 **** Incremental Build of configuration Debug for project ImageProcessing ****
+make all 
+Building file: ../src/DisplayImage.cpp
+Invoking: GCC C++ Compiler
+g++ -I/Applications/opencv-3.0.0 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/DisplayImage.d" -MT"src/DisplayImage.d" -o "src/DisplayImage.o" "../src/DisplayImage.cpp"
+../src/DisplayImage.cpp:1:10: fatal error: 'cv.h' file not found
+#include <cv.h>
+         ^
+1 error generated.
+make: *** [src/DisplayImage.o] Error 1
+06:44:32 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+Building target: OpenCVtest
+Invoking: MacOS X C++ Linker
+g++ -L/usr/local/lib -o "OpenCVtest"  ./DisplayImage.o   -lopencv_core -lopencv_highgui -lopencv_imgproc  -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d  -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Undefined symbols for architecture x86_64:
+  "cv::imread(cv::String const&, int)", referenced from:
+      _main in DisplayImage.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [OpenCVtest] Error 1
+06:45:26 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+06:45:27 **** Incremental Build of configuration Debug for project ImageProcessing ****
+make all 
+Building target: ImageProcessing
+Invoking: MacOS X C++ Linker
+g++  -o "ImageProcessing"   
+clang: error: no input files
+make: *** [ImageProcessing] Error 1
+06:45:27 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+Building target: OpenCVtest
+Invoking: MacOS X C++ Linker
+g++ -L/usr/local/lib -o "OpenCVtest"  ./DisplayImage.o   -lopencv_core -lopencv_highgui -lopencv_imgproc  -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d  -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Undefined symbols for architecture x86_64:
+  "cv::imread(cv::String const&, int)", referenced from:
+      _main in DisplayImage.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [OpenCVtest] Error 1
+06:49:15 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+
+**** Build of configuration Debug for project ImageProcessing ****
+
+Nothing to build for project ImageProcessing
+06:49:16 **** Build of configuration Debug for project MorningTest ****
+make all 
+Building file: ../src/MorningTest.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MorningTest.d" -MT"src/MorningTest.d" -o "src/MorningTest.o" "../src/MorningTest.cpp"
+Finished building: ../src/MorningTest.cpp
+ 
+Building target: MorningTest
+Invoking: MacOS X C++ Linker
+g++  -o "MorningTest"  ./src/MorningTest.o   
+Finished building target: MorningTest
+ 
+06:49:18 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+Building target: OpenCVtest
+Invoking: MacOS X C++ Linker
+g++ -L/usr/local/lib -o "OpenCVtest"  ./DisplayImage.o   -lopencv_core -lopencv_highgui -lopencv_imgproc  -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d  -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Undefined symbols for architecture x86_64:
+  "cv::imread(cv::String const&, int)", referenced from:
+      _main in DisplayImage.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [OpenCVtest] Error 1
+06:49:39 **** Incremental Build of configuration Debug for project MorningTest ****
+make all 
+make: Nothing to be done for `all'.
+07:01:59 **** Incremental Build of configuration Debug for project MorningTest ****
+make all 
+Building file: ../src/MorningTest.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -I/usr/local/include/opencv -I/usr/local/include/opencv2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MorningTest.d" -MT"src/MorningTest.d" -o "src/MorningTest.o" "../src/MorningTest.cpp"
+Finished building: ../src/MorningTest.cpp
+ 
+Building target: MorningTest
+Invoking: MacOS X C++ Linker
+g++ -L/usr/local/lib -o "MorningTest"  ./src/MorningTest.o   -lopencv_core -lopencv_highgui -lopencv_imageproc
+ld: library not found for -lopencv_imageproc
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [MorningTest] Error 1
+07:03:08 **** Incremental Build of configuration Debug for project MorningTest ****
+make all 
+Building target: MorningTest
+Invoking: MacOS X C++ Linker
+g++ -L/usr/local/lib -o "MorningTest"  ./src/MorningTest.o   -lopencv_core -lopencv_highgui -lopencv_imgproc
+Finished building target: MorningTest
+ 
+07:03:37 **** Incremental Build of configuration Debug for project MorningTest ****
+make all 
+Building file: ../src/MorningTest.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -I/usr/local/include/opencv -I/usr/local/include/opencv2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MorningTest.d" -MT"src/MorningTest.d" -o "src/MorningTest.o" "../src/MorningTest.cpp"
+Finished building: ../src/MorningTest.cpp
+ 
+Building target: MorningTest
+Invoking: MacOS X C++ Linker
+g++ -L/usr/local/lib -o "MorningTest"  ./src/MorningTest.o   -lopencv_core -lopencv_highgui -lopencv_imgproc
+Finished building target: MorningTest
+ 
+07:04:37 **** Incremental Build of configuration Debug for project MorningTest ****
+make all 
+Building file: ../src/MorningTest.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -I/usr/local/include/opencv -I/usr/local/include/opencv2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MorningTest.d" -MT"src/MorningTest.d" -o "src/MorningTest.o" "../src/MorningTest.cpp"
+Finished building: ../src/MorningTest.cpp
+ 
+Building target: MorningTest
+Invoking: MacOS X C++ Linker
+g++ -L/usr/local/lib -o "MorningTest"  ./src/MorningTest.o   -lopencv_core -lopencv_highgui -lopencv_imgproc
+Finished building target: MorningTest
+ 
+07:05:20 **** Incremental Build of configuration Debug for project MorningTest ****
+make all 
+Building file: ../src/MorningTest.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -I/usr/local/include/opencv -I/usr/local/include/opencv2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MorningTest.d" -MT"src/MorningTest.d" -o "src/MorningTest.o" "../src/MorningTest.cpp"
+Finished building: ../src/MorningTest.cpp
+ 
+Building target: MorningTest
+Invoking: MacOS X C++ Linker
+g++ -L/usr/local/lib -o "MorningTest"  ./src/MorningTest.o   -lopencv_core -lopencv_highgui -lopencv_imgproc
+Finished building target: MorningTest
+ 
+07:05:50 **** Incremental Build of configuration Debug for project MorningTest ****
+make all 
+Building file: ../src/MorningTest.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -I/usr/local/include/opencv -I/usr/local/include/opencv2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MorningTest.d" -MT"src/MorningTest.d" -o "src/MorningTest.o" "../src/MorningTest.cpp"
+../src/MorningTest.cpp:19:11: warning: unused variable 'hScale' [-Wunused-variable]
+          double hScale = 1.0;
+                 ^
+../src/MorningTest.cpp:20:11: warning: unused variable 'vScale' [-Wunused-variable]
+          double vScale = 1.0;
+                 ^
+../src/MorningTest.cpp:21:8: warning: unused variable 'lineWidth' [-Wunused-variable]
+          int lineWidth = 1;
+              ^
+../src/MorningTest.cpp:17:12: warning: unused variable 'img' [-Wunused-variable]
+        IplImage *img = cvCreateImage( cvSize( 640, 480 ), IPL_DEPTH_8U, 1 );
+                  ^
+4 warnings generated.
+Finished building: ../src/MorningTest.cpp
+ 
+Building target: MorningTest
+Invoking: MacOS X C++ Linker
+g++ -L/usr/local/lib -o "MorningTest"  ./src/MorningTest.o   -lopencv_core -lopencv_highgui -lopencv_imgproc
+Finished building target: MorningTest
+ 
+07:06:33 **** Incremental Build of configuration Debug for project MorningTest ****
+make all 
+Building file: ../src/MorningTest.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include -I/usr/local/include/opencv -I/usr/local/include/opencv2 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/MorningTest.d" -MT"src/MorningTest.d" -o "src/MorningTest.o" "../src/MorningTest.cpp"
+Finished building: ../src/MorningTest.cpp
+ 
+Building target: MorningTest
+Invoking: MacOS X C++ Linker
+g++ -L/usr/local/lib -o "MorningTest"  ./src/MorningTest.o   -lopencv_core -lopencv_highgui -lopencv_imgproc
+Finished building target: MorningTest
+ 
+07:13:44 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+
+**** Build of configuration Debug for project ImageProcessing ****
+
+Nothing to build for project ImageProcessing
+07:13:45 **** Incremental Build of configuration Debug for project MorningTest ****
+make all 
+make: Nothing to be done for `all'.
+07:13:45 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+Building file: ../DisplayImage.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -I/usr/local/include/opencv2 -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"DisplayImage.d" -MT"DisplayImage.d" -o "DisplayImage.o" "../DisplayImage.cpp"
+Finished building: ../DisplayImage.cpp
+ 
+Building target: OpenCVtest
+Invoking: MacOS X C++ Linker
+g++ -L/usr/local/lib -o "OpenCVtest"  ./DisplayImage.o   -lopencv_core -lopencv_highgui -lopencv_imgproc  -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d  -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Undefined symbols for architecture x86_64:
+  "cv::imread(cv::String const&, int)", referenced from:
+      _main in DisplayImage.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [OpenCVtest] Error 1
+07:15:09 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+07:15:09 **** Incremental Build of configuration Debug for project MorningTest ****
+make all 
+make: Nothing to be done for `all'.
+07:15:10 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+Building target: OpenCVtest
+Invoking: MacOS X C++ Linker
+g++ -L/usr/local/lib -o "OpenCVtest"  ./DisplayImage.o   -lopencv_core -lopencv_highgui -lopencv_imgproc  -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d  -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Undefined symbols for architecture x86_64:
+  "cv::imread(cv::String const&, int)", referenced from:
+      _main in DisplayImage.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [OpenCVtest] Error 1
+07:16:06 **** Incremental Build of configuration Debug for project MorningTest ****
+make all 
+make: Nothing to be done for `all'.
+07:16:38 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+07:16:38 **** Incremental Build of configuration Debug for project MorningTest ****
+make all 
+make: Nothing to be done for `all'.
+07:16:39 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+Building target: OpenCVtest
+Invoking: MacOS X C++ Linker
+g++ -L/usr/local/lib -o "OpenCVtest"  ./DisplayImage.o   -lopencv_core -lopencv_highgui -lopencv_imgproc  -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d  -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Undefined symbols for architecture x86_64:
+  "cv::imread(cv::String const&, int)", referenced from:
+      _main in DisplayImage.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [OpenCVtest] Error 1
+07:18:33 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+07:18:34 **** Incremental Build of configuration Debug for project MorningTest ****
+make all 
+make: Nothing to be done for `all'.
+07:18:34 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+Building file: ../DisplayImage.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"DisplayImage.d" -MT"DisplayImage.d" -o "DisplayImage.o" "../DisplayImage.cpp"
+Finished building: ../DisplayImage.cpp
+ 
+Building target: OpenCVtest
+Invoking: MacOS X C++ Linker
+g++ -L/usr/local/lib -o "OpenCVtest"  ./DisplayImage.o   -lopencv_core -lopencv_highgui -lopencv_imgproc  -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d  -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Undefined symbols for architecture x86_64:
+  "cv::imread(cv::String const&, int)", referenced from:
+      _main in DisplayImage.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [OpenCVtest] Error 1
+07:28:48 **** Incremental Build of configuration Debug for project MorningTest ****
+make all 
+make: Nothing to be done for `all'.
+07:29:03 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+07:29:04 **** Incremental Build of configuration Debug for project MorningTest ****
+make all 
+make: Nothing to be done for `all'.
+07:29:04 **** Clean-only build of configuration Debug for project OpenCVtest ****
+make clean 
+rm -rf  ./DisplayImage.o  ./DisplayImage.d  OpenCVtest
+ 
+07:29:04 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+Building file: ../src/DisplayImage.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -I/usr/local/include/opencv2 -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/DisplayImage.d" -MT"src/DisplayImage.d" -o "src/DisplayImage.o" "../src/DisplayImage.cpp"
+Finished building: ../src/DisplayImage.cpp
+make: *** No rule to make target `DisplayImage.o', needed by `OpenCVtest'.  Stop.
+ 
+18:00:38 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+18:01:28 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+18:01:28 **** Incremental Build of configuration Debug for project MorningTest ****
+make all 
+make: Nothing to be done for `all'.
+18:01:28 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+make: *** No rule to make target `DisplayImage.o', needed by `OpenCVtest'.  Stop.
+18:01:52 **** Incremental Build of configuration Debug for project MorningTest ****
+make all 
+make: Nothing to be done for `all'.
+18:02:17 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+18:02:17 **** Incremental Build of configuration Debug for project MorningTest ****
+make all 
+make: Nothing to be done for `all'.
+18:02:18 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+make: *** No rule to make target `DisplayImage.o', needed by `OpenCVtest'.  Stop.
+18:02:36 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+18:20:23 **** Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+Finished building: ../src/LinkedList.cpp
+ 
+Building target: DataStructures
+Invoking: MacOS X C++ Linker
+g++  -o "DataStructures"  ./src/LinkedList.o   
+Undefined symbols for architecture x86_64:
+  "_main", referenced from:
+     implicit entry/start for main executable
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [DataStructures] Error 1
+18:20:24 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+18:20:24 **** Incremental Build of configuration Debug for project MorningTest ****
+make all 
+make: Nothing to be done for `all'.
+18:20:24 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+make: *** No rule to make target `DisplayImage.o', needed by `OpenCVtest'.  Stop.
+18:29:35 **** Build of configuration Debug for project AnotherHelloWorld ****
+make all 
+Building file: ../src/AnotherHelloWorld.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/AnotherHelloWorld.d" -MT"src/AnotherHelloWorld.d" -o "src/AnotherHelloWorld.o" "../src/AnotherHelloWorld.cpp"
+Finished building: ../src/AnotherHelloWorld.cpp
+ 
+Building target: AnotherHelloWorld
+Invoking: MacOS X C++ Linker
+g++  -o "AnotherHelloWorld"  ./src/AnotherHelloWorld.o   
+Finished building target: AnotherHelloWorld
+ 
+18:29:37 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building target: DataStructures
+Invoking: MacOS X C++ Linker
+g++  -o "DataStructures"  ./src/LinkedList.o   
+Undefined symbols for architecture x86_64:
+  "_main", referenced from:
+     implicit entry/start for main executable
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [DataStructures] Error 1
+18:29:37 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+18:29:38 **** Incremental Build of configuration Debug for project MorningTest ****
+make all 
+make: Nothing to be done for `all'.
+18:29:38 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+make: *** No rule to make target `DisplayImage.o', needed by `OpenCVtest'.  Stop.
+18:29:54 **** Incremental Build of configuration Debug for project AnotherHelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+18:30:09 **** Incremental Build of configuration Debug for project AnotherHelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+18:30:09 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+../src/LinkedList.cpp:9:1: error: 'main' must return 'int'
+void main(){
+^~~~
+int
+1 error generated.
+make: *** [src/LinkedList.o] Error 1
+18:30:10 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+18:30:10 **** Incremental Build of configuration Debug for project MorningTest ****
+make all 
+make: Nothing to be done for `all'.
+18:30:10 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+make: *** No rule to make target `DisplayImage.o', needed by `OpenCVtest'.  Stop.
+18:30:29 **** Incremental Build of configuration Debug for project AnotherHelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+18:35:49 **** Clean-only build of configuration Debug for project DataStructures ****
+make clean 
+rm -rf  ./src/LinkedList.o  ./src/LinkedList.d  DataStructures
+ 
+18:35:49 **** Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+../src/LinkedList.cpp:9:1: error: 'main' must return 'int'
+void main(){
+^~~~
+int
+1 error generated.
+make: *** [src/LinkedList.o] Error 1
+18:35:50 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+18:35:50 **** Incremental Build of configuration Debug for project MorningTest ****
+make all 
+make: Nothing to be done for `all'.
+18:35:50 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+make: *** No rule to make target `DisplayImage.o', needed by `OpenCVtest'.  Stop.
+18:36:21 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+../src/LinkedList.cpp:9:1: error: 'main' must return 'int'
+void main(){
+^~~~
+int
+1 error generated.
+make: *** [src/LinkedList.o] Error 1
+18:36:22 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+18:36:22 **** Incremental Build of configuration Debug for project MorningTest ****
+make all 
+make: Nothing to be done for `all'.
+18:36:22 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+make: *** No rule to make target `DisplayImage.o', needed by `OpenCVtest'.  Stop.
+18:37:08 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+../src/LinkedList.cpp:9:1: error: 'main' must return 'int'
+void main(){
+^~~~
+int
+1 error generated.
+make: *** [src/LinkedList.o] Error 1
+18:37:08 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+18:37:08 **** Incremental Build of configuration Debug for project MorningTest ****
+make all 
+make: Nothing to be done for `all'.
+18:37:08 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+make: *** No rule to make target `DisplayImage.o', needed by `OpenCVtest'.  Stop.
+18:38:01 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+18:38:33 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+Finished building: ../src/LinkedList.cpp
+ 
+Building target: DataStructures
+Invoking: MacOS X C++ Linker
+g++  -o "DataStructures"  ./src/LinkedList.o   
+Finished building target: DataStructures
+ 
+18:38:34 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+18:38:34 **** Incremental Build of configuration Debug for project MorningTest ****
+make all 
+make: Nothing to be done for `all'.
+18:38:35 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+make: *** No rule to make target `DisplayImage.o', needed by `OpenCVtest'.  Stop.
+18:38:42 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+make: Nothing to be done for `all'.
+18:39:26 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+make: Nothing to be done for `all'.
+18:39:27 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+18:39:27 **** Incremental Build of configuration Debug for project MorningTest ****
+make all 
+make: Nothing to be done for `all'.
+18:39:27 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+make: *** No rule to make target `DisplayImage.o', needed by `OpenCVtest'.  Stop.
+18:39:37 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+Finished building: ../src/LinkedList.cpp
+ 
+Building target: DataStructures
+Invoking: MacOS X C++ Linker
+g++  -o "DataStructures"  ./src/LinkedList.o   
+Finished building target: DataStructures
+ 
+20:22:09 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+make: Nothing to be done for `all'.
+20:22:09 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+20:22:09 **** Incremental Build of configuration Debug for project MorningTest ****
+make all 
+make: Nothing to be done for `all'.
+20:22:09 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+make: *** No rule to make target `DisplayImage.o', needed by `OpenCVtest'.  Stop.
+20:22:09 **** Build of configuration Debug for project TestUsingNameSpaceSTDIssue ****
+make all 
+Building file: ../src/CPPSourceFile.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CPPSourceFile.d" -MT"src/CPPSourceFile.d" -o "src/CPPSourceFile.o" "../src/CPPSourceFile.cpp"
+Finished building: ../src/CPPSourceFile.cpp
+ 
+Building target: TestUsingNameSpaceSTDIssue
+Invoking: MacOS X C++ Linker
+g++  -o "TestUsingNameSpaceSTDIssue"  ./src/CPPSourceFile.o   
+Finished building target: TestUsingNameSpaceSTDIssue
+ 
+20:22:18 **** Incremental Build of configuration Debug for project TestUsingNameSpaceSTDIssue ****
+make all 
+make: Nothing to be done for `all'.
+20:31:22 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+make: Nothing to be done for `all'.
+20:31:22 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+20:31:22 **** Incremental Build of configuration Debug for project MorningTest ****
+make all 
+make: Nothing to be done for `all'.
+20:31:22 **** Build of configuration Debug for project My2ndNewProject ****
+make all 
+Building file: ../mysourcefilefolder/mysourcefilewithcppExtension.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"mysourcefilefolder/mysourcefilewithcppExtension.d" -MT"mysourcefilefolder/mysourcefilewithcppExtension.d" -o "mysourcefilefolder/mysourcefilewithcppExtension.o" "../mysourcefilefolder/mysourcefilewithcppExtension.cpp"
+../mysourcefilefolder/mysourcefilewithcppExtension.cpp:14:1: error: 'main' must return 'int'
+void main(){
+^~~~
+int
+1 error generated.
+make: *** [mysourcefilefolder/mysourcefilewithcppExtension.o] Error 1
+20:31:23 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+make: *** No rule to make target `DisplayImage.o', needed by `OpenCVtest'.  Stop.
+20:31:23 **** Incremental Build of configuration Debug for project TestUsingNameSpaceSTDIssue ****
+make all 
+Building file: ../src/CPPSourceFile.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CPPSourceFile.d" -MT"src/CPPSourceFile.d" -o "src/CPPSourceFile.o" "../src/CPPSourceFile.cpp"
+Finished building: ../src/CPPSourceFile.cpp
+ 
+Building target: TestUsingNameSpaceSTDIssue
+Invoking: MacOS X C++ Linker
+g++  -o "TestUsingNameSpaceSTDIssue"  ./src/CPPSourceFile.o   
+Finished building target: TestUsingNameSpaceSTDIssue
+ 
+20:33:07 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+make: Nothing to be done for `all'.
+20:33:07 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+20:33:07 **** Incremental Build of configuration Debug for project MorningTest ****
+make all 
+make: Nothing to be done for `all'.
+20:33:07 **** Incremental Build of configuration Debug for project My2ndNewProject ****
+make all 
+Building file: ../mysourcefilefolder/mysourcefilewithcppExtension.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"mysourcefilefolder/mysourcefilewithcppExtension.d" -MT"mysourcefilefolder/mysourcefilewithcppExtension.d" -o "mysourcefilefolder/mysourcefilewithcppExtension.o" "../mysourcefilefolder/mysourcefilewithcppExtension.cpp"
+Finished building: ../mysourcefilefolder/mysourcefilewithcppExtension.cpp
+ 
+Building target: My2ndNewProject
+Invoking: MacOS X C++ Linker
+g++  -o "My2ndNewProject"  ./mysourcefilefolder/mysourcefilewithcppExtension.o   
+Finished building target: My2ndNewProject
+ 
+20:33:08 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+make: *** No rule to make target `DisplayImage.o', needed by `OpenCVtest'.  Stop.
+20:33:08 **** Incremental Build of configuration Debug for project TestUsingNameSpaceSTDIssue ****
+make all 
+make: Nothing to be done for `all'.
+20:33:53 **** Incremental Build of configuration Debug for project My2ndNewProject ****
+make all 
+Building file: ../mysourcefilefolder/mysourcefilewithcppExtension.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"mysourcefilefolder/mysourcefilewithcppExtension.d" -MT"mysourcefilefolder/mysourcefilewithcppExtension.d" -o "mysourcefilefolder/mysourcefilewithcppExtension.o" "../mysourcefilefolder/mysourcefilewithcppExtension.cpp"
+Finished building: ../mysourcefilefolder/mysourcefilewithcppExtension.cpp
+ 
+Building target: My2ndNewProject
+Invoking: MacOS X C++ Linker
+g++  -o "My2ndNewProject"  ./mysourcefilefolder/mysourcefilewithcppExtension.o   
+Finished building target: My2ndNewProject
+ 
+20:34:43 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+make: Nothing to be done for `all'.
+20:34:43 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+20:34:44 **** Incremental Build of configuration Debug for project MorningTest ****
+make all 
+make: Nothing to be done for `all'.
+20:34:44 **** Incremental Build of configuration Debug for project My2ndNewProject ****
+make all 
+Building file: ../mysourcefilefolder/mysourcefilewithcppExtension.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"mysourcefilefolder/mysourcefilewithcppExtension.d" -MT"mysourcefilefolder/mysourcefilewithcppExtension.d" -o "mysourcefilefolder/mysourcefilewithcppExtension.o" "../mysourcefilefolder/mysourcefilewithcppExtension.cpp"
+Finished building: ../mysourcefilefolder/mysourcefilewithcppExtension.cpp
+ 
+Building target: My2ndNewProject
+Invoking: MacOS X C++ Linker
+g++  -o "My2ndNewProject"  ./mysourcefilefolder/mysourcefilewithcppExtension.o   
+Finished building target: My2ndNewProject
+ 
+20:34:45 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+make: *** No rule to make target `DisplayImage.o', needed by `OpenCVtest'.  Stop.
+20:34:45 **** Incremental Build of configuration Debug for project TestUsingNameSpaceSTDIssue ****
+make all 
+make: Nothing to be done for `all'.
+20:35:11 **** Incremental Build of configuration Debug for project My2ndNewProject ****
+make all 
+make: Nothing to be done for `all'.
+20:46:07 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+../src/LinkedList.cpp:13:1: error: unknown type name 'structure'; did you mean 'struct'?
+structure SingleNode{
+^~~~~~~~~
+struct
+../src/LinkedList.cpp:17:2: error: expected ';' after struct
+}
+ ^
+ ;
+../src/LinkedList.cpp:22:7: error: member 'LinkedList' has the same name as its class
+        void LinkedList(SingleNode FirstNode){
+             ^
+../src/LinkedList.cpp:22:7: error: constructor cannot have a return type
+        void LinkedList(SingleNode FirstNode){
+        ~~~~ ^~~~~~~~~~
+../src/LinkedList.cpp:20:13: warning: private field 'MasterNode' is not used [-Wunused-private-field]
+        SingleNode MasterNode;
+                   ^
+1 warning and 4 errors generated.
+make: *** [src/LinkedList.o] Error 1
+20:46:08 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+20:46:08 **** Incremental Build of configuration Debug for project MorningTest ****
+make all 
+make: Nothing to be done for `all'.
+20:46:08 **** Incremental Build of configuration Debug for project My2ndNewProject ****
+make all 
+Building file: ../mysourcefilefolder/mysourcefilewithcppExtension.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"mysourcefilefolder/mysourcefilewithcppExtension.d" -MT"mysourcefilefolder/mysourcefilewithcppExtension.d" -o "mysourcefilefolder/mysourcefilewithcppExtension.o" "../mysourcefilefolder/mysourcefilewithcppExtension.cpp"
+Finished building: ../mysourcefilefolder/mysourcefilewithcppExtension.cpp
+ 
+Building target: My2ndNewProject
+Invoking: MacOS X C++ Linker
+g++  -o "My2ndNewProject"  ./mysourcefilefolder/mysourcefilewithcppExtension.o   
+Finished building target: My2ndNewProject
+ 
+20:46:09 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+make: *** No rule to make target `DisplayImage.o', needed by `OpenCVtest'.  Stop.
+20:46:09 **** Incremental Build of configuration Debug for project TestUsingNameSpaceSTDIssue ****
+make all 
+make: Nothing to be done for `all'.
+20:48:02 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+../src/LinkedList.cpp:24:7: error: member 'LinkedList' has the same name as its class
+        void LinkedList(SingleNode FirstNode){
+             ^
+../src/LinkedList.cpp:24:7: error: constructor cannot have a return type
+        void LinkedList(SingleNode FirstNode){
+        ~~~~ ^~~~~~~~~~
+../src/LinkedList.cpp:22:13: warning: private field 'MasterNode' is not used [-Wunused-private-field]
+        SingleNode MasterNode;
+                   ^
+1 warning and 2 errors generated.
+make: *** [src/LinkedList.o] Error 1
+20:48:03 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+20:48:03 **** Incremental Build of configuration Debug for project MorningTest ****
+make all 
+make: Nothing to be done for `all'.
+20:48:03 **** Incremental Build of configuration Debug for project My2ndNewProject ****
+make all 
+make: Nothing to be done for `all'.
+20:48:03 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+make: *** No rule to make target `DisplayImage.o', needed by `OpenCVtest'.  Stop.
+20:48:03 **** Incremental Build of configuration Debug for project TestUsingNameSpaceSTDIssue ****
+make all 
+make: Nothing to be done for `all'.
+20:53:25 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+../src/LinkedList.cpp:19:2: error: C++ requires a type specifier for all declarations
+        Value = 0;
+        ^
+../src/LinkedList.cpp:19:2: error: duplicate member 'Value'
+../src/LinkedList.cpp:14:6: note: previous declaration is here
+        int Value;
+            ^
+../src/LinkedList.cpp:19:8: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        Value = 0;
+              ^
+../src/LinkedList.cpp:20:3: error: C++ requires a type specifier for all declarations
+        *NextNode = NULL;
+         ^
+../src/LinkedList.cpp:20:3: error: duplicate member 'NextNode'
+../src/LinkedList.cpp:15:8: note: previous declaration is here
+        int * NextNode; // note: here NextNode is actually a pointer, so when try to get the field of next node, we
+              ^
+../src/LinkedList.cpp:20:12: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        *NextNode = NULL;
+                  ^
+../src/LinkedList.cpp:31:7: error: member 'LinkedList' has the same name as its class
+        void LinkedList(SingleNode FirstNode){
+             ^
+../src/LinkedList.cpp:31:7: error: constructor cannot have a return type
+        void LinkedList(SingleNode FirstNode){
+        ~~~~ ^~~~~~~~~~
+../src/LinkedList.cpp:29:13: warning: private field 'MasterNode' is not used [-Wunused-private-field]
+        SingleNode MasterNode;
+                   ^
+3 warnings and 6 errors generated.
+make: *** [src/LinkedList.o] Error 1
+20:53:26 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+20:53:26 **** Incremental Build of configuration Debug for project MorningTest ****
+make all 
+make: Nothing to be done for `all'.
+20:53:26 **** Incremental Build of configuration Debug for project My2ndNewProject ****
+make all 
+make: Nothing to be done for `all'.
+20:53:26 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+make: *** No rule to make target `DisplayImage.o', needed by `OpenCVtest'.  Stop.
+20:53:26 **** Incremental Build of configuration Debug for project TestUsingNameSpaceSTDIssue ****
+make all 
+make: Nothing to be done for `all'.
+20:54:59 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+../src/LinkedList.cpp:34:7: error: member 'LinkedList' has the same name as its class
+        void LinkedList(SingleNode FirstNode){
+             ^
+../src/LinkedList.cpp:34:7: error: constructor cannot have a return type
+        void LinkedList(SingleNode FirstNode){
+        ~~~~ ^~~~~~~~~~
+../src/LinkedList.cpp:32:13: warning: private field 'MasterNode' is not used [-Wunused-private-field]
+        SingleNode MasterNode;
+                   ^
+1 warning and 2 errors generated.
+make: *** [src/LinkedList.o] Error 1
+20:54:59 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+20:55:00 **** Incremental Build of configuration Debug for project MorningTest ****
+make all 
+make: Nothing to be done for `all'.
+20:55:00 **** Incremental Build of configuration Debug for project My2ndNewProject ****
+make all 
+make: Nothing to be done for `all'.
+20:55:00 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+make: *** No rule to make target `DisplayImage.o', needed by `OpenCVtest'.  Stop.
+20:55:00 **** Incremental Build of configuration Debug for project TestUsingNameSpaceSTDIssue ****
+make all 
+make: Nothing to be done for `all'.
+20:56:06 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+../src/LinkedList.cpp:24:1: error: unknown type name 'SingeNode'; did you mean 'SingleNode'?
+SingeNode NodeA, NodeB;
+^~~~~~~~~
+SingleNode
+../src/LinkedList.cpp:13:8: note: 'SingleNode' declared here
+struct SingleNode{
+       ^
+../src/LinkedList.cpp:36:7: error: member 'LinkedList' has the same name as its class
+        void LinkedList(SingleNode FirstNode){
+             ^
+../src/LinkedList.cpp:36:7: error: constructor cannot have a return type
+        void LinkedList(SingleNode FirstNode){
+        ~~~~ ^~~~~~~~~~
+../src/LinkedList.cpp:34:13: warning: private field 'MasterNode' is not used [-Wunused-private-field]
+        SingleNode MasterNode;
+                   ^
+1 warning and 3 errors generated.
+make: *** [src/LinkedList.o] Error 1
+20:56:06 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+20:56:07 **** Incremental Build of configuration Debug for project MorningTest ****
+make all 
+make: Nothing to be done for `all'.
+20:56:07 **** Incremental Build of configuration Debug for project My2ndNewProject ****
+make all 
+make: Nothing to be done for `all'.
+20:56:07 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+make: *** No rule to make target `DisplayImage.o', needed by `OpenCVtest'.  Stop.
+20:56:07 **** Incremental Build of configuration Debug for project TestUsingNameSpaceSTDIssue ****
+make all 
+make: Nothing to be done for `all'.
+20:58:35 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+../src/LinkedList.cpp:24:1: error: unknown type name 'SingeNode'; did you mean 'SingleNode'?
+SingeNode NodeA;
+^~~~~~~~~
+SingleNode
+../src/LinkedList.cpp:13:8: note: 'SingleNode' declared here
+struct SingleNode{
+       ^
+../src/LinkedList.cpp:37:7: error: member 'LinkedList' has the same name as its class
+        void LinkedList(SingleNode FirstNode){
+             ^
+../src/LinkedList.cpp:37:7: error: constructor cannot have a return type
+        void LinkedList(SingleNode FirstNode){
+        ~~~~ ^~~~~~~~~~
+../src/LinkedList.cpp:35:13: warning: private field 'MasterNode' is not used [-Wunused-private-field]
+        SingleNode MasterNode;
+                   ^
+1 warning and 3 errors generated.
+make: *** [src/LinkedList.o] Error 1
+20:58:36 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+20:58:36 **** Incremental Build of configuration Debug for project MorningTest ****
+make all 
+make: Nothing to be done for `all'.
+20:58:36 **** Incremental Build of configuration Debug for project My2ndNewProject ****
+make all 
+make: Nothing to be done for `all'.
+20:58:37 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+make: *** No rule to make target `DisplayImage.o', needed by `OpenCVtest'.  Stop.
+20:58:37 **** Incremental Build of configuration Debug for project TestUsingNameSpaceSTDIssue ****
+make all 
+make: Nothing to be done for `all'.
+20:59:14 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+../src/LinkedList.cpp:37:7: error: member 'LinkedList' has the same name as its class
+        void LinkedList(SingleNode FirstNode){
+             ^
+../src/LinkedList.cpp:37:7: error: constructor cannot have a return type
+        void LinkedList(SingleNode FirstNode){
+        ~~~~ ^~~~~~~~~~
+../src/LinkedList.cpp:35:13: warning: private field 'MasterNode' is not used [-Wunused-private-field]
+        SingleNode MasterNode;
+                   ^
+1 warning and 2 errors generated.
+make: *** [src/LinkedList.o] Error 1
+20:59:14 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+20:59:15 **** Incremental Build of configuration Debug for project MorningTest ****
+make all 
+make: Nothing to be done for `all'.
+20:59:15 **** Incremental Build of configuration Debug for project My2ndNewProject ****
+make all 
+make: Nothing to be done for `all'.
+20:59:15 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+make: *** No rule to make target `DisplayImage.o', needed by `OpenCVtest'.  Stop.
+20:59:15 **** Incremental Build of configuration Debug for project TestUsingNameSpaceSTDIssue ****
+make all 
+make: Nothing to be done for `all'.
+20:59:36 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+../src/LinkedList.cpp:36:7: error: member 'LinkedList' has the same name as its class
+        void LinkedList(SingleNode FirstNode){
+             ^
+../src/LinkedList.cpp:36:7: error: constructor cannot have a return type
+        void LinkedList(SingleNode FirstNode){
+        ~~~~ ^~~~~~~~~~
+../src/LinkedList.cpp:34:13: warning: private field 'MasterNode' is not used [-Wunused-private-field]
+        SingleNode MasterNode;
+                   ^
+1 warning and 2 errors generated.
+make: *** [src/LinkedList.o] Error 1
+20:59:37 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+20:59:37 **** Incremental Build of configuration Debug for project MorningTest ****
+make all 
+make: Nothing to be done for `all'.
+20:59:37 **** Incremental Build of configuration Debug for project My2ndNewProject ****
+make all 
+make: Nothing to be done for `all'.
+20:59:37 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+make: *** No rule to make target `DisplayImage.o', needed by `OpenCVtest'.  Stop.
+20:59:38 **** Incremental Build of configuration Debug for project TestUsingNameSpaceSTDIssue ****
+make all 
+make: Nothing to be done for `all'.
+21:05:19 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+../src/LinkedList.cpp:36:7: error: member 'LinkedList' has the same name as its class
+        void LinkedList(SingleNode FirstNode){
+             ^
+../src/LinkedList.cpp:36:7: error: constructor cannot have a return type
+        void LinkedList(SingleNode FirstNode){
+        ~~~~ ^~~~~~~~~~
+../src/LinkedList.cpp:34:13: warning: private field 'MasterNode' is not used [-Wunused-private-field]
+        SingleNode MasterNode;
+                   ^
+1 warning and 2 errors generated.
+make: *** [src/LinkedList.o] Error 1
+21:05:20 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+21:05:20 **** Incremental Build of configuration Debug for project MorningTest ****
+make all 
+make: Nothing to be done for `all'.
+21:05:20 **** Incremental Build of configuration Debug for project My2ndNewProject ****
+make all 
+make: Nothing to be done for `all'.
+21:05:21 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+make: *** No rule to make target `DisplayImage.o', needed by `OpenCVtest'.  Stop.
+21:05:21 **** Incremental Build of configuration Debug for project TestUsingNameSpaceSTDIssue ****
+make all 
+make: Nothing to be done for `all'.
+21:11:47 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+../src/LinkedList.cpp:42:7: error: member 'LinkedList' has the same name as its class
+        void LinkedList(SingleNode FirstNode){
+             ^
+../src/LinkedList.cpp:42:7: error: constructor cannot have a return type
+        void LinkedList(SingleNode FirstNode){
+        ~~~~ ^~~~~~~~~~
+../src/LinkedList.cpp:63:19: error: use of undeclared identifier '$NodeC'
+        NodeB.NextNode = $NodeC;
+                         ^
+../src/LinkedList.cpp:40:13: warning: private field 'MasterNode' is not used [-Wunused-private-field]
+        SingleNode MasterNode;
+                   ^
+1 warning and 3 errors generated.
+make: *** [src/LinkedList.o] Error 1
+21:11:48 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+21:11:48 **** Incremental Build of configuration Debug for project MorningTest ****
+make all 
+make: Nothing to be done for `all'.
+21:11:48 **** Incremental Build of configuration Debug for project My2ndNewProject ****
+make all 
+make: Nothing to be done for `all'.
+21:11:48 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+make: *** No rule to make target `DisplayImage.o', needed by `OpenCVtest'.  Stop.
+21:11:48 **** Incremental Build of configuration Debug for project TestUsingNameSpaceSTDIssue ****
+make all 
+make: Nothing to be done for `all'.
+21:11:56 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+../src/LinkedList.cpp:42:7: error: member 'LinkedList' has the same name as its class
+        void LinkedList(SingleNode FirstNode){
+             ^
+../src/LinkedList.cpp:42:7: error: constructor cannot have a return type
+        void LinkedList(SingleNode FirstNode){
+        ~~~~ ^~~~~~~~~~
+../src/LinkedList.cpp:63:19: error: use of undeclared identifier '$NodeC'
+        NodeB.NextNode = $NodeC;
+                         ^
+../src/LinkedList.cpp:40:13: warning: private field 'MasterNode' is not used [-Wunused-private-field]
+        SingleNode MasterNode;
+                   ^
+1 warning and 3 errors generated.
+make: *** [src/LinkedList.o] Error 1
+21:12:21 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+../src/LinkedList.cpp:42:7: error: member 'LinkedList' has the same name as its class
+        void LinkedList(SingleNode FirstNode){
+             ^
+../src/LinkedList.cpp:42:7: error: constructor cannot have a return type
+        void LinkedList(SingleNode FirstNode){
+        ~~~~ ^~~~~~~~~~
+../src/LinkedList.cpp:40:13: warning: private field 'MasterNode' is not used [-Wunused-private-field]
+        SingleNode MasterNode;
+                   ^
+1 warning and 2 errors generated.
+make: *** [src/LinkedList.o] Error 1
+21:12:22 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+21:12:22 **** Incremental Build of configuration Debug for project MorningTest ****
+make all 
+make: Nothing to be done for `all'.
+21:12:22 **** Incremental Build of configuration Debug for project My2ndNewProject ****
+make all 
+make: Nothing to be done for `all'.
+21:12:22 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+make: *** No rule to make target `DisplayImage.o', needed by `OpenCVtest'.  Stop.
+21:12:22 **** Incremental Build of configuration Debug for project TestUsingNameSpaceSTDIssue ****
+make all 
+make: Nothing to be done for `all'.
+21:12:31 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+../src/LinkedList.cpp:42:7: error: member 'LinkedList' has the same name as its class
+        void LinkedList(SingleNode FirstNode){
+             ^
+../src/LinkedList.cpp:42:7: error: constructor cannot have a return type
+        void LinkedList(SingleNode FirstNode){
+        ~~~~ ^~~~~~~~~~
+../src/LinkedList.cpp:40:13: warning: private field 'MasterNode' is not used [-Wunused-private-field]
+        SingleNode MasterNode;
+                   ^
+1 warning and 2 errors generated.
+make: *** [src/LinkedList.o] Error 1
+21:13:41 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+Finished building: ../src/LinkedList.cpp
+ 
+Building target: DataStructures
+Invoking: MacOS X C++ Linker
+g++  -o "DataStructures"  ./src/LinkedList.o   
+Finished building target: DataStructures
+ 
+21:13:42 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+21:13:42 **** Incremental Build of configuration Debug for project MorningTest ****
+make all 
+make: Nothing to be done for `all'.
+21:13:43 **** Incremental Build of configuration Debug for project My2ndNewProject ****
+make all 
+make: Nothing to be done for `all'.
+21:13:43 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+make: *** No rule to make target `DisplayImage.o', needed by `OpenCVtest'.  Stop.
+21:13:43 **** Incremental Build of configuration Debug for project TestUsingNameSpaceSTDIssue ****
+make all 
+make: Nothing to be done for `all'.
+21:13:50 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+make: Nothing to be done for `all'.
+21:20:33 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+../src/LinkedList.cpp:70:2: error: use of undeclared identifier 'coiut'; did you mean 'cout'?
+        coiut <<"the value of the next node of next node of the next node of node A is :"<< NodeA.NextNode->Value <<endl;
+        ^~~~~
+        cout
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/iostream:50:33: note: 'cout' declared here
+extern _LIBCPP_FUNC_VIS ostream cout;
+                                ^
+1 error generated.
+make: *** [src/LinkedList.o] Error 1
+21:20:34 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+21:20:34 **** Incremental Build of configuration Debug for project MorningTest ****
+make all 
+make: Nothing to be done for `all'.
+21:20:35 **** Incremental Build of configuration Debug for project My2ndNewProject ****
+make all 
+make: Nothing to be done for `all'.
+21:20:35 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+make: *** No rule to make target `DisplayImage.o', needed by `OpenCVtest'.  Stop.
+21:20:35 **** Incremental Build of configuration Debug for project TestUsingNameSpaceSTDIssue ****
+make all 
+make: Nothing to be done for `all'.
+21:20:51 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+Finished building: ../src/LinkedList.cpp
+ 
+Building target: DataStructures
+Invoking: MacOS X C++ Linker
+g++  -o "DataStructures"  ./src/LinkedList.o   
+Finished building target: DataStructures
+ 
+21:20:52 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+21:20:52 **** Incremental Build of configuration Debug for project MorningTest ****
+make all 
+make: Nothing to be done for `all'.
+21:20:53 **** Incremental Build of configuration Debug for project My2ndNewProject ****
+make all 
+make: Nothing to be done for `all'.
+21:20:53 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+make: *** No rule to make target `DisplayImage.o', needed by `OpenCVtest'.  Stop.
+21:20:53 **** Incremental Build of configuration Debug for project TestUsingNameSpaceSTDIssue ****
+make all 
+make: Nothing to be done for `all'.
+21:21:07 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+make: Nothing to be done for `all'.
+21:21:32 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+make: Nothing to be done for `all'.
+21:21:32 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+21:21:32 **** Incremental Build of configuration Debug for project MorningTest ****
+make all 
+make: Nothing to be done for `all'.
+21:21:33 **** Incremental Build of configuration Debug for project My2ndNewProject ****
+make all 
+make: Nothing to be done for `all'.
+21:21:33 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+make: *** No rule to make target `DisplayImage.o', needed by `OpenCVtest'.  Stop.
+21:21:33 **** Incremental Build of configuration Debug for project TestUsingNameSpaceSTDIssue ****
+make all 
+make: Nothing to be done for `all'.
+21:21:44 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+Finished building: ../src/LinkedList.cpp
+ 
+Building target: DataStructures
+Invoking: MacOS X C++ Linker
+g++  -o "DataStructures"  ./src/LinkedList.o   
+Finished building target: DataStructures
+ 
+21:21:54 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+make: Nothing to be done for `all'.
+21:22:14 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+Finished building: ../src/LinkedList.cpp
+ 
+Building target: DataStructures
+Invoking: MacOS X C++ Linker
+g++  -o "DataStructures"  ./src/LinkedList.o   
+Finished building target: DataStructures
+ 
+21:23:18 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+Finished building: ../src/LinkedList.cpp
+ 
+Building target: DataStructures
+Invoking: MacOS X C++ Linker
+g++  -o "DataStructures"  ./src/LinkedList.o   
+Finished building target: DataStructures
+ 
+21:26:59 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+../src/LinkedList.cpp:42:7: error: member 'LinkedList' has the same name as its class
+        void LinkedList(SingleNode FirstNode){
+             ^
+../src/LinkedList.cpp:42:7: error: constructor cannot have a return type
+        void LinkedList(SingleNode FirstNode){
+        ~~~~ ^~~~~~~~~~
+../src/LinkedList.cpp:40:13: warning: private field 'MasterNode' is not used [-Wunused-private-field]
+        SingleNode MasterNode;
+                   ^
+1 warning and 2 errors generated.
+make: *** [src/LinkedList.o] Error 1
+21:27:00 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+21:27:00 **** Incremental Build of configuration Debug for project MorningTest ****
+make all 
+make: Nothing to be done for `all'.
+21:27:01 **** Incremental Build of configuration Debug for project My2ndNewProject ****
+make all 
+make: Nothing to be done for `all'.
+21:27:01 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+make: *** No rule to make target `DisplayImage.o', needed by `OpenCVtest'.  Stop.
+21:27:01 **** Incremental Build of configuration Debug for project TestUsingNameSpaceSTDIssue ****
+make all 
+make: Nothing to be done for `all'.
+21:29:42 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+../src/LinkedList.cpp:42:2: error: C++ requires a type specifier for all declarations
+        MasterNode = NULL;
+        ^
+../src/LinkedList.cpp:42:2: error: duplicate member 'MasterNode'
+../src/LinkedList.cpp:40:14: note: previous declaration is here
+        SingleNode *MasterNode;//it seems that I should define the master node as a pointer, then I don't have to initialize it
+                    ^
+../src/LinkedList.cpp:42:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        MasterNode = NULL;
+                   ^
+../src/LinkedList.cpp:44:7: error: member 'LinkedList' has the same name as its class
+        void LinkedList(SingleNode *FirstNode){
+             ^
+../src/LinkedList.cpp:44:7: error: constructor cannot have a return type
+        void LinkedList(SingleNode *FirstNode){
+        ~~~~ ^~~~~~~~~~
+../src/LinkedList.cpp:40:14: warning: private field 'MasterNode' is not used [-Wunused-private-field]
+        SingleNode *MasterNode;//it seems that I should define the master node as a pointer, then I don't have to initialize it
+                    ^
+../src/LinkedList.cpp:42:2: warning: private field 'MasterNode' is not used [-Wunused-private-field]
+        MasterNode = NULL;
+        ^
+3 warnings and 4 errors generated.
+make: *** [src/LinkedList.o] Error 1
+21:30:29 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+../src/LinkedList.cpp:42:2: error: C++ requires a type specifier for all declarations
+        MasterNode = new SingleNode;
+        ^
+../src/LinkedList.cpp:42:2: error: duplicate member 'MasterNode'
+../src/LinkedList.cpp:40:14: note: previous declaration is here
+        SingleNode *MasterNode;//it seems that I should define the master node as a pointer, then I don't have to initialize it
+                    ^
+../src/LinkedList.cpp:42:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        MasterNode = new SingleNode;
+                   ^
+../src/LinkedList.cpp:44:7: error: member 'LinkedList' has the same name as its class
+        void LinkedList(SingleNode *FirstNode){
+             ^
+../src/LinkedList.cpp:44:7: error: constructor cannot have a return type
+        void LinkedList(SingleNode *FirstNode){
+        ~~~~ ^~~~~~~~~~
+../src/LinkedList.cpp:40:14: warning: private field 'MasterNode' is not used [-Wunused-private-field]
+        SingleNode *MasterNode;//it seems that I should define the master node as a pointer, then I don't have to initialize it
+                    ^
+../src/LinkedList.cpp:42:2: warning: private field 'MasterNode' is not used [-Wunused-private-field]
+        MasterNode = new SingleNode;
+        ^
+3 warnings and 4 errors generated.
+make: *** [src/LinkedList.o] Error 1
+21:34:12 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+../src/LinkedList.cpp:44:7: error: member 'LinkedList' has the same name as its class
+        void LinkedList(SingleNode *FirstNode){
+             ^
+../src/LinkedList.cpp:44:7: error: constructor cannot have a return type
+        void LinkedList(SingleNode *FirstNode){
+        ~~~~ ^~~~~~~~~~
+../src/LinkedList.cpp:40:14: warning: private field 'MasterNode' is not used [-Wunused-private-field]
+        SingleNode *MasterNode;//it seems that I should define the master node as a pointer, then I don't have to initialize it
+                    ^
+1 warning and 2 errors generated.
+make: *** [src/LinkedList.o] Error 1
+21:35:57 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+Finished building: ../src/LinkedList.cpp
+ 
+Building target: DataStructures
+Invoking: MacOS X C++ Linker
+g++  -o "DataStructures"  ./src/LinkedList.o   
+Finished building target: DataStructures
+ 
+21:35:59 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for `all'.
+21:35:59 **** Incremental Build of configuration Debug for project MorningTest ****
+make all 
+make: Nothing to be done for `all'.
+21:35:59 **** Incremental Build of configuration Debug for project My2ndNewProject ****
+make all 
+make: Nothing to be done for `all'.
+21:36:00 **** Incremental Build of configuration Debug for project OpenCVtest ****
+make all 
+make: *** No rule to make target `DisplayImage.o', needed by `OpenCVtest'.  Stop.
+21:36:00 **** Incremental Build of configuration Debug for project TestUsingNameSpaceSTDIssue ****
+make all 
+make: Nothing to be done for `all'.
+21:38:03 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+Finished building: ../src/LinkedList.cpp
+ 
+Building target: DataStructures
+Invoking: MacOS X C++ Linker
+g++  -o "DataStructures"  ./src/LinkedList.o   
+Finished building target: DataStructures
+ 
+21:38:42 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+../src/LinkedList.cpp:44:7: error: member 'LinkedList' has the same name as its class
+        void LinkedList(SingleNode *FirstNode){
+             ^
+../src/LinkedList.cpp:44:7: error: constructor cannot have a return type
+        void LinkedList(SingleNode *FirstNode){
+        ~~~~ ^~~~~~~~~~
+../src/LinkedList.cpp:38:6: error: cannot combine with previous 'void' declaration specifier
+void class LinkedList{
+     ^
+../src/LinkedList.cpp:38:1: warning: declaration does not declare anything [-Wmissing-declarations]
+void class LinkedList{
+^~~~
+../src/LinkedList.cpp:40:14: warning: private field 'MasterNode' is not used [-Wunused-private-field]
+        SingleNode *MasterNode;//it seems that I should define the master node as a pointer, then I don't have to initialize it
+                    ^
+2 warnings and 3 errors generated.
+make: *** [src/LinkedList.o] Error 1
+21:39:12 **** Incremental Build of configuration Debug for project DataStructures ****
+make all 
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+Finished building: ../src/LinkedList.cpp
+ 
+Building target: DataStructures
+Invoking: MacOS X C++ Linker
+g++  -o "DataStructures"  ./src/LinkedList.o   
+Finished building target: DataStructures
+ 

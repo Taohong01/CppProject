@@ -1,0 +1,15 @@
+/*
+ * mysourcefilewithcppExtension.cpp
+ *
+ *  Created on: Oct 3, 2015
+ *      Author: Tao
+ */
+// add include file
+#include <iostream>
+// add using namespace
+using namespace std;
+// the old error message still shows up at this moment
+
+
+
+
