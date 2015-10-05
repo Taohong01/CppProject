@@ -1,6 +1,6 @@
-08:08:28 **** Incremental Build of configuration Debug for project OpenCVtest ****
+20:48:12 **** Incremental Build of configuration Debug for project OpenCVtest ****
 make all 
 make: *** No rule to make target `DisplayImage.o', needed by `OpenCVtest'.  Stop.
 
-08:08:28 Build Finished (took 88ms)
+20:48:13 Build Finished (took 90ms)
 

@@ -46,6 +46,10 @@ int main(){
 	bool BooleanA, BooleanB;
 	char CharA, CharB;
 	int NoahHasAnInteger, StevenHasAnInteger;
+	//void NoValue; // note: in c++, we can define a variable as void, this is new to me, I wonder what size it is
+	// it generates error, so it seems impossible to declare a variable in the type of void. or probably in a very
+	// special situation, it can be used. I am not clear at this time. I might revisit this later.
+
 
 	cout << endl << endl;
 	cout << "size of boolean variable, defined by using bool is :   " << sizeof(BooleanA) << endl;
@@ -80,6 +84,13 @@ int main(){
 	cout << " the size of a short int variable is :" << sizeof(short int) << endl;
 	cout << " the size of a long int variable is :" << sizeof(long int) << endl;
 	cout << " the size of a long double variable is :" << sizeof(long double) << endl;
+
+	// try to find out what size of void data variable is
+	//cout << "the size of a void variable is :" << sizeof(void) << endl; // an error message shows I can use sizeof() for void
+	//cout << " the size of a void variable, NoValue is : " << sizeof(NoValue) << endl;
+
+
+
 	return 0;
 }
 

@@ -1,6 +1,6 @@
-08:08:28 **** Incremental Build of configuration Debug for project TestUsingNameSpaceSTDIssue ****
+20:48:15 **** Incremental Build of configuration Debug for project TestUsingNameSpaceSTDIssue ****
 make all 
 make: Nothing to be done for `all'.
 
-08:08:29 Build Finished (took 86ms)
+20:48:15 Build Finished (took 94ms)
 

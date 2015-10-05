@@ -1,6 +1,25 @@
-08:08:26 **** Incremental Build of configuration Debug for project DataStructures ****
+22:25:22 **** Incremental Build of configuration Debug for project DataStructures ****
 make all 
-make: Nothing to be done for `all'.
+Building file: ../src/LinkedList.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LinkedList.d" -MT"src/LinkedList.d" -o "src/LinkedList.o" "../src/LinkedList.cpp"
+../src/LinkedList.cpp:8:9: warning: 'NULL' macro redefined [-Wmacro-redefined]
+#define NULL 0
+        ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include/stddef.h:100:13: note: previous definition is here
+#    define NULL __null
+            ^
+../src/LinkedList.cpp:26:13: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int Length = 0;
+                   ^
+2 warnings generated.
+Finished building: ../src/LinkedList.cpp
+ 
+Building target: DataStructures
+Invoking: MacOS X C++ Linker
+g++  -o "DataStructures"  ./src/LinkedList.o   
+Finished building target: DataStructures
+ 
 
-08:08:26 Build Finished (took 141ms)
+22:25:24 Build Finished (took 1s.597ms)
 
