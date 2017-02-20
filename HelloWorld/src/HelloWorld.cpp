@@ -7,9 +7,8 @@
 //============================================================================
 
 #include <iostream>
+#include <array>
 using namespace std;
-
-
 
 class Vector{
 	/*define a generic vector and relevant operations.
@@ -107,6 +106,7 @@ public:
 	~Node(){
 		cout << "node instance with value," << _value << ", is deleted." << endl;
 	}
+
 };
 
 /* Define a linked list class based on the Node class
@@ -138,8 +138,6 @@ int main() {
 
 
 
-
-
 	//Example, how to initialize class instances.
 	// note only when the defined class instance is a pointer,
 	// we use vecPointer = new Vector(); for initialization;
@@ -149,6 +147,9 @@ int main() {
 	Vector Vec3(3.0, 2.5, 1.5);
 	//Vector Vec4(), Vec5();
 	Vec1.x = 5.0;
+	array<Vector, 3> VecArray;
+	VecArray[0] = Vec1;
+	VecArray[2] = Vec3;
 
 	Vector Vec4, Vec5;
 	Vec4 = Vec1 + Vec2;
@@ -192,5 +193,11 @@ int main() {
 		}
 	}
 
+	for(int i=0; i<3; i++){
+		cout << "VecArray.z is ";
+		cout << VecArray[i].z << endl;
+	}
+
+	cout << "This is the end of this program." << endl;
 	return 0;
 }

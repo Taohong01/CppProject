@@ -1,6 +1,372 @@
-20:48:12 **** Incremental Build of configuration Debug for project OpenCVtest ****
+09:39:41 **** Build of configuration Debug for project OpenCVtest ****
 make all 
+Building file: ../src/DisplayImage.cpp
+Invoking: GCC C++ Compiler
+g++ -I/usr/local/include/opencv -I/usr/local/include/opencv2 -I/usr/local/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/DisplayImage.d" -MT"src/DisplayImage.o" -o "src/DisplayImage.o" "../src/DisplayImage.cpp"
+In file included from ../src/DisplayImage.cpp:1:
+In file included from /usr/local/include/opencv/cv.h:63:
+In file included from /usr/local/include/opencv2/core/core_c.h:48:
+In file included from /usr/local/include/opencv2/core/types_c.h:101:
+In file included from /usr/local/include/opencv2/core.hpp:57:
+/usr/local/include/opencv2/core/matx.hpp:497:5: warning: unused typedef 'CV_StaticAssert_failed_at_497' [-Wunused-local-typedef]
+    CV_StaticAssert(channels >= 2, "Matx should have at least 2 elaments.");
+    ^
+/usr/local/include/opencv2/core/base.hpp:281:111: note: expanded from macro 'CV_StaticAssert'
+       typedef cv::CV_StaticAssert_test< sizeof(cv::CV_StaticAssert_failed< static_cast<bool>(condition) >) > CVAUX_CONCAT(CV_StaticAssert_failed_at_, __LINE__)
+                                                                                                              ^
+/usr/local/include/opencv2/core/base.hpp:255:28: note: expanded from macro 'CVAUX_CONCAT'
+#define CVAUX_CONCAT(a, b) CVAUX_CONCAT_EXP(a,b)
+                           ^
+/usr/local/include/opencv2/core/base.hpp:254:32: note: expanded from macro 'CVAUX_CONCAT_EXP'
+#define CVAUX_CONCAT_EXP(a, b) a##b
+                               ^
+<scratch space>:529:1: note: expanded from here
+CV_StaticAssert_failed_at_497
+^
+In file included from ../src/DisplayImage.cpp:1:
+In file included from /usr/local/include/opencv/cv.h:63:
+In file included from /usr/local/include/opencv2/core/core_c.h:48:
+In file included from /usr/local/include/opencv2/core/types_c.h:101:
+In file included from /usr/local/include/opencv2/core.hpp:57:
+/usr/local/include/opencv2/core/matx.hpp:505:5: warning: unused typedef 'CV_StaticAssert_failed_at_505' [-Wunused-local-typedef]
+    CV_StaticAssert(channels >= 3, "Matx should have at least 3 elaments.");
+    ^
+/usr/local/include/opencv2/core/base.hpp:281:111: note: expanded from macro 'CV_StaticAssert'
+       typedef cv::CV_StaticAssert_test< sizeof(cv::CV_StaticAssert_failed< static_cast<bool>(condition) >) > CVAUX_CONCAT(CV_StaticAssert_failed_at_, __LINE__)
+                                                                                                              ^
+/usr/local/include/opencv2/core/base.hpp:255:28: note: expanded from macro 'CVAUX_CONCAT'
+#define CVAUX_CONCAT(a, b) CVAUX_CONCAT_EXP(a,b)
+                           ^
+/usr/local/include/opencv2/core/base.hpp:254:32: note: expanded from macro 'CVAUX_CONCAT_EXP'
+#define CVAUX_CONCAT_EXP(a, b) a##b
+                               ^
+<scratch space>:531:1: note: expanded from here
+CV_StaticAssert_failed_at_505
+^
+In file included from ../src/DisplayImage.cpp:1:
+In file included from /usr/local/include/opencv/cv.h:63:
+In file included from /usr/local/include/opencv2/core/core_c.h:48:
+In file included from /usr/local/include/opencv2/core/types_c.h:101:
+In file included from /usr/local/include/opencv2/core.hpp:57:
+/usr/local/include/opencv2/core/matx.hpp:513:5: warning: unused typedef 'CV_StaticAssert_failed_at_513' [-Wunused-local-typedef]
+    CV_StaticAssert(channels >= 4, "Matx should have at least 4 elaments.");
+    ^
+/usr/local/include/opencv2/core/base.hpp:281:111: note: expanded from macro 'CV_StaticAssert'
+       typedef cv::CV_StaticAssert_test< sizeof(cv::CV_StaticAssert_failed< static_cast<bool>(condition) >) > CVAUX_CONCAT(CV_StaticAssert_failed_at_, __LINE__)
+                                                                                                              ^
+/usr/local/include/opencv2/core/base.hpp:255:28: note: expanded from macro 'CVAUX_CONCAT'
+#define CVAUX_CONCAT(a, b) CVAUX_CONCAT_EXP(a,b)
+                           ^
+/usr/local/include/opencv2/core/base.hpp:254:32: note: expanded from macro 'CVAUX_CONCAT_EXP'
+#define CVAUX_CONCAT_EXP(a, b) a##b
+                               ^
+<scratch space>:533:1: note: expanded from here
+CV_StaticAssert_failed_at_513
+^
+In file included from ../src/DisplayImage.cpp:1:
+In file included from /usr/local/include/opencv/cv.h:63:
+In file included from /usr/local/include/opencv2/core/core_c.h:48:
+In file included from /usr/local/include/opencv2/core/types_c.h:101:
+In file included from /usr/local/include/opencv2/core.hpp:57:
+/usr/local/include/opencv2/core/matx.hpp:521:5: warning: unused typedef 'CV_StaticAssert_failed_at_521' [-Wunused-local-typedef]
+    CV_StaticAssert(channels >= 5, "Matx should have at least 5 elaments.");
+    ^
+/usr/local/include/opencv2/core/base.hpp:281:111: note: expanded from macro 'CV_StaticAssert'
+       typedef cv::CV_StaticAssert_test< sizeof(cv::CV_StaticAssert_failed< static_cast<bool>(condition) >) > CVAUX_CONCAT(CV_StaticAssert_failed_at_, __LINE__)
+                                                                                                              ^
+/usr/local/include/opencv2/core/base.hpp:255:28: note: expanded from macro 'CVAUX_CONCAT'
+#define CVAUX_CONCAT(a, b) CVAUX_CONCAT_EXP(a,b)
+                           ^
+/usr/local/include/opencv2/core/base.hpp:254:32: note: expanded from macro 'CVAUX_CONCAT_EXP'
+#define CVAUX_CONCAT_EXP(a, b) a##b
+                               ^
+<scratch space>:535:1: note: expanded from here
+CV_StaticAssert_failed_at_521
+^
+In file included from ../src/DisplayImage.cpp:1:
+In file included from /usr/local/include/opencv/cv.h:63:
+In file included from /usr/local/include/opencv2/core/core_c.h:48:
+In file included from /usr/local/include/opencv2/core/types_c.h:101:
+In file included from /usr/local/include/opencv2/core.hpp:57:
+/usr/local/include/opencv2/core/matx.hpp:529:5: warning: unused typedef 'CV_StaticAssert_failed_at_529' [-Wunused-local-typedef]
+    CV_StaticAssert(channels >= 6, "Matx should have at least 6 elaments.");
+    ^
+/usr/local/include/opencv2/core/base.hpp:281:111: note: expanded from macro 'CV_StaticAssert'
+       typedef cv::CV_StaticAssert_test< sizeof(cv::CV_StaticAssert_failed< static_cast<bool>(condition) >) > CVAUX_CONCAT(CV_StaticAssert_failed_at_, __LINE__)
+                                                                                                              ^
+/usr/local/include/opencv2/core/base.hpp:255:28: note: expanded from macro 'CVAUX_CONCAT'
+#define CVAUX_CONCAT(a, b) CVAUX_CONCAT_EXP(a,b)
+                           ^
+/usr/local/include/opencv2/core/base.hpp:254:32: note: expanded from macro 'CVAUX_CONCAT_EXP'
+#define CVAUX_CONCAT_EXP(a, b) a##b
+                               ^
+<scratch space>:537:1: note: expanded from here
+CV_StaticAssert_failed_at_529
+^
+In file included from ../src/DisplayImage.cpp:1:
+In file included from /usr/local/include/opencv/cv.h:63:
+In file included from /usr/local/include/opencv2/core/core_c.h:48:
+In file included from /usr/local/include/opencv2/core/types_c.h:101:
+In file included from /usr/local/include/opencv2/core.hpp:57:
+/usr/local/include/opencv2/core/matx.hpp:538:5: warning: unused typedef 'CV_StaticAssert_failed_at_538' [-Wunused-local-typedef]
+    CV_StaticAssert(channels >= 7, "Matx should have at least 7 elaments.");
+    ^
+/usr/local/include/opencv2/core/base.hpp:281:111: note: expanded from macro 'CV_StaticAssert'
+       typedef cv::CV_StaticAssert_test< sizeof(cv::CV_StaticAssert_failed< static_cast<bool>(condition) >) > CVAUX_CONCAT(CV_StaticAssert_failed_at_, __LINE__)
+                                                                                                              ^
+/usr/local/include/opencv2/core/base.hpp:255:28: note: expanded from macro 'CVAUX_CONCAT'
+#define CVAUX_CONCAT(a, b) CVAUX_CONCAT_EXP(a,b)
+                           ^
+/usr/local/include/opencv2/core/base.hpp:254:32: note: expanded from macro 'CVAUX_CONCAT_EXP'
+#define CVAUX_CONCAT_EXP(a, b) a##b
+                               ^
+<scratch space>:539:1: note: expanded from here
+CV_StaticAssert_failed_at_538
+^
+In file included from ../src/DisplayImage.cpp:1:
+In file included from /usr/local/include/opencv/cv.h:63:
+In file included from /usr/local/include/opencv2/core/core_c.h:48:
+In file included from /usr/local/include/opencv2/core/types_c.h:101:
+In file included from /usr/local/include/opencv2/core.hpp:57:
+/usr/local/include/opencv2/core/matx.hpp:547:5: warning: unused typedef 'CV_StaticAssert_failed_at_547' [-Wunused-local-typedef]
+    CV_StaticAssert(channels >= 8, "Matx should have at least 8 elaments.");
+    ^
+/usr/local/include/opencv2/core/base.hpp:281:111: note: expanded from macro 'CV_StaticAssert'
+       typedef cv::CV_StaticAssert_test< sizeof(cv::CV_StaticAssert_failed< static_cast<bool>(condition) >) > CVAUX_CONCAT(CV_StaticAssert_failed_at_, __LINE__)
+                                                                                                              ^
+/usr/local/include/opencv2/core/base.hpp:255:28: note: expanded from macro 'CVAUX_CONCAT'
+#define CVAUX_CONCAT(a, b) CVAUX_CONCAT_EXP(a,b)
+                           ^
+/usr/local/include/opencv2/core/base.hpp:254:32: note: expanded from macro 'CVAUX_CONCAT_EXP'
+#define CVAUX_CONCAT_EXP(a, b) a##b
+                               ^
+<scratch space>:541:1: note: expanded from here
+CV_StaticAssert_failed_at_547
+^
+In file included from ../src/DisplayImage.cpp:1:
+In file included from /usr/local/include/opencv/cv.h:63:
+In file included from /usr/local/include/opencv2/core/core_c.h:48:
+In file included from /usr/local/include/opencv2/core/types_c.h:101:
+In file included from /usr/local/include/opencv2/core.hpp:57:
+/usr/local/include/opencv2/core/matx.hpp:556:5: warning: unused typedef 'CV_StaticAssert_failed_at_556' [-Wunused-local-typedef]
+    CV_StaticAssert(channels >= 9, "Matx should have at least 9 elaments.");
+    ^
+/usr/local/include/opencv2/core/base.hpp:281:111: note: expanded from macro 'CV_StaticAssert'
+       typedef cv::CV_StaticAssert_test< sizeof(cv::CV_StaticAssert_failed< static_cast<bool>(condition) >) > CVAUX_CONCAT(CV_StaticAssert_failed_at_, __LINE__)
+                                                                                                              ^
+/usr/local/include/opencv2/core/base.hpp:255:28: note: expanded from macro 'CVAUX_CONCAT'
+#define CVAUX_CONCAT(a, b) CVAUX_CONCAT_EXP(a,b)
+                           ^
+/usr/local/include/opencv2/core/base.hpp:254:32: note: expanded from macro 'CVAUX_CONCAT_EXP'
+#define CVAUX_CONCAT_EXP(a, b) a##b
+                               ^
+<scratch space>:543:1: note: expanded from here
+CV_StaticAssert_failed_at_556
+^
+In file included from ../src/DisplayImage.cpp:1:
+In file included from /usr/local/include/opencv/cv.h:63:
+In file included from /usr/local/include/opencv2/core/core_c.h:48:
+In file included from /usr/local/include/opencv2/core/types_c.h:101:
+In file included from /usr/local/include/opencv2/core.hpp:57:
+/usr/local/include/opencv2/core/matx.hpp:566:5: warning: unused typedef 'CV_StaticAssert_failed_at_566' [-Wunused-local-typedef]
+    CV_StaticAssert(channels >= 10, "Matx should have at least 10 elaments.");
+    ^
+/usr/local/include/opencv2/core/base.hpp:281:111: note: expanded from macro 'CV_StaticAssert'
+       typedef cv::CV_StaticAssert_test< sizeof(cv::CV_StaticAssert_failed< static_cast<bool>(condition) >) > CVAUX_CONCAT(CV_StaticAssert_failed_at_, __LINE__)
+                                                                                                              ^
+/usr/local/include/opencv2/core/base.hpp:255:28: note: expanded from macro 'CVAUX_CONCAT'
+#define CVAUX_CONCAT(a, b) CVAUX_CONCAT_EXP(a,b)
+                           ^
+/usr/local/include/opencv2/core/base.hpp:254:32: note: expanded from macro 'CVAUX_CONCAT_EXP'
+#define CVAUX_CONCAT_EXP(a, b) a##b
+                               ^
+<scratch space>:545:1: note: expanded from here
+CV_StaticAssert_failed_at_566
+^
+In file included from ../src/DisplayImage.cpp:1:
+In file included from /usr/local/include/opencv/cv.h:63:
+In file included from /usr/local/include/opencv2/core/core_c.h:48:
+In file included from /usr/local/include/opencv2/core/types_c.h:101:
+In file included from /usr/local/include/opencv2/core.hpp:57:
+/usr/local/include/opencv2/core/matx.hpp:577:5: warning: unused typedef 'CV_StaticAssert_failed_at_577' [-Wunused-local-typedef]
+    CV_StaticAssert(channels == 12, "Matx should have at least 12 elaments.");
+    ^
+/usr/local/include/opencv2/core/base.hpp:281:111: note: expanded from macro 'CV_StaticAssert'
+Finished building: ../src/DisplayImage.cpp
+       typedef cv::CV_StaticAssert_test< sizeof(cv::CV_StaticAssert_failed< static_cast<bool>(condition) >) > CVAUX_CONCAT(CV_StaticAssert_failed_at_, __LINE__)
+                                                                                                              ^
+/usr/local/include/opencv2/core/base.hpp:255:28: note: expanded from macro 'CVAUX_CONCAT'
+#define CVAUX_CONCAT(a, b) CVAUX_CONCAT_EXP(a,b)
+                           ^
+/usr/local/include/opencv2/core/base.hpp:254:32: note: expanded from macro 'CVAUX_CONCAT_EXP'
+#define CVAUX_CONCAT_EXP(a, b) a##b
+                               ^
+<scratch space>:547:1: note: expanded from here
+CV_StaticAssert_failed_at_577
+^
+In file included from ../src/DisplayImage.cpp:1:
+In file included from /usr/local/include/opencv/cv.h:63:
+In file included from /usr/local/include/opencv2/core/core_c.h:48:
+In file included from /usr/local/include/opencv2/core/types_c.h:101:
+ 
+In file included from /usr/local/include/opencv2/core.hpp:57:
+/usr/local/include/opencv2/core/matx.hpp:586:5: warning: unused typedef 'CV_StaticAssert_failed_at_586' [-Wunused-local-typedef]
+    CV_StaticAssert(channels == 16, "Matx should have at least 16 elaments.");
+    ^
+/usr/local/include/opencv2/core/base.hpp:281:111: note: expanded from macro 'CV_StaticAssert'
+       typedef cv::CV_StaticAssert_test< sizeof(cv::CV_StaticAssert_failed< static_cast<bool>(condition) >) > CVAUX_CONCAT(CV_StaticAssert_failed_at_, __LINE__)
+                                                                                                              ^
+/usr/local/include/opencv2/core/base.hpp:255:28: note: expanded from macro 'CVAUX_CONCAT'
+#define CVAUX_CONCAT(a, b) CVAUX_CONCAT_EXP(a,b)
+                           ^
+/usr/local/include/opencv2/core/base.hpp:254:32: note: expanded from macro 'CVAUX_CONCAT_EXP'
+#define CVAUX_CONCAT_EXP(a, b) a##b
+                               ^
+<scratch space>:549:1: note: expanded from here
+CV_StaticAssert_failed_at_586
+^
+In file included from ../src/DisplayImage.cpp:1:
+In file included from /usr/local/include/opencv/cv.h:63:
+In file included from /usr/local/include/opencv2/core/core_c.h:48:
+In file included from /usr/local/include/opencv2/core/types_c.h:101:
+In file included from /usr/local/include/opencv2/core.hpp:57:
+/usr/local/include/opencv2/core/matx.hpp:664:5: warning: unused typedef 'CV_StaticAssert_failed_at_664' [-Wunused-local-typedef]
+    CV_StaticAssert(m1*n1 == m*n, "Input and destnarion matrices must have the same number of elements");
+    ^
+/usr/local/include/opencv2/core/base.hpp:281:111: note: expanded from macro 'CV_StaticAssert'
+       typedef cv::CV_StaticAssert_test< sizeof(cv::CV_StaticAssert_failed< static_cast<bool>(condition) >) > CVAUX_CONCAT(CV_StaticAssert_failed_at_, __LINE__)
+                                                                                                              ^
+/usr/local/include/opencv2/core/base.hpp:255:28: note: expanded from macro 'CVAUX_CONCAT'
+#define CVAUX_CONCAT(a, b) CVAUX_CONCAT_EXP(a,b)
+                           ^
+/usr/local/include/opencv2/core/base.hpp:254:32: note: expanded from macro 'CVAUX_CONCAT_EXP'
+#define CVAUX_CONCAT_EXP(a, b) a##b
+                               ^
+<scratch space>:551:1: note: expanded from here
+CV_StaticAssert_failed_at_664
+^
+In file included from ../src/DisplayImage.cpp:1:
+In file included from /usr/local/include/opencv/cv.h:63:
+In file included from /usr/local/include/opencv2/core/core_c.h:48:
+In file included from /usr/local/include/opencv2/core/types_c.h:101:
+In file included from /usr/local/include/opencv2/core.hpp:57:
+/usr/local/include/opencv2/core/matx.hpp:723:5: warning: unused typedef 'CV_StaticAssert_failed_at_723' [-Wunused-local-typedef]
+    CV_StaticAssert(m == 1 || n == 1, "Single index indexation requires matrix to be a column or a row");
+    ^
+/usr/local/include/opencv2/core/base.hpp:281:111: note: expanded from macro 'CV_StaticAssert'
+       typedef cv::CV_StaticAssert_test< sizeof(cv::CV_StaticAssert_failed< static_cast<bool>(condition) >) > CVAUX_CONCAT(CV_StaticAssert_failed_at_, __LINE__)
+                                                                                                              ^
+/usr/local/include/opencv2/core/base.hpp:255:28: note: expanded from macro 'CVAUX_CONCAT'
+#define CVAUX_CONCAT(a, b) CVAUX_CONCAT_EXP(a,b)
+                           ^
+/usr/local/include/opencv2/core/base.hpp:254:32: note: expanded from macro 'CVAUX_CONCAT_EXP'
+#define CVAUX_CONCAT_EXP(a, b) a##b
+                               ^
+<scratch space>:553:1: note: expanded from here
+CV_StaticAssert_failed_at_723
+^
+In file included from ../src/DisplayImage.cpp:1:
+In file included from /usr/local/include/opencv/cv.h:63:
+In file included from /usr/local/include/opencv2/core/core_c.h:48:
+In file included from /usr/local/include/opencv2/core/types_c.h:101:
+In file included from /usr/local/include/opencv2/core.hpp:57:
+/usr/local/include/opencv2/core/matx.hpp:731:5: warning: unused typedef 'CV_StaticAssert_failed_at_731' [-Wunused-local-typedef]
+    CV_StaticAssert(m == 1 || n == 1, "Single index indexation requires matrix to be a column or a row");
+    ^
+/usr/local/include/opencv2/core/base.hpp:281:111: note: expanded from macro 'CV_StaticAssert'
+       typedef cv::CV_StaticAssert_test< sizeof(cv::CV_StaticAssert_failed< static_cast<bool>(condition) >) > CVAUX_CONCAT(CV_StaticAssert_failed_at_, __LINE__)
+                                                                                                              ^
+/usr/local/include/opencv2/core/base.hpp:255:28: note: expanded from macro 'CVAUX_CONCAT'
+#define CVAUX_CONCAT(a, b) CVAUX_CONCAT_EXP(a,b)
+                           ^
+/usr/local/include/opencv2/core/base.hpp:254:32: note: expanded from macro 'CVAUX_CONCAT_EXP'
+#define CVAUX_CONCAT_EXP(a, b) a##b
+                               ^
+<scratch space>:555:1: note: expanded from here
+CV_StaticAssert_failed_at_731
+^
+In file included from ../src/DisplayImage.cpp:1:
+In file included from /usr/local/include/opencv/cv.h:63:
+In file included from /usr/local/include/opencv2/core/core_c.h:48:
+In file included from /usr/local/include/opencv2/core/types_c.h:101:
+In file included from /usr/local/include/opencv2/core.hpp:57:
+/usr/local/include/opencv2/core/matx.hpp:987:5: warning: unused typedef 'CV_StaticAssert_failed_at_987' [-Wunused-local-typedef]
+    CV_StaticAssert(cn == 3, "for arbitrary-size vector there is no cross-product defined");
+    ^
+/usr/local/include/opencv2/core/base.hpp:281:111: note: expanded from macro 'CV_StaticAssert'
+       typedef cv::CV_StaticAssert_test< sizeof(cv::CV_StaticAssert_failed< static_cast<bool>(condition) >) > CVAUX_CONCAT(CV_StaticAssert_failed_at_, __LINE__)
+                                                                                                              ^
+/usr/local/include/opencv2/core/base.hpp:255:28: note: expanded from macro 'CVAUX_CONCAT'
+#define CVAUX_CONCAT(a, b) CVAUX_CONCAT_EXP(a,b)
+                           ^
+/usr/local/include/opencv2/core/base.hpp:254:32: note: expanded from macro 'CVAUX_CONCAT_EXP'
+#define CVAUX_CONCAT_EXP(a, b) a##b
+                               ^
+<scratch space>:557:1: note: expanded from here
+CV_StaticAssert_failed_at_987
+^
+In file included from ../src/DisplayImage.cpp:1:
+In file included from /usr/local/include/opencv/cv.h:63:
+In file included from /usr/local/include/opencv2/core/core_c.h:48:
+In file included from /usr/local/include/opencv2/core/types_c.h:101:
+In file included from /usr/local/include/opencv2/core.hpp:3106:
+/usr/local/include/opencv2/core/operations.hpp:303:5: warning: unused typedef 'CV_StaticAssert_failed_at_303' [-Wunused-local-typedef]
+    CV_StaticAssert( nm == MIN(m, n), "Invalid size of output vector.");
+    ^
+/usr/local/include/opencv2/core/base.hpp:281:111: note: expanded from macro 'CV_StaticAssert'
+       typedef cv::CV_StaticAssert_test< sizeof(cv::CV_StaticAssert_failed< static_cast<bool>(condition) >) > CVAUX_CONCAT(CV_StaticAssert_failed_at_, __LINE__)
+                                                                                                              ^
+/usr/local/include/opencv2/core/base.hpp:255:28: note: expanded from macro 'CVAUX_CONCAT'
+#define CVAUX_CONCAT(a, b) CVAUX_CONCAT_EXP(a,b)
+                           ^
+/usr/local/include/opencv2/core/base.hpp:254:32: note: expanded from macro 'CVAUX_CONCAT_EXP'
+#define CVAUX_CONCAT_EXP(a, b) a##b
+                               ^
+<scratch space>:245:1: note: expanded from here
+CV_StaticAssert_failed_at_303
+^
+In file included from ../src/DisplayImage.cpp:1:
+In file included from /usr/local/include/opencv/cv.h:63:
+In file included from /usr/local/include/opencv2/core/core_c.h:48:
+In file included from /usr/local/include/opencv2/core/types_c.h:101:
+In file included from /usr/local/include/opencv2/core.hpp:3106:
+/usr/local/include/opencv2/core/operations.hpp:312:5: warning: unused typedef 'CV_StaticAssert_failed_at_312' [-Wunused-local-typedef]
+    CV_StaticAssert( nm == MIN(m, n), "Invalid size of output vector.");
+    ^
+/usr/local/include/opencv2/core/base.hpp:281:111: note: expanded from macro 'CV_StaticAssert'
+       typedef cv::CV_StaticAssert_test< sizeof(cv::CV_StaticAssert_failed< static_cast<bool>(condition) >) > CVAUX_CONCAT(CV_StaticAssert_failed_at_, __LINE__)
+                                                                                                              ^
+/usr/local/include/opencv2/core/base.hpp:255:28: note: expanded from macro 'CVAUX_CONCAT'
+#define CVAUX_CONCAT(a, b) CVAUX_CONCAT_EXP(a,b)
+                           ^
+/usr/local/include/opencv2/core/base.hpp:254:32: note: expanded from macro 'CVAUX_CONCAT_EXP'
+#define CVAUX_CONCAT_EXP(a, b) a##b
+                               ^
+<scratch space>:250:1: note: expanded from here
+CV_StaticAssert_failed_at_312
+^
+In file included from ../src/DisplayImage.cpp:1:
+In file included from /usr/local/include/opencv/cv.h:63:
+In file included from /usr/local/include/opencv2/core/core_c.h:48:
+In file included from /usr/local/include/opencv2/core/types_c.h:101:
+In file included from /usr/local/include/opencv2/core.hpp:3106:
+/usr/local/include/opencv2/core/operations.hpp:323:5: warning: unused typedef 'CV_StaticAssert_failed_at_323' [-Wunused-local-typedef]
+    CV_StaticAssert( nm == MIN(m, n), "Invalid size of output vector.");
+    ^
+/usr/local/include/opencv2/core/base.hpp:281:111: note: expanded from macro 'CV_StaticAssert'
+       typedef cv::CV_StaticAssert_test< sizeof(cv::CV_StaticAssert_failed< static_cast<bool>(condition) >) > CVAUX_CONCAT(CV_StaticAssert_failed_at_, __LINE__)
+                                                                                                              ^
+/usr/local/include/opencv2/core/base.hpp:255:28: note: expanded from macro 'CVAUX_CONCAT'
+#define CVAUX_CONCAT(a, b) CVAUX_CONCAT_EXP(a,b)
+                           ^
+/usr/local/include/opencv2/core/base.hpp:254:32: note: expanded from macro 'CVAUX_CONCAT_EXP'
+#define CVAUX_CONCAT_EXP(a, b) a##b
+                               ^
+<scratch space>:255:1: note: expanded from here
+CV_StaticAssert_failed_at_323
+^
+18 warnings generated.
 make: *** No rule to make target `DisplayImage.o', needed by `OpenCVtest'.  Stop.
 
-20:48:13 Build Finished (took 90ms)
+09:39:42 Build Finished (took 980ms)
 

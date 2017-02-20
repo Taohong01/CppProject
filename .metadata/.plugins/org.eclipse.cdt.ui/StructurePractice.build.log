@@ -1,6 +1,7 @@
-20:48:22 **** Incremental Build of configuration Debug for project StructurePractice ****
-make all 
-make: Nothing to be done for `all'.
+11:03:30 **** Clean-only build of configuration Debug for project StructurePractice ****
+make clean 
+rm -rf  ./src/StructurePracitice.o  ./src/StructurePracitice.d  StructurePractice
+ 
 
-20:48:22 Build Finished (took 92ms)
+11:03:30 Build Finished (took 76ms)
 

@@ -1,1 +1,1 @@
-src/HelloWorld.d: ../src/HelloWorld.cpp
+src/HelloWorld.o: ../src/HelloWorld.cpp

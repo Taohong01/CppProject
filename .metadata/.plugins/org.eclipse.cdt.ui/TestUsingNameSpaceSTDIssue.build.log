@@ -1,6 +1,7 @@
-20:48:15 **** Incremental Build of configuration Debug for project TestUsingNameSpaceSTDIssue ****
-make all 
-make: Nothing to be done for `all'.
+11:03:30 **** Clean-only build of configuration Debug for project TestUsingNameSpaceSTDIssue ****
+make clean 
+rm -rf  ./src/CPPSourceFile.o  ./src/CPPSourceFile.d  TestUsingNameSpaceSTDIssue
+ 
 
-20:48:15 Build Finished (took 94ms)
+11:03:30 Build Finished (took 87ms)
 

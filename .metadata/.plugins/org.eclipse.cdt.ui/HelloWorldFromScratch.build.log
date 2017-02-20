@@ -1,0 +1,14 @@
+21:41:24 **** Incremental Build of configuration Debug for project HelloWorldFromScratch ****
+make all 
+Building target: HelloWorldFromScratch
+Invoking: MacOS X C++ Linker
+g++ -L/usr/local/lib -o "HelloWorldFromScratch"  ./src/HelloExcutable.o   -lopencv_core -lopencv_highgui -lopencv_imgproc -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+Undefined symbols for architecture x86_64:
+  "cv::imread(cv::String const&, int)", referenced from:
+      _main in HelloExcutable.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [HelloWorldFromScratch] Error 1
+
+21:41:31 Build Finished (took 6s.461ms)
+

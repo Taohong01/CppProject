@@ -1,0 +1,11 @@
+09:40:14 **** Incremental Build of configuration Debug for project OpenCVNewTest ****
+make all 
+Building target: OpenCVNewTest
+Invoking: MacOS X C++ Linker
+g++ -L/usr/local/Cellar/opencv/2.4.11_1/lib -L/usr/local/lib -o "OpenCVNewTest"  ./src/OpenCVTestor.o   -l/usr/local/lib -lopencv_core -lopencv_highgui -lopencv_imgproc -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann
+ld: library not found for -l/usr/local/lib
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [OpenCVNewTest] Error 1
+
+09:40:15 Build Finished (took 133ms)
+

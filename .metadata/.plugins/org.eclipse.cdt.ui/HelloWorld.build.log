@@ -1,6 +1,41 @@
-20:48:12 **** Incremental Build of configuration Debug for project HelloWorld ****
+23:00:51 **** Incremental Build of configuration Debug for project HelloWorld ****
 make all 
-make: Nothing to be done for `all'.
+Building file: ../src/HelloWorld.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/HelloWorld.d" -MT"src/HelloWorld.o" -o "src/HelloWorld.o" "../src/HelloWorld.cpp"
+../src/HelloWorld.cpp:84:12: warning: implicit conversion of NULL constant to 'double' [-Wnull-conversion]
+                _value = NULL;
+                       ~ ^~~~
+                         0.0
+../src/HelloWorld.cpp:118:14: warning: in-class initialization of non-static data member is a C++11 extension [-Wc++11-extensions]
+        int _Length = 0;
+                    ^
+../src/HelloWorld.cpp:63:9: warning: private field 'x' is not used [-Wunused-private-field]
+        double x, y, z;
+               ^
+../src/HelloWorld.cpp:63:12: warning: private field 'y' is not used [-Wunused-private-field]
+        double x, y, z;
+                  ^
+../src/HelloWorld.cpp:63:15: warning: private field 'z' is not used [-Wunused-private-field]
+        double x, y, z;
+                     ^
+../src/HelloWorld.cpp:67:9: warning: private field 'atomMass' is not used [-Wunused-private-field]
+        double atomMass;
+               ^
+../src/HelloWorld.cpp:68:6: warning: private field 'atomicNumber' is not used [-Wunused-private-field]
+        int atomicNumber;
+            ^
+../src/HelloWorld.cpp:119:8: warning: private field 'Node0' is not used [-Wunused-private-field]
+        Node *Node0;
+              ^
+8 warnings generated.
+Finished building: ../src/HelloWorld.cpp
+ 
+Building target: HelloWorld
+Invoking: MacOS X C++ Linker
+g++  -o "HelloWorld"  ./src/HelloWorld.o   
+Finished building target: HelloWorld
+ 
 
-20:48:12 Build Finished (took 84ms)
+23:00:53 Build Finished (took 2s.160ms)
 

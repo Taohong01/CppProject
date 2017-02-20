@@ -1,6 +1,7 @@
-20:48:13 **** Incremental Build of configuration Debug for project PrimitiveDataTypePractice ****
-make all 
-make: Nothing to be done for `all'.
+11:03:30 **** Clean-only build of configuration Debug for project PrimitiveDataTypePractice ****
+make clean 
+rm -rf  ./src/PrimitiveDataTypePractice.o  ./src/PrimitiveDataTypePractice.d  PrimitiveDataTypePractice
+ 
 
-20:48:13 Build Finished (took 87ms)
+11:03:30 Build Finished (took 77ms)
 
