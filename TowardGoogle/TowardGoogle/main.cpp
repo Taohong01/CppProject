@@ -247,28 +247,67 @@ void quickFind(){
     // these numbers together, two a time. and then we want to find out blocks of
     // these numbers. Say, if we are given two numbers, we need a way to find out
     // if these two numbers belong a same block or not.
-    int a[10] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+    //int a[10] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
     
 }
 
 class node{
+private:
+    
+    int label = NULL;
+    node *rootp = nullptr;
+    node **subp = nullptr;
+    int numSubp = 0;
+    
 public:
-    int label;
-    node *root;
-    node **sub;
-    int numSub = 0;
+
     node(int label){
         this->label = label;
     }
+    void set_lable(int label){
+        this->label = label;
+    }
+    int get_label(){
+        return this->label;
+    }
     
-    void unionWith(node *nodeB){
-        if (this->label < nodeB->label){
-            nodeB->root = this;
-            this->sub[this->numSub] = nodeB;
-            this->numSub += 1;
+    void set_rootp(node * rootp){
+        this->rootp = rootp;
+    }
+    node* get_rootp(){
+        return this->rootp;
+    }
+    
+    void set_subp(node* subp){
+        if (this->subp == NULL){
+            this->subp = new node*;
+        }
+        this->subp[this->numSubp] = subp;
+        this->numSubp += 1;
+        
+    }
+    
+    node** get_subp(){
+        node** pp = nullptr;
+        if (this->subp != nullptr){
+            pp = this->subp;
+            return pp;
+        }
+        return pp;
+    }
+    
+    int get_numSubp(){
+        return this->numSubp;
+    }
+    
+    void unionWith(node *nodeBp){
+        if (this->get_label() < nodeBp->get_label()){
+            nodeBp->set_rootp(this);
+            this->set_subp(nodeBp);
         }
         else{
-            this->root = nodeB;
+            this->set_rootp(nodeBp);
+            nodeBp->set_subp(this);
         }
     }
     
@@ -280,17 +319,41 @@ public:
 
 int main() {
     
-    node *Node;
+    node **Nodepp;
+    Nodepp = new node*;
     int a[10] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
     for (int i = 0; i < 10; i++){
         cout << a[i];
         cout << endl;
-        Node = new node(a[i]);
-        cout << Node->label << "<-Node label";
+        Nodepp[i] = new node(a[i]);
+        cout << Nodepp[i]->get_label() << "<-Node label" << endl;
+    }
+
+    cout << "start union" << endl;
+    Nodepp[2]->unionWith(Nodepp[3]);
+    cout << "one union is successful" << endl;
+    Nodepp[4]->unionWith(Nodepp[1]);
+    cout << "2nd union is successful" << endl;
+    Nodepp[8]->unionWith(Nodepp[1]);
+    //cout << endl;
+    //cout << endl;
+    cout << "      " << endl;
+    
+    
+    
+    for (int i = 0; i < 10; i++){
+        cout << Nodepp[i]->get_label() << endl;
+        if (Nodepp[i]->get_rootp() != NULL){
+            cout << "tada: "<<Nodepp[i]->get_rootp()->get_label() << endl;
+        }
+        cout << Nodepp[i]->get_numSubp() << endl;
     }
     
-    
-    
+    for (int i = 0; i < 10; i++){
+        delete [] Nodepp[i];
+        
+    }
+    //delete [] Nodepp;
     
     
     

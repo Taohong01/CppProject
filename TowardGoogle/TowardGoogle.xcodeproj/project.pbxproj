@@ -11,6 +11,8 @@
 		2B270FCB1DB7448800218CA3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B270FCA1DB7448800218CA3 /* main.cpp */; };
 		2B270FD31DB7452800218CA3 /* vector_homemade.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B270FD11DB7452800218CA3 /* vector_homemade.cpp */; };
 		2B41DA141DC2FD97003A72BA /* exceptionTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B41DA121DC2FD97003A72BA /* exceptionTest.cpp */; };
+		2BDD950F1E5D6D68004DFC02 /* heapsort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2BDD950D1E5D6D68004DFC02 /* heapsort.cpp */; };
+		2BDD95121E6262FC004DFC02 /* shellsort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2BDD95101E6262FC004DFC02 /* shellsort.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +36,10 @@
 		2B270FD21DB7452800218CA3 /* vector_homemade.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_homemade.hpp; sourceTree = "<group>"; };
 		2B41DA121DC2FD97003A72BA /* exceptionTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = exceptionTest.cpp; path = ../exceptionTest.cpp; sourceTree = "<group>"; };
 		2B41DA131DC2FD97003A72BA /* exceptionTest.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = exceptionTest.hpp; path = ../exceptionTest.hpp; sourceTree = "<group>"; };
+		2BDD950D1E5D6D68004DFC02 /* heapsort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = heapsort.cpp; sourceTree = "<group>"; };
+		2BDD950E1E5D6D68004DFC02 /* heapsort.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = heapsort.hpp; sourceTree = "<group>"; };
+		2BDD95101E6262FC004DFC02 /* shellsort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = shellsort.cpp; sourceTree = "<group>"; };
+		2BDD95111E6262FC004DFC02 /* shellsort.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = shellsort.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,10 @@
 				2B18664F1DB7487200114063 /* linkedlist_homemade.hpp */,
 				2B270FD11DB7452800218CA3 /* vector_homemade.cpp */,
 				2B270FD21DB7452800218CA3 /* vector_homemade.hpp */,
+				2BDD950D1E5D6D68004DFC02 /* heapsort.cpp */,
+				2BDD950E1E5D6D68004DFC02 /* heapsort.hpp */,
+				2BDD95101E6262FC004DFC02 /* shellsort.cpp */,
+				2BDD95111E6262FC004DFC02 /* shellsort.hpp */,
 			);
 			path = TowardGoogle;
 			sourceTree = "<group>";
@@ -134,8 +144,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B270FD31DB7452800218CA3 /* vector_homemade.cpp in Sources */,
+				2BDD950F1E5D6D68004DFC02 /* heapsort.cpp in Sources */,
 				2B41DA141DC2FD97003A72BA /* exceptionTest.cpp in Sources */,
 				2B1866501DB7487200114063 /* linkedlist_homemade.cpp in Sources */,
+				2BDD95121E6262FC004DFC02 /* shellsort.cpp in Sources */,
 				2B270FCB1DB7448800218CA3 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
