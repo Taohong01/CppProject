@@ -1,0 +1,591 @@
+import java.util.*;
+import java.lang.String.*;
+public class BinarySearchTreeSolution {
+	
+	public boolean isValidBST(TreeNode root){
+		if (root == null) return true;
+		return isValidBST(root.left) && isValidBST(root.right) && 
+				isSubTreeLessThan(root.left, root.val) 
+				&& isSubTreeGreaterThan(root.right, root.val);
+	}
+	
+	private boolean isSubTreeLessThan(TreeNode p, int val){
+		if (p == null) return true;
+		return (p.val < val) && isSubTreeLessThan(p.left, val)
+				&& isSubTreeLessThan(p.right, val);
+	}
+	
+	private boolean isSubTreeGreaterThan(TreeNode p, int val){
+		if(p == null) return true;
+		return (p.val > val) && isSubTreeGreaterThan(p.left, val)
+				&& isSubTreeGreaterThan(p.right, val);
+	}
+	
+	public boolean isValidBST_2(TreeNode root){
+		if (root == null) return true;
+		return isValid(root, Integer.MIN_VALUE, Integer.MAX_VALUE);
+	}
+	private boolean isValid(TreeNode p, int low, int high){
+		if (p == null) return true;
+		return p.val > low && p.val < high &&
+				isValid(p.left, low, p.val)
+				&& isValid(p.right, p.val, high);
+	}
+
+	
+	private TreeNode prev;
+	public boolean isValidBST3(TreeNode root) {
+	prev = null;
+	   return isMonotonicIncreasing(root);
+	}
+	private boolean isMonotonicIncreasing(TreeNode p) {
+	   if (p == null) return true;
+	   if (isMonotonicIncreasing(p.left)) {
+	      if (prev != null && p.val <= prev.val) return false;
+	      prev = p;
+	      return isMonotonicIncreasing(p.right);
+	}
+	   return false;
+	}
+	
+	
+
+	public static int[] twoSum(int[] nums, int target){
+		Map<Integer, Integer> map = new HashMap<>();
+		for (int i = 0; i < nums.length; i++){
+			if (map.containsKey(target - nums[i])){
+				return new int[]{map.get(target - nums[i])+1, i + 1};
+		}
+		map.put(nums[i], i);
+		System.out.println("add key value pairs");
+		System.out.println(i);
+		
+		}
+		throw new IllegalArgumentException("No two sum solution.");
+	}
+	
+	public static int getMaxDepthBTree(TreeNode root){
+		int maxlevel = traverse(root, 0);	
+		return maxlevel;
+	}
+	
+	private static int traverse(TreeNode p, int level){
+		if (p == null) return level;
+		level += 1;
+		int levelleft = traverse(p.left, level);
+		int levelright = traverse(p.right, level);
+		return (levelleft >= levelright) ? levelleft: levelright;
+	}
+	
+	
+	public static int MaxDepth(TreeNode root){
+		if (root == null) return 0;
+		return Math.max(MaxDepth(root.left), MaxDepth(root.right)) + 1;
+	}
+	
+	public static int MinDepth(TreeNode root){
+		if (root == null) return 0;
+		if (root.left == null) return MinDepth(root.right) + 1;
+		if (root.right == null) return MinDepth(root.left) + 1;
+		return Math.min(MinDepth(root.left), MinDepth(root.right)) + 1;
+	}
+	
+	
+	public static TreeNode buildBTree(){
+		TreeNode a = new TreeNode(1);
+		TreeNode b = new TreeNode(2);
+		TreeNode c = new TreeNode(3);
+		TreeNode d = new TreeNode(4);
+		TreeNode e = new TreeNode(5);
+		TreeNode f = new TreeNode(6);
+		a.left = b;
+		a.right = c;
+		b.left = d;
+		b.right = e;
+		e.right = f;
+		return a;
+	}
+	
+	public int minDepth2(TreeNode root){
+		if (root == null) return 0;
+		Queue<TreeNode> q = new LinkedList<>();
+		q.add(root);
+		TreeNode rightMost = root;
+		int depth = 1;
+		while(!q.isEmpty()){
+			TreeNode node = q.poll();
+			if (node.left == null && node.right == null) break;
+			if (node.left != null) q.add(node.left);
+			if (node.right != null) q.add(node.right);
+			if (node == rightMost){
+				depth++;
+				rightMost = (node.right != null) ? node.right : node.left;
+				
+			}
+		}
+		return depth;
+	}
+	
+	public static int strStr(){
+		return strStr("The skye is very blue yeah", "blue");
+	}
+	public static int strStr(String haystack, String needle){
+		
+		for (int i = 0; ; i++){
+			for (int j = 0; ; j++){
+				//System.out.println(j);
+				if (j == needle.length()) return i;
+				if ((i + j) == haystack.length()) return -1;
+				if (needle.charAt(j) != haystack.charAt(i+j)) break;
+			}
+			//System.out.println("current i is : " + i);
+		}
+	}
+	
+	
+//	public static String reverseStr(String sentence){
+//	String	
+//	}
+	// merge two sorted linkedlist together according to the their value order
+	public static LinkNode merge2LinkedLists(LinkNode rootL, LinkNode rootR){
+		if (rootL == null && rootR == null) return null;
+		if (rootL == null && rootR != null) return rootR;
+		if (rootL != null && rootR == null) return rootL;
+		LinkNode tmp = new LinkNode(0);
+		LinkNode head = tmp;
+		while(rootL != null && rootR != null){
+			if (rootL.getVal() <= rootR.getVal()){
+				tmp.next = rootL;
+				rootL = rootL.next;
+				tmp = tmp.next;
+			}else{
+				tmp.next = rootR;
+				rootR = rootR.next;
+				tmp = tmp.next;
+			}
+		}
+		if(rootL == null && rootR != null){
+			tmp.next = rootR;
+		}
+		if(rootL != null && rootR == null){
+			tmp.next = rootL;
+		}
+		return head.next;
+	}
+	
+	
+	
+	public static void testMerge2SortedLinkedLists(){
+		LinkNode roota = new LinkNode(1);
+		roota.next = new LinkNode(2);
+		roota.next.next = new LinkNode(4);
+		roota.next.next.next = new LinkNode(8);
+		
+		LinkNode rootb = new LinkNode(3);
+		rootb.next = new LinkNode(4);
+		rootb.next.next = new LinkNode(5);
+		rootb.next.next.next = new LinkNode(7);
+		
+		LinkNode mergedlinklist = merge2LinkedLists(roota, rootb);
+		LinkNode tmp;
+		tmp = mergedlinklist;
+		//tmp = roota;
+
+		
+		while (tmp != null){
+			System.out.println(tmp.getVal());
+			tmp = tmp.next;
+		}
+		
+	}
+	
+	
+	public static char[] inverseStr(char[] inputStr){
+		if (inputStr.length < 2) return inputStr;
+		int i = 0;
+		for(int j = 1; j <= inputStr.length - 1; j++){
+			System.out.println("j is " + j);
+			if(Character.isSpace(inputStr[j]) && !Character.isSpace(inputStr[j-1]))
+			{ System.out.println("reverse, j is " + j + " , i is " + i);
+				reverseStr(inputStr, i, j-1);
+				System.out.println(inputStr);
+				
+			}
+			if(!Character.isSpace(inputStr[j]) && Character.isSpace(inputStr[j-1])){
+				System.out.println("reverse, j is " + j + " , i is " + i);
+				i = j;
+			}
+		}
+		return inputStr;
+	}
+	
+	public static char[] reverseStr(char[] s, int start, int end){
+		char tmp;
+		for (int i = 0; i <= (end - start) / 2; i++){
+			tmp = s[start + i];
+			s[start + i] = s[end - i];
+			s[end - i] = tmp;
+		}
+		return s;
+	}
+	
+	
+	public static int convertStr2Num(String inputStr){
+		System.out.println("start convert string to number.");
+		int maxDiv10 = Integer.MAX_VALUE / 10;
+		int result = 0;
+		//check each inputStr.CharAt[i] if is space until not;
+		int i = 0;
+		int s = 1;
+		int n = inputStr.length();
+		while(i < n && Character.isWhitespace(inputStr.charAt(i))) {i++;}
+		//check if the Char is '+' or '-' and then set a variable s as 1 or -1;
+		while(i < n && inputStr.charAt(i) == '+') {s = 1; i++;}
+		while(i < n && inputStr.charAt(i) == '-') {s = -1; i++;}
+		while(Character.isWhitespace(inputStr.charAt(i))) {i++;}
+		// move on check inputStr.ChartAt[i] if is a digit;
+		while(i < n && Character.isDigit(inputStr.charAt(i))) {
+			System.out.println("found digit");
+			int digit = Character.getNumericValue(inputStr.charAt(i));
+			if (result > maxDiv10 || result == maxDiv10 && digit >=8){
+				return s == 1 ? Integer.MAX_VALUE : Integer.MIN_VALUE; 
+			}
+			result = result * 10 + digit;
+			System.out.println("rseult is "+ result);
+			i++;
+		}
+		result = s * result;
+		return result;
+		// if it is a digit, then convert it into an int and calculate the result*10 +  digit
+		// till the end where the inputStr.CharAt[i] becomes not a digit
+		// then check the result if it is larger than Integeter.MaxValue or smaller than Integer.MinValue
+		// and decide which value to return.
+	}
+	
+	
+	//valide palindrome
+	public static boolean isParlindrome(String s){
+		//set two indices for s and scan from two sides toward the center
+		int i = 0, j = s.length() - 1;
+		while (i < j){
+			System.out.println("good 1");
+			while (i != j && !Character.isLetterOrDigit(s.charAt(i))) i++;
+			System.out.println("good 2");
+			while (i != j && !Character.isLetterOrDigit(s.charAt(j))) j--;
+			System.out.println("good 3");
+			if (Character.toLowerCase(s.charAt(i)) == Character.toLowerCase(s.charAt(j))) {
+				i++; 
+				j--;
+				}
+			else{ return false;}
+			System.out.println("good 4");
+		}
+		return true;
+		
+		// move the index toward the center until it hits a letter or digit, otherwise, just keep skipping.
+		// once it hits either letter or number, it stops and wait for the other to hit a letter or number
+		// then compare and see if they are identical either letters or numbers.
+		// if they are different, then return false
+		// else keep scan until they both hits the center or overlap and return true;
+	}
+	
+	
+	
+	
+	
+	public boolean isNumber(String s) {
+		   int i = 0, n = s.length();
+		   while (i < n && Character.isWhitespace(s.charAt(i))) i++;
+		   if (i < n && (s.charAt(i) == '+' || s.charAt(i) == '-')) i++;
+		   boolean isNumeric = false;
+		   while (i < n && Character.isDigit(s.charAt(i))) {
+			   i++;
+			   isNumeric = true;
+		   }
+		   if (i < n && s.charAt(i) == '.') {
+		      i++;
+		      while (i < n && Character.isDigit(s.charAt(i))) {
+		         i++;
+		         isNumeric = true;
+		      }
+		   }
+		   while (i < n && Character.isWhitespace(s.charAt(i))) i++;
+		   return isNumeric && i == n;
+		}
+	
+	public static boolean isNumeric(String s){
+		int i = 0, n = s.length();
+		while (i < n && Character.isWhitespace(s.charAt(i))) i++;
+		if (i < n && (s.charAt(i) == '+' || s.charAt(i) == '-')) {i++;}
+		boolean isNumeric = false;
+		while (i<n && Character.isDigit(s.charAt(i))) {
+			i++;
+			isNumeric = true;
+		}
+		if (i < n && s.charAt(i) == '.') {
+			i++; 
+			while (i<n && Character.isDigit(s.charAt(i))) {
+				i++;
+				isNumeric = true;
+			}	
+		}
+		while (i < n && Character.isWhitespace(s.charAt(i))) i++;
+		return isNumeric && i == n;
+	}
+	
+	//Longest Substring Without Repeating Characters:
+	//what parameter we have, an input String, s,
+	//return will be an int length of the longest nonrepeat substring
+	public static int lengthMaxNonrepeatSubStr(String s){
+		int maxLen = 0;
+		int i = 0;
+		int[] charMap = new int[256];
+		Arrays.fill(charMap, -1);
+		// assuming all characters are lower case, or upper doesn't equivalent to lower case. 
+	 // make a loop with some condition,say, scan j from 0 to n all the way by j++
+		for (int j = 0; j < s.length(); j++){	 
+			if (charMap[s.charAt(j)] >= i){	
+				i = charMap[s.charAt(j)] + 1;
+			}
+			charMap[s.charAt(j)] = j;
+			maxLen = Math.max(maxLen, j - i + 1);
+		}
+		return maxLen;
+		//open a new dict for temp use.
+		//set i = 0, j = 0, scan s from 0, and check if each character already in the a temperory dict ('a', index)
+		// if not in the dict, just add it to the dict and move to the next j by j++
+		// until hit a point where we see the charAt(j) is in the dict and then we take the 
+		// substring out and check its length and see if it is larger than the previous recorded substring length,
+		// it is larger, then update, if it is not just skip. and flush the dict so that
+		
+		// once j reach the end of s. we just return the largest substring lenght back.
+	}
+	
+	public static int getLongestSubstrWithMost2DistChars(String s){
+		int n = s.length();
+		int i = 0, j = -1;
+		int maxLen = 0;
+		// scan k from the beginning of the s, all the way to the end
+		for (int k = 1; k < n; k++){
+			if (s.charAt(k) == s.charAt(k-1)){ continue;}
+			if (j >= 0 && s.charAt(j) != s.charAt(k)){
+				maxLen = Math.max(k - i, maxLen);
+				i = j + 1; // if k char change, and j was following k, then it means the string is ending 
+				           // we need to change the value of i to the new start of a string.
+				
+			}
+			j = k - 1; // when eeee, k keep increasing, and j will lag behind, but as soon as k change, 
+			           //j will jump up next to k, i.e. k-1.  
+		}
+		return Math.max(s.length() - i, maxLen);
+	}
+	// range of elements are [0, 99] inclusive
+	//[0, 1, 3, 50, 75], return [“2”, “4->49”, “51->74”, “76->99”]
+	public static List<String> missingRanges(int[] intList){
+		List<String> rangeList = new ArrayList<>();
+		if (intList.length == 0) {rangeList.add("0 -> 99"); return rangeList;}
+		if (intList.length == 100) {
+			return rangeList;
+		}
+		if (intList[0] > 0) {rangeList.add(rangeStr(0, intList[0]));}
+		int start, end;
+		for (int i = 0; i < intList.length - 1; i++){
+			if (intList[i] + 1 == intList[i + 1]) continue;
+			start = intList[i] + 1;
+			end = intList[i+1] - 1;
+			rangeList.add(rangeStr(start, end));
+		}
+		if (intList[intList.length -1] < 99) {rangeList.add(rangeStr(intList[intList.length -1] + 1, 99));}
+		return rangeList;
+		/*
+		 * if the first element is 0, 
+		 * then we need to check the second element see if it is 1 
+		 * and next if next one is 2, i.e., if next element is num[i] + 1== num[i+1]
+		 * until it voilate this relationship, then we should take num[i] + 1 as a start 
+		 * and num[i]-1 as an end of the range to generate a string and add the string to
+		 * the ArrayList
+		 * then we should repeat the check with num[i+1] to its next element, until the last one;
+		 * then check num[n-1] if smaller than 99. if it is we will get a range (num[n-1]+1, 99)
+		 */
+		
+		
+	}
+	public static String rangeStr(int from, int to){
+		return (from == to) ? String.valueOf(from) : from + " -> " + to;
+	}
+	
+	
+	public static String findLongestPalindrome(String s){
+		int len1 = 0, len2 = 0, Len = 0;
+		int start = 0, end = 0;
+		for (int i = 0; i < s.length(); i++){
+			len1 = expandPalindrome(s, i, i);
+			len2 = expandPalindrome(s, i, i + 1);
+			Len = Math.max(len1, len2);
+			if (Len > end - start){
+				start = i - (Len - 1) / 2;
+				end = i + Len / 2;
+			}
+		}
+		return s.substring(start, end + 1);
+	}
+	
+	public static int expandPalindrome(String s, int left, int right){
+		while( left >= 0 && right < s.length() && s.charAt(left) == s.charAt(right)){
+			left--;
+			right++;
+		}
+		return right - left - 1;
+	}
+	
+	
+	public static boolean isOneEditDistance(String s, String t){
+		int m = s.length(), n = t.length();
+		if (m > n) return isOneEditDistance(t, s);
+		if (n - m > 1) return false;
+		int i = 0, shift = n - m;
+		while (i < m && s.charAt(i) == t.charAt(i)) i++;
+		if (i == m) return shift > 0;
+		if (shift == 0) i++;
+		while (i < m && s.charAt(i) == t.charAt(i + shift)) i++;
+		return i == m;
+	}
+	
+	
+	public static int reverseInt(int num){
+		
+		/*
+		 * divide the num by 10 if it is larger than 1 then
+		 * we should continue
+		 */
+		int result = 0;
+		while (num != 0){
+			if (Math.abs(num) > 214748364){
+				return 0;
+			}
+			result = result * 10 + num % 10; 
+			num /= 10;
+		}
+		return result;
+	}
+	
+	public static void plusOne(List<Integer> digits){
+		int n = digits.size();
+		for (int i = n - 1; i >= 0; i--){
+			int digit = digits.get(i);
+			System.out.println("digit is " + digit);
+			if (digit < 9){
+				digits.set(i, digit + 1);
+				return;
+			}
+			else if (digit == 9){
+				digits.set(i, 0);
+			}
+		}
+		
+		digits.add(0, 1);
+		//digits.set(0, 1);
+		
+	}
+	
+	public static boolean isPalindrome(int x){
+		int div = 1;
+		while (x/10 > 10){
+			div *= 10;
+		}
+		while (x != 0){
+			int l = x / div;
+			int r = x % 10;
+			if (l != r) return false;
+			x = (x - l * div - r) / 10;
+			div /= 100;
+		}
+		return true;
+	}
+	
+	
+	
+	//public boolean isValidBST()
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("hello World!");
+		TreeNode tn = new TreeNode(10);
+		System.out.println(tn.val);
+		System.out.println("complete!");
+		int[] arr = {1, 5, 6, 10, 8, 9, 15};
+		int[] result =  BinarySearchTreeSolution.twoSum(arr, 13);
+		System.out.println(result[0]);
+		System.out.println(result[1]);
+		
+		
+		TreeNode root;
+		root = buildBTree();
+		int maxD = getMaxDepthBTree(root);
+		int maxD2nd = MaxDepth(root);
+		int minD = MinDepth(root);
+		System.out.println("maximum depth of the btree is: ");
+		System.out.println(maxD);
+		System.out.println(maxD2nd);
+		System.out.println(minD);
+		System.out.println("string match:");
+		System.out.println(strStr());
+		
+		System.out.println("test merging two linked lists:");
+		testMerge2SortedLinkedLists();
+		
+		char mystring[] = "i am coming hello world".toCharArray();
+		reverseStr(mystring, 0, mystring.length - 1);
+		System.out.println(mystring);
+		
+		inverseStr(mystring);
+		System.out.println(mystring);
+		
+		String s = "   -129939";
+		System.out.println(s + " is " + convertStr2Num(s));
+		
+		String ss = "A man, , a, i plan, a canal: Panama";
+		System.out.println("the sentence is a palindrome: " + isParlindrome(ss));
+
+		System.out.println("is Numeric?  : " + isNumeric("    -1.03321"));
+		
+		String sss = "aaaabcdeeeeefghijk";
+		System.out.println("longest nonrepeated substring is : " + lengthMaxNonrepeatSubStr(sss));
+		
+		
+		System.out.println(rangeStr(10, 10));
+		
+		int[] arr2 = new int[]{0, 1,2,3, 5, 6, 99};
+		List<String> ranges = missingRanges(arr2);
+		System.out.println(ranges);
+		
+		System.out.println(findLongestPalindrome("abccbaadda"));
+		
+		System.out.println(reverseInt(123));
+		System.out.println(2^4);
+		
+		List<Integer> arr3 = new ArrayList<Integer>(Arrays.asList(8, 9, 9));
+		plusOne(arr3);
+		System.out.println(arr3);
+		
+		
+		System.out.println("is it palindrome : " + isPalindrome(123));
+	}
+
+}
+/*
+int[] charMap = new int[256];
+Arrays.fill(charMap, -1);
+String s;
+s.length();
+continue;
+List<String> rangeList = new ArrayList<>();
+
+List<Integer> list = new ArrayList<Integer>(Arrays.asList(1, 2, 3));
+list.add(index, value);// insert at the index and shift from there to the right.
+list.set(index, value);
+list.get(index);
+
+*
+*
+*
+*/

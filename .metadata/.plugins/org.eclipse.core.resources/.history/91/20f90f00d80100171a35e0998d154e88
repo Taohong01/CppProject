@@ -1,0 +1,233 @@
+import java.util.*;
+import java.lang.String.*;
+public class BinarySearchTreeSolution {
+	
+	public boolean isValidBST(TreeNode root){
+		if (root == null) return true;
+		return isValidBST(root.left) && isValidBST(root.right) && 
+				isSubTreeLessThan(root.left, root.val) 
+				&& isSubTreeGreaterThan(root.right, root.val);
+	}
+	
+	private boolean isSubTreeLessThan(TreeNode p, int val){
+		if (p == null) return true;
+		return (p.val < val) && isSubTreeLessThan(p.left, val)
+				&& isSubTreeLessThan(p.right, val);
+	}
+	
+	private boolean isSubTreeGreaterThan(TreeNode p, int val){
+		if(p == null) return true;
+		return (p.val > val) && isSubTreeGreaterThan(p.left, val)
+				&& isSubTreeGreaterThan(p.right, val);
+	}
+	
+	public boolean isValidBST_2(TreeNode root){
+		if (root == null) return true;
+		return isValid(root, Integer.MIN_VALUE, Integer.MAX_VALUE);
+	}
+	private boolean isValid(TreeNode p, int low, int high){
+		if (p == null) return true;
+		return p.val > low && p.val < high &&
+				isValid(p.left, low, p.val)
+				&& isValid(p.right, p.val, high);
+	}
+
+	
+	private TreeNode prev;
+	public boolean isValidBST3(TreeNode root) {
+	prev = null;
+	   return isMonotonicIncreasing(root);
+	}
+	private boolean isMonotonicIncreasing(TreeNode p) {
+	   if (p == null) return true;
+	   if (isMonotonicIncreasing(p.left)) {
+	      if (prev != null && p.val <= prev.val) return false;
+	      prev = p;
+	      return isMonotonicIncreasing(p.right);
+	}
+	   return false;
+	}
+	
+	
+
+	public static int[] twoSum(int[] nums, int target){
+		Map<Integer, Integer> map = new HashMap<>();
+		for (int i = 0; i < nums.length; i++){
+			if (map.containsKey(target - nums[i])){
+				return new int[]{map.get(target - nums[i])+1, i + 1};
+		}
+		map.put(nums[i], i);
+		System.out.println("add key value pairs");
+		System.out.println(i);
+		
+		}
+		throw new IllegalArgumentException("No two sum solution.");
+	}
+	
+	public static int getMaxDepthBTree(TreeNode root){
+		int maxlevel = traverse(root, 0);	
+		return maxlevel;
+	}
+	
+	private static int traverse(TreeNode p, int level){
+		if (p == null) return level;
+		level += 1;
+		int levelleft = traverse(p.left, level);
+		int levelright = traverse(p.right, level);
+		return (levelleft >= levelright) ? levelleft: levelright;
+	}
+	
+	
+	public static int MaxDepth(TreeNode root){
+		if (root == null) return 0;
+		return Math.max(MaxDepth(root.left), MaxDepth(root.right)) + 1;
+	}
+	
+	public static int MinDepth(TreeNode root){
+		if (root == null) return 0;
+		if (root.left == null) return MinDepth(root.right) + 1;
+		if (root.right == null) return MinDepth(root.left) + 1;
+		return Math.min(MinDepth(root.left), MinDepth(root.right)) + 1;
+	}
+	
+	
+	public static TreeNode buildBTree(){
+		TreeNode a = new TreeNode(1);
+		TreeNode b = new TreeNode(2);
+		TreeNode c = new TreeNode(3);
+		TreeNode d = new TreeNode(4);
+		TreeNode e = new TreeNode(5);
+		TreeNode f = new TreeNode(6);
+		a.left = b;
+		a.right = c;
+		b.left = d;
+		b.right = e;
+		e.right = f;
+		return a;
+	}
+	
+	public int minDepth2(TreeNode root){
+		if (root == null) return 0;
+		Queue<TreeNode> q = new LinkedList<>();
+		q.add(root);
+		TreeNode rightMost = root;
+		int depth = 1;
+		while(!q.isEmpty()){
+			TreeNode node = q.poll();
+			if (node.left == null && node.right == null) break;
+			if (node.left != null) q.add(node.left);
+			if (node.right != null) q.add(node.right);
+			if (node == rightMost){
+				depth++;
+				rightMost = (node.right != null) ? node.right : node.left;
+				
+			}
+		}
+		return depth;
+	}
+	
+	public static int strStr(){
+		return strStr("The skye is very blue yeah", "blue");
+	}
+	public static int strStr(String haystack, String needle){
+		
+		for (int i = 0; ; i++){
+			for (int j = 0; ; j++){
+				//System.out.println(j);
+				if (j == needle.length()) return i;
+				if ((i + j) == haystack.length()) return -1;
+				if (needle.charAt(j) != haystack.charAt(i+j)) break;
+			}
+			//System.out.println("current i is : " + i);
+		}
+	}
+	
+	
+//	public static String reverseStr(String sentence){
+//	String	
+//	}
+	// merge two sorted linkedlist together according to the their value order
+	public static LinkNode merge2LinkedLists(LinkNode rootL, LinkNode rootR){
+		if (rootL == null && rootR == null) return null;
+		if (rootL == null && rootR != null) return rootR;
+		if (rootL != null && rootR == null) return rootL;
+		LinkNode tmp = new LinkNode(0);
+		LinkNode head = tmp;
+		while(rootL != null && rootR != null){
+			if (rootL.getVal() >= rootR.getVal()){
+				tmp.next = rootL;
+				rootL = rootL.next;
+				tmp = tmp.next;
+			}else{
+				tmp.next = rootR;
+				rootR = rootR.next;
+				tmp = tmp.next;
+			}
+		}
+		if(rootL == null && rootR != null){
+			tmp.next = rootR;
+		}
+		if(rootL != null && rootR == null){
+			tmp.next = rootL;
+		}
+		return head.next;
+	}
+	
+	
+	
+	public static void testMerge2SortedLinkedLists(){
+		LinkNode roota = new LinkNode(1);
+		roota.next = new LinkNode(2);
+		roota.next.next = new LinkNode(4);
+		roota.next.next.next = new LinkNode(8);
+		
+		LinkNode rootb = new LinkNode(3);
+		rootb.next = new LinkNode(4);
+		rootb.next.next = new LinkNode(5);
+		rootb.next.next.next = new LinkNode(7);
+		
+		LinkNode mergedlinklist = merge2LinkedLists(roota, rootb);
+		LinkNode tmp;
+		//tmp = mergedlinklist;
+		tmp = roota;
+
+		
+		while (tmp != null){
+			System.out.println(tmp.getVal());
+			tmp = tmp.next;
+		}
+		
+	}
+	
+	
+	//public boolean isValidBST()
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("hello World!");
+		TreeNode tn = new TreeNode(10);
+		System.out.println(tn.val);
+		System.out.println("complete!");
+		int[] arr = {1, 5, 6, 10, 8, 9, 15};
+		int[] result =  BinarySearchTreeSolution.twoSum(arr, 13);
+		System.out.println(result[0]);
+		System.out.println(result[1]);
+		
+		
+		TreeNode root;
+		root = buildBTree();
+		int maxD = getMaxDepthBTree(root);
+		int maxD2nd = MaxDepth(root);
+		int minD = MinDepth(root);
+		System.out.println("maximum depth of the btree is: ");
+		System.out.println(maxD);
+		System.out.println(maxD2nd);
+		System.out.println(minD);
+		System.out.println("string match:");
+		System.out.println(strStr());
+		
+		System.out.println("test merging two linked lists:");
+		testMerge2SortedLinkedLists();
+
+	}
+
+}

@@ -401,8 +401,286 @@ void testSolutionFor2Sum(){
 }
 
 
+//class TwoSum{
+//    
+//private:
+//    map<int, int> table; // = new map<int, int>();
+//    
+//public:
+//    void add( int input){
+//        int count = (table.find(input) != table.end()) ? table.count(input) : 0;
+//        table[input] = count + 1;
+//    }
+//    
+//    
+//    bool find(int val){
+//        for (map<int, int>){
+//            
+//        }
+//    }
+//};
 
 
+
+//Given a number represented as an array of digits, plus one to the number.
+
+class PlusOneSolution{
+public:
+    vector<int> plusOne(vector<int> &digits){
+        add(digits, 1);
+        return digits;
+    }
+private:
+    //assuming 0 <= digit <= 9
+    void add(vector<int> &digits, int digit){
+        int c = digit;
+        for ( auto it = digits.rbegin(); it != digits.rend(); ++it){
+            cout << "iterator it : " << *it << endl;
+            *it += c;
+            c = *it / 10;
+            *it %= 10;
+            cout << "final iterator it : " << *it << endl;
+            
+        }
+        if (c > 0){
+            digits.insert(digits.begin(), 1);
+        }
+    }
+};
+
+void testPlusOneSolution(){
+    vector<int> arr = {9,9,9};
+    vector<int> result;
+    PlusOneSolution p1s;
+    result = p1s.plusOne(arr);
+    for(auto it = result.begin(); it != result.end(); it++){
+        cout << "digit : " << *it << endl;
+    }
+}
+
+class ClimbingStairsSolution{
+public:
+    int climbStairs(int n){
+        int prev = 0;
+        int cur = 1;
+        for (int i = 1; i <= n; i++){
+            int tmp = cur;
+            cur += prev;
+            prev = tmp;
+        }
+        return cur;
+    }
+};
+
+void testClimbingSolution(){
+    ClimbingStairsSolution clss;
+    cout << "climbing stairs: "<<clss.climbStairs(10) << endl;
+}
+
+
+// binary tree:
+struct TreeNode{
+    int val;
+    TreeNode *left;
+    TreeNode *right;
+    TreeNode(int x) : val(x), left(nullptr), right(nullptr){}
+};
+//#include <stack>
+//class binaryTreePreorderSolution{
+//public:
+//    vector<int> preorderTraversal(TreeNode *root){
+//        vector<int> result;
+//        stack<const TreeNode *> s;
+//        if (root != nullptr) s.push(root);
+//        
+//        while (!s.empty()){
+//            const TreeNode *p = s.top();
+//            s.pop();
+//            result.push_back(p->val);
+//            
+//            if (p->right != nullptr) s.push(p->right);
+//            if (p->left != nullptr) s.push(p->left);
+//        }
+//        return result;
+//    }
+//};
+
+#include <stack>
+class binaryTreePreorderSolution2{
+public:
+    vector<int> preorder(TreeNode *root){
+        vector<int> result;
+        stack<const TreeNode *> s;
+        if(root != nullptr) s.push(root);
+        cout << "s top is " << s.top();
+        cout << "s top is a TreeNode pointer" << endl;
+        cout << "find out what it points to " << s.top()->val << endl;
+        cout << "therefore s.top points to the root " << endl;
+        
+        
+        
+        while(!s.empty()){
+            const TreeNode *p = s.top();
+            // make the pointer pointing to the top of the stack all the time
+            s.pop();// then pop it off, so nothing left in the stack
+            cout << "we just excuted s.pop() and now let see where s.top is pointing to by using s.top()->val. As a result we see error, which means there is no more TreeNode exist on the top of stack, however, before we pop the stack, we already pass the top pointer of the stack to TreeNode pointer p, so it is still memorized by p, we therefore can still use p to find the root TreeNode and extract the value from there." << endl;
+            
+            result.push_back(p->val);// we therefore extract the root TreeNode value and push it into the vector array. then we push the right node and then the left nodes of the root TreeNode into the stack and repeat the process for another iteration.
+            if (p->right != nullptr) s.push(p->right);
+            if (p->left != nullptr) s.push(p->left);
+        }
+        return result;
+
+    }
+    
+};
+
+class preorderMorrisSolution{
+public:
+    vector<int> preorderTraversal(TreeNode * root){
+        vector<int> result;
+        TreeNode * cur = root, * pre = nullptr;
+        while (cur != nullptr){
+            if (cur->left == nullptr){
+                result.push_back(cur->val);
+                pre = cur;
+                cur = cur->right;
+            }else{
+                TreeNode *node = cur->left;
+                while (node->right != nullptr && node->right != cur){
+                    node = node->right;
+                }
+            }
+        }
+        
+        
+        
+        return result;
+    }
+};
+
+
+
+class postorderTraversalSolution{
+public:
+    vector<int> postorderTraversal(TreeNode * root){
+        vector<int> result;
+        stack<const TreeNode *> s;
+        /* p, currunt vist, q past vist*/
+        const TreeNode *p = root, *q = nullptr;
+        
+        do{
+            while (p != nullptr){
+                s.push(p);
+                p = p->left;
+            }
+            q = nullptr;
+            while (!s.empty()){
+                p = s.top();
+                s.pop();
+                /* right child not exist or already visted, visit*/
+                if (p->right == q){
+                    result.push_back(p->val);
+                    q = p; /*save visted node*/
+                }else{
+                    /*current node can't be visted, needs second into stak*/
+                    s.push(p);
+                    /*first process right child*/
+                    p = p->right;
+                    break;
+                }
+            }
+        }while(!s.empty());
+        
+        return result;
+    }
+};
+
+struct TNode{
+    int val;
+    TNode *left;
+    TNode *right;
+    TNode(int x):val(x), left(nullptr), right(nullptr){};
+};
+
+// treverse a binary tree and get the value of each node and return
+// in an order following the traverse order. The input will be the root
+// node of a binary tree and return will be an array of values of the nodes.
+#include <stack>
+class preorderTNodeSolution{
+public:
+    vector<int> preorder(TNode * root){
+        vector<int> result;
+        stack<const TNode *> s;
+        if(root != nullptr) s.push(root);
+        
+        while (!s.empty()){
+            const TNode *p = s.top();
+            s.pop();
+            result.push_back(p->val);
+            if (p->right != nullptr) s.push(p->right);
+            if (p->left != nullptr) s.push(p->left);
+            
+        }
+        return result;
+    }
+};
+
+
+
+
+
+
+void testBinaryPreorderSolution(){
+    binaryTreePreorderSolution2 btp;
+    preorderTNodeSolution potn;
+    TreeNode* A, *B, *C, *D;
+    A = new TreeNode(10);
+    B = new TreeNode(1);
+    C = new TreeNode(2);
+    D = new TreeNode(3);
+    
+    A->left = B;
+    A->right = C;
+    B->left = D;
+    
+    vector<int> results;
+    results = btp.preorder(A);
+    for (auto r: results){
+        cout << r << " ";
+        cout << endl;
+    };
+    
+    
+    TNode* a, *b, *c, *d, *e, *f, *g, *h, *i, *j;
+    a = new TNode(10);
+    b = new TNode(1);
+    c = new TNode(2);
+    d = new TNode(3);
+    e = new TNode(4);
+    f = new TNode(5);
+    g = new TNode(6);
+    h = new TNode(7);
+    i = new TNode(8);
+    j = new TNode(9);
+    a->left = b;
+    a->right = c;
+    b->right = d;
+    b->left = e;
+    c->left = f;
+    c->right = g;
+    g->left = h;
+    h->left = i;
+    h->right = j;
+    
+    vector<int> results2;
+    results2 = potn.preorder(a);
+    for (auto r: results2){
+        cout << r << " ";
+        cout << endl;
+    };
+    
+}
 
 int main(int argc, const char * argv[]){
     
@@ -424,6 +702,9 @@ int main(int argc, const char * argv[]){
     //searchRotateArraySolutionTest();
     //testMap();
     testSolutionFor2Sum();
+    testPlusOneSolution();
+    testClimbingSolution();
+    testBinaryPreorderSolution();
         
     return 0;
 }
