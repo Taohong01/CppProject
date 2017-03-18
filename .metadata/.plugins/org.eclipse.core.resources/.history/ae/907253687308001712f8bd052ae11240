@@ -1,0 +1,6 @@
+
+public interface operators {
+	public int eval(int x, int y);
+}
+
+

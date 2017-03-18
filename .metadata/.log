@@ -9516,3 +9516,6 @@ Binding(ALT+CTRL+P,
 
 !ENTRY org.eclipse.core.net 1 0 2017-03-05 21:41:19.185
 !MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2017-03-13 09:43:40.096
+!MESSAGE No repository found at https://maven.apache.org/plugins/maven-eclipse-plugin/.

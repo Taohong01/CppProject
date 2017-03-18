@@ -272,6 +272,7 @@ public class BinarySearchTreeSolution {
 	   parent.right = sortedListToBST(mid+1, end);
 	   return parent;
 	}
+	
 	public static TreeNode sortedListToBST(LinkNode head) {
 	   int n = 0;
 	   LinkNode p = head;
@@ -296,6 +297,552 @@ public class BinarySearchTreeSolution {
 		for (int i = 0; i < nodes.size(); i++){
 			System.out.println(nodes.get(i));
 		}
+	}
+	
+	// find max sum of all the a binary tree path
+	// TreeNode, start from a root node of the tree
+	private static int maxSum;
+	public static int maxSumOfAllPaths(TreeNode root){
+		// make the basis case is met
+		// find left max, find right max and make combinations
+		// find the final max and return the value
+		
+		maxSum = Integer.MIN_VALUE;
+		findMaxPath(root);
+		return maxSum;
+	}
+	public static int findMaxPath(TreeNode p){
+		if (p == null) return 0;
+		int maxL = maxSumOfAllPaths(p.left);
+		int maxR = maxSumOfAllPaths(p.right);
+		int ret = p.val + Math.max(maxL, maxR);
+		maxSum = Math.max(maxL + p.val + maxR, maxSum);
+		return (ret > 0) ? ret : 0;
+	}
+	
+	public static TreeNode rotateBTUpsideDown(TreeNode root){
+		TreeNode p = root, pp = null, pr = null;
+		while (p != null){
+			TreeNode pl = p.left;
+			p.left = pr;
+			pr = p.right;
+			p.right = pp;
+			pp = p;
+			p = pl;
+		}
+		return pp;
+	}
+	
+	public static void testRotateBTUpsideDown(){
+		System.out.println("test rotate BT upside down");
+		TreeNode a = new TreeNode(0);
+		a.left = new TreeNode(1);
+		a.right = new TreeNode(2);
+		a.left.left = new TreeNode(3);
+		a.left.right = new TreeNode(4);
+		a.left.left.left = new TreeNode(5);
+		a.left.left.right = new TreeNode(6);
+		TreeNode b = rotateBTUpsideDown(a);
+		List<Integer> treenodes = preorderTraversal(b);
+		for (int i = 0; i < treenodes.size(); i++){
+			System.out.println(treenodes.get(i));
+		}
+	}
+	
+	
+	public static TreeNode rotateBTreeFromBottomUp(TreeNode root){
+		return rotate(root, null);
+	}
+	
+	public static TreeNode rotate(TreeNode p, TreeNode parent){
+		if (p == null) return parent; 
+		TreeNode root = rotate(p.left, p);
+		p.left = (parent == null) ? parent : parent.right;
+		p.right = parent;
+		return root;
+		
+		
+	}
+	
+	public static int findSingleNumber(int[] nums){
+		//if (nums.length <= 0) return 0;
+		Map<Integer, Integer> map = new HashMap<>();
+		for (int i = 0; i < nums.length; i++){
+			if (!map.containsKey(nums[i])){
+				map.put(nums[i], i);
+				System.out.println(map.get(nums[i]));
+			}
+			else{
+				System.out.println("remove number" + nums[i]);
+				System.out.println("remove" + map.get(nums[i]));
+				map.remove(nums[i]);
+			}
+		}
+		for (int i = 0; i < nums.length; i++){
+			if (map.containsKey(nums[i])){
+				return nums[i];
+			}
+			//return 0;
+		}
+		return -1;
+	}
+	
+	
+	public static void testFindSingleNumber(){
+		System.out.println("test finding single number:");
+		int[] nums = {1, 2, 4, 3, 2, 3,  1};
+		System.out.println("Single number is " + findSingleNumber(nums));
+		int[] nums1 = {1, 1, 2, 2, 999, 3, 3, 2, 3,  1};
+		System.out.println("Single number is " + findSingleNumberUsingBits(nums1));
+	}
+	
+	
+	
+	
+	
+	public static int findSingleNumberUsingHashSet(int[] nums){
+		Set<Integer> numset = new HashSet<>();
+		for (int x : nums){
+			if (!numset.contains(x)){
+				numset.add(x);
+			}
+			else{
+				numset.remove(x);
+			}
+		}
+		return numset.iterator().next();
+	}
+	
+	
+	public static void testXOROperator(){
+		System.out.println("test xor operator");
+		System.out.println(5^6);
+		int h = 3;
+		System.out.println((h >> 1)&1);
+
+	}
+	
+	
+	public static int findSingleNumberUsingBits(int[] nums){
+		System.out.println("find single number using bits:");
+		int result = 0;
+		for (int i = 0; i < 32; i++){
+			int counter = 0;
+			for (int j = 0; j < nums.length; j++){
+				int num = nums[j];
+				if (((num >> i) & 1) == 1){
+					counter++;
+				}
+			}
+			result |= (counter % 3) << i;
+		}
+		return result;
+		
+	}
+	
+	public static List<Integer> spiralMatrix(int[][] A){
+		List<Integer> result = new ArrayList<Integer>();
+		int m = A.length, n = A[0].length + 1;
+		int row = 0, col = -1;
+		while (true){
+			if (--n == 0) break;
+			for (int i = 0; i < n; i++){
+				result.add(A[row][++col]);
+			}
+			if (--m == 0) break;
+			for (int j = 0; j < m; j++){
+				result.add(A[++row][col]);
+			}
+			if (--n == 0) break;
+			for (int i = 0; i < n; i++){
+				result.add(A[row][--col]);
+			}
+			if (--m == 0) break;
+			for (int j = 0; j < m; j++){
+				result.add(A[--row][col]);
+			}
+		}
+		return result;
+	}
+	
+	public static void testSpiralMatrix(){
+		System.out.println("Test spiral matrix:");
+		int[][] A = {{1,2,3},{4,5,6},{7,8,9}};
+		List<Integer> list = spiralMatrix(A);
+		for (int i = 0; i < list.size(); i++){
+			System.out.println("spiral : " + list.get(i) );
+		}
+	}
+	
+	private static final String[] symbols ={
+			"M", "CM", "D", "CD",
+			"C", "XC", "L", "XL",
+			"X", "IX", "V", "IV",
+			"I"
+	};
+	
+	private static final int[] values ={
+			1000, 900, 500, 400,
+			100,  90,  50,  40,
+			10,   9,   5,   4,
+			1
+	};
+	
+	public static String numeral2Roman(int num){
+		StringBuilder s = new StringBuilder();
+		int i = 0;
+		while (num > 0){
+			int k = num / values[i];
+			for (int j = 0; j < k; j++){
+				s.append(symbols[i]);
+				num -= values[i];
+			}
+			i++;
+		}
+		return s.toString();
+	}
+	
+	public static void testNumeral2Roman(){
+		int num = 2615;
+		System.out.println("test numeral to Roman:");
+		System.out.println(num + "  -> " +numeral2Roman(num));
+		String roman = "MMDCXIVI";
+		System.out.println(roman + " Roman to numeral is :" +
+		roman2numeral(roman));
+	}
+	
+	
+	public static int roman2numeral(String roman){
+		Map<Character, Integer> map = 
+				new HashMap<Character, Integer>(){{
+			put('I', 1); put('V', 5); put('X', 10);
+			put('L', 50); put('C', 100); put('D', 500);
+			put('M', 1000);
+		}};
+		int prev = 0, total = 0;
+		for (char c : roman.toCharArray()){
+			int curr = map.get(c);
+			total += (curr > prev) ? (curr - 2 * prev) : curr;
+			prev = curr;
+		}
+		return total;
+		
+		
+	}
+	
+	public static DirectedGraphNode testBuildDirectedGraph(){
+		DirectedGraphNode a = new DirectedGraphNode(0);
+		DirectedGraphNode b = new DirectedGraphNode(1);
+		DirectedGraphNode c = new DirectedGraphNode(4);
+		DirectedGraphNode d = new DirectedGraphNode(6);
+		a.neigbors.add(b);
+		a.neigbors.add(new DirectedGraphNode(2));
+		a.neigbors.add(new DirectedGraphNode(3));
+		b.neigbors.add(c);
+		b.neigbors.add(d);
+		d.neigbors.add(c);
+		c.neigbors.add(a);
+		c.neigbors.add(new DirectedGraphNode(5));
+		System.out.println("Directed Graph Example:" + a.label + "-> "
+				+ a.neigbors.get(0).label + " -> "
+				+ a.neigbors.get(0).neigbors.get(0).label +"->"
+				+ a.neigbors.get(0).neigbors.get(0).neigbors.get(0).label
+				);
+		return a;
+	}
+	
+	public static Set<DirectedGraphNode> traversedNodeSet = new HashSet<>();
+	public static List<Integer> traverseDirectedGraph(DirectedGraphNode start){
+		List<Integer> result = new ArrayList<Integer>();
+		
+		if ((start == null))return result;
+		result.add(start.label);
+		traversedNodeSet.add(start);
+		
+		if (start.neigbors.isEmpty()){
+			return result;
+		}
+		else{
+			for (DirectedGraphNode node : start.neigbors){
+				if (!traversedNodeSet.contains(node)){
+					traversedNodeSet.add(node);
+					result.addAll(traverseDirectedGraph(node));
+				}	
+			}
+		return result;
+		}
+	}
+	
+	public static void testTraverseDirectedGraph(){
+		System.out.println("traverse directed graph:");
+		DirectedGraphNode graph = testBuildDirectedGraph();
+		List<Integer> gnodelist = traverseDirectedGraph(graph);
+		for (int i = 0; i < gnodelist.size(); i++){
+			
+			System.out.println("graph node label: " + gnodelist.get(i));
+		}
+		
+	}
+	
+	public static Set<UndirectedGraphNode> UndirectedGraphNodeSet = new HashSet<UndirectedGraphNode>();
+	public static Map<UndirectedGraphNode, UndirectedGraphNode>gmap = new HashMap<>();
+	public static UndirectedGraphNode 
+	croneUndirectedGraph(UndirectedGraphNode p){
+		UndirectedGraphNode croneNode = null;
+		if (p == null) return croneNode;
+		if (UndirectedGraphNodeSet.contains(p)) return gmap.get(p);
+		UndirectedGraphNodeSet.add(p); 
+		croneNode = new UndirectedGraphNode(p.label);
+		gmap.put(p,croneNode);
+		if (p.neigbors.isEmpty()) return croneNode; 
+		for (UndirectedGraphNode node : p.neigbors){
+			croneNode.neigbors.add(croneUndirectedGraph(node));		
+		}
+		return croneNode;
+	}
+	
+	
+	public static UndirectedGraphNode testBuildUndirectedGraph(){
+		UndirectedGraphNode a = new UndirectedGraphNode(0);
+		UndirectedGraphNode b = new UndirectedGraphNode(1);
+		UndirectedGraphNode c = new UndirectedGraphNode(4);
+		UndirectedGraphNode d = new UndirectedGraphNode(6);
+		a.neigbors.add(b);
+		a.neigbors.add(new UndirectedGraphNode(2));
+		a.neigbors.add(new UndirectedGraphNode(3));
+		b.neigbors.add(c);
+		b.neigbors.add(d);
+		d.neigbors.add(c);
+		c.neigbors.add(a);
+		c.neigbors.add(new UndirectedGraphNode(5));
+		System.out.println("Directed Graph Example:" + a.label + "-> "
+				+ a.neigbors.get(0).label + " -> "
+				+ a.neigbors.get(0).neigbors.get(0).label +"->"
+				+ a.neigbors.get(0).neigbors.get(0).neigbors.get(0).label
+				);
+		return a;
+	}
+	
+	public static void testCroneUndirectedGraph(){
+		System.out.println("crone undirected graph:");
+		UndirectedGraphNode graph = testBuildUndirectedGraph();
+		UndirectedGraphNode croneGraph = croneUndirectedGraph(graph);
+		System.out.println("graph node label: " + graph.neigbors.get(0).neigbors.get(0).neigbors.get(1) + "  address: " + graph);
+		System.out.println("croneGraph node label: " + croneGraph.neigbors.get(0).neigbors.get(0).neigbors.get(1) + "  address: " + croneGraph);
+	}
+	
+	
+	
+	public static void testMinStack(){
+		System.out.println("test minstack: ");
+		MinStack myMinStack = new MinStack();
+		myMinStack.push(5);
+		System.out.println(myMinStack.getMin());
+		myMinStack.push(1);
+		System.out.println(myMinStack.getMin());
+		myMinStack.push(2);
+		System.out.println(myMinStack.getMin());
+		myMinStack.push(1);
+		System.out.println(myMinStack.getMin());
+		myMinStack.push(0);
+		System.out.println(myMinStack.getMin());
+		myMinStack.push(0);
+		System.out.println(myMinStack.getMin());
+		System.out.println("start pop");
+		myMinStack.pop();
+		System.out.println(myMinStack.getMin());
+		myMinStack.pop();
+		System.out.println(myMinStack.getMin());
+		myMinStack.pop();
+		System.out.println(myMinStack.getMin());
+		myMinStack.pop();
+		System.out.println(myMinStack.getMin());
+		myMinStack.pop();
+		System.out.println(myMinStack.getMin());
+		
+	}
+	
+	public static final Set<String> OperatorSet 
+	= new HashSet<>(Arrays.asList("+", "-", "*", "/"));
+	
+	public static int evaluateReversedPolishExpression(String[] tokens){
+		int result = 0;
+		Stack<String> sk = new Stack<String>();
+		for (String token : tokens){
+			if (OperatorSet.contains(token)){
+				int x = Integer.parseInt(sk.pop());
+				int y = Integer.parseInt(sk.pop());
+				result = evalOPRN(x, y, token);
+				sk.push(Integer.toString(result));
+			}
+			else{
+				sk.push(token);
+			}
+		}
+		return Integer.parseInt(sk.pop());
+		
+	}
+	
+	public static int evalOPRN(int x, int y, String operator){
+		switch (operator){
+			case "+": return x + y;
+			case "-": return x - y;
+			case "*": return x * y;
+			default: return x / y;
+		}
+	}
+	
+	public static void testEvalReversedPolish(){
+		System.out.println("test eval polish expression");
+		String[] tokens = {"1","2", "+", "3", "/","5","*","55","35", "+", "/"};
+		System.out.println(evaluateReversedPolishExpression(tokens));
+		System.out.println(evalPolishExp(tokens));
+	}
+	
+	public static final
+	Map<String, Operator> OPERATORS = new HashMap<String, Operator>(){{
+		put("+", new Operator(){public int eval(int x, int y){return x + y;}});
+		put("-", new Operator(){public int eval(int x, int y){return x - y;}});
+		put("*", new Operator(){public int eval(int x, int y){return x * y;}});
+		put("/", new Operator(){public int eval(int x, int y){return x / y;}});
+	}};
+	
+	public static int evalPolishExp(String[] tokens){
+		Stack<String> sk = new Stack<String>();
+		for (String token : tokens){
+			if (OPERATORS.containsKey(token)){
+				// do calculation
+				int x = Integer.parseInt(sk.pop());
+				int y = Integer.parseInt(sk.pop());
+				sk.push(Integer.toString(OPERATORS.get(token).eval(x, y)));
+			}
+			else{
+				sk.push(token);
+			}
+		}
+		return Integer.parseInt(sk.pop());	
+	}
+	
+	public static final Map<Character, Character> map =
+			new HashMap<Character, Character>(){{
+				put('(', ')');
+				put('[', ']');
+				put('{', '}');
+			}};
+	
+	public boolean isValid(String s){
+		Stack<Character> stack = new Stack<Character>();
+		for (char c : s.toCharArray()){
+			if (map.containsKey(c)){
+				stack.push(c);
+			}
+			else if (stack.isEmpty() || map.get(stack.pop()) != c){
+				return false;
+			}
+		}
+		return stack.isEmpty();
+	}
+	
+	// dynamic programming
+	public static int climbStairs(int n){
+		int present = 1, previous = 1;
+		for (int i = 1; i < n; i++){
+			int tmp = present;
+			present += previous;
+			previous = tmp;
+			
+		}
+		return present;
+	}
+	
+	public static int alternativeClimbStairs(int n){
+		if (n <= 1) return 1;
+		if (n == 2) return 2;
+		return alternativeClimbStairs(n - 1) + alternativeClimbStairs(n - 2);
+	}
+	
+	public static void testClimbStairs(){
+		for (int i = 1; i < 10; i++){
+			System.out.println(i + "stairs : " + climbStairs(i));
+			System.out.println(i + "stairs : " + alternativeClimbStairs(i));};
+	
+	}
+	
+	public static int counter = 0;
+	public static int backTrack(int r, int c, int m, int n){
+		System.out.println("times of access: " + counter);
+		counter++;
+		if (r == m - 1 && c == n - 1) return 1;
+		if (r >= m || c >= n) return 0;
+		//counter++;
+		return backTrack(r + 1, c, m, n) + backTrack(r, c + 1, m, n);
+	}
+	
+	public static int uniquePaths(int m, int n){
+		return backTrack(0, 0, m, n);
+	}
+	
+	public static int counter2 = 0;
+	public static int backTrackDynamicPro(int r, int c, int m, int n, int[][] map){
+		System.out.println("times of access: " + counter2);
+		counter2++;
+		if (r == m - 1 && c == n - 1) return 1;
+		if (r >= m || c >= n) return 0;
+		if (map[r + 1][c] == -1){
+			 map[r + 1][c] = backTrackDynamicPro(r + 1, c, m, n, map);}
+		if (map[r][c + 1] == -1){
+			map[r][c + 1] = backTrackDynamicPro(r, c + 1, m, n, map);}
+		return map[r + 1][c] + map[r][c + 1];
+	}
+	
+	public static int uniquePathsDynamicPro(int m, int n){
+		int[][] map = new int[m+1][n+1];
+		for (int i = 0; i < m; i++){
+			for (int j = 0; j < n; j++){
+				map[i][j] = -1;
+			}
+		}
+		return backTrackDynamicPro(0, 0, m, n, map);
+	}
+	
+	
+	public static void testUniquePaths(){
+		int m = 3, n = 2;
+		System.out.println("unique paths:" + m + "," + n + ":  "+ uniquePaths(m, n));
+		System.out.println("2n unique paths:" + m + "," + n + ":  "+uniquePathsDynamicPro(m, n));
+	}
+	
+	
+	//Find the contiguous subarray within an array (containing at least one number) that has the largest sum.
+	public static int maxSumContinguousSubArrays(int[] nums){
+		return maxSumSub(nums, 0, nums.length-1);
+	}
+	
+	public static int maxSumSub(int[] A, int L, int R){
+		if (L > R) return Integer.MIN_VALUE;
+		int M = (L + R) / 2;
+		int maxleft = maxSumSub(A, L, M - 1);
+		int maxright = maxSumSub(A, M + 1, R);
+		int maxSumL = 0;
+		int sum = 0;
+		for (int i = M-1; i >= L; i--){
+			sum += A[i];
+			maxSumL = Math.max(sum, maxSumL);
+			System.out.println(maxSumL);
+		}
+		int maxSumR = 0;
+		sum = 0;
+		for (int i = M + 1; i < R; i++){
+			sum += A[i];
+			maxSumR = Math.max(sum, maxSumR);
+		}
+		return Math.max(maxSumL + A[M] + maxSumR, Math.max(maxleft, maxright));
+			
+	}
+	
+	public static void testMaxSubArray(){
+		int[] arrA = { -13, -14, 5, -3, 12, -4, -15, -16};
+        System.out.println("Maximum subarray is  " + maxSumContinguousSubArrays(arrA));
 	}
 	
 	
@@ -845,6 +1392,12 @@ public class BinarySearchTreeSolution {
 		   return isNumeric && i == n;
 		}
 	
+	public static void testStringSplit(){
+	     String[] result = "this is a test".split("\\s");
+	     for (int x=0; x<result.length; x++)
+	         System.out.println(result[x]);
+	}
+	
 	public static boolean isNumeric(String s){
 		int i = 0, n = s.length();
 		while (i < n && Character.isWhitespace(s.charAt(i))) i++;
@@ -878,8 +1431,9 @@ public class BinarySearchTreeSolution {
 		for (int j = 0; j < s.length(); j++){	 
 			if (charMap[s.charAt(j)] >= i){	
 				i = charMap[s.charAt(j)] + 1;
+				// set the nonrepeated string start char to the index right after the char 
 			}
-			charMap[s.charAt(j)] = j;
+			charMap[s.charAt(j)] = j;// this is for remembering the index of the char in the 
 			maxLen = Math.max(maxLen, j - i + 1);
 		}
 		return maxLen;
@@ -992,7 +1546,7 @@ public class BinarySearchTreeSolution {
 		 */
 		int result = 0;
 		while (num != 0){
-			if (Math.abs(num) > 214748364){
+			if (Math.abs(result) > 214748364){
 				return 0;
 			}
 			result = result * 10 + num % 10; 
@@ -1132,6 +1686,35 @@ public class BinarySearchTreeSolution {
 		System.out.println("sorted linked list to binary search tree");
 		testSortedListToBST();
 		
+		testRotateBTUpsideDown();
+		
+		testFindSingleNumber();
+		
+		System.out.println(5^6^3);
+		System.out.println(5^6^5^5^5^6^5);
+		
+		testXOROperator();
+		
+		testSpiralMatrix();
+		testNumeral2Roman();
+		
+		testBuildDirectedGraph();
+		
+		testTraverseDirectedGraph();
+		
+		testCroneUndirectedGraph();
+		testMinStack();
+		
+		testEvalReversedPolish();
+		testClimbStairs();
+		
+		testUniquePaths();
+		testMaxSubArray();
+		
+		testStringSplit();
+		System.out.println(Integer.MIN_VALUE);
+		System.out.println(Integer.MAX_VALUE);
+		
 	}
 
 }
@@ -1167,6 +1750,39 @@ so that it got a pointer.
 List<Integer> rightList = new ArrayList<>();
 also the template, List, needs to come with a data type, which can't be
 int, instead, it should be Integer.
+
+Set<Integer> numset = new HashSet<>();
+numset.contains(x)
+numset.add(x);
+numset.remove(x);
+numset.iterator().next();
+for (int x : nums)
+		
+int[][] multi = new int[5][10];
+... which is a short hand for something like this:
+
+int[][] multi = new int[5][];
+multi[0] = new int[10];
+multi[1] = new int[10];
+multi[2] = new int[10];
+multi[3] = new int[10];
+multi[4] = new int[10];
+Note that every element will be initialized to the default value for int, 0, so the above are also equivalent to:
+
+int[][] multi = new int[][]{
+  { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+  { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+  { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+  { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+  { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }
+};
+
+switch (operator){
+			case "+": return x + y;
+			case "-": return x - y;
+			case "*": return x * y;
+			default: return x / y;
+
 *
 *
 *
