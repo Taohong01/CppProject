@@ -2,10 +2,19 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.alien.weapon"/>
+			<item value="com.hong.precision"/>
+			<item value="myexperiment.with.maven"/>
 		</list>
 		<list key="name">
+			<item value="first_alien"/>
+			<item value="Maven Test"/>
 		</list>
 		<list key="artifactId">
+			<item value="alien3"/>
+			<item value="time_machine"/>
+			<item value="TimeMachine"/>
+			<item value="test1"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -46,6 +55,8 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="/Users/Tao/GitHub/CppProjects/time_machine/src/main/java/time_machine/ControlCenter.java"/>
+			<item value="/Users/Tao/GitHub/CppProjects/BinarySearchTree/src/BinarySearchTreeSolution.java"/>
 			<item value="/Users/Tao/GitHub/CppProjects/com.java.jaja"/>
 			<item value="/Users/Tao/GitHub/CppProjects/MyJavaProject/src/TestClass.java"/>
 		</list>
@@ -60,13 +71,10 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.myproject.test.testmaveagain"/>
 		</list>
 		<list key="groupId">
-			<item value="com.myproject.test"/>
 		</list>
 		<list key="artifactId">
-			<item value="testmaveagain"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

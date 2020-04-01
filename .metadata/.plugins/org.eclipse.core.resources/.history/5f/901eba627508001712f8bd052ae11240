@@ -1,3 +1,0 @@
-public interface Operator {
-	int eval(int x, int y);
-}

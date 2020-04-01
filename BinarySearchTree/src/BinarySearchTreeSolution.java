@@ -1309,6 +1309,23 @@ public class BinarySearchTreeSolution {
 	}
 	
 	
+	public static String reverseStr2(String s){
+		StringBuilder r = new StringBuilder();
+		for (int j = s.length()-1; j >= 0; j--){
+			if (!Character.isLetter(s.charAt(j))){
+				r.append(' ');
+				continue;
+			}
+			int i = j;
+			while (i-1 >= 0 && Character.isLetter(s.charAt(i-1))) i--;
+			r.append(s.substring(i, j+1));
+			r.append(' ');
+			j = i - 1;
+			
+		}
+		return r.toString();
+	}
+	
 	public static int convertStr2Num(String inputStr){
 		System.out.println("start convert string to number.");
 		int maxDiv10 = Integer.MAX_VALUE / 10;
@@ -1592,6 +1609,199 @@ public class BinarySearchTreeSolution {
 	}
 	
 	
+	public static void practiceJava(){
+		// list practice
+		List<Integer> myIntegerList = new ArrayList<>();
+		myIntegerList.add(1);
+		myIntegerList.add(2);
+		myIntegerList.set(0, 10);
+		myIntegerList.set(0, 20);
+		//myIntegerList.remove(0);
+		myIntegerList.addAll(myIntegerList);
+		System.out.println(myIntegerList.isEmpty());
+		System.out.println(myIntegerList.get(0));
+		System.out.println(myIntegerList.get(1));
+		System.out.println(myIntegerList.get(2));
+		System.out.println(myIntegerList.get(3));
+		for (int i = 0; i < myIntegerList.size(); i++){
+			System.out.println(myIntegerList.get(i));
+			
+		}
+		
+		List<Integer> my2ndNumbList = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5));
+		for (int i = 0; i < my2ndNumbList.size(); i++){
+			System.out.println(my2ndNumbList.get(i));
+		}
+		
+		
+		Set<String> myStringSet = new HashSet<>();
+		myStringSet.add("double");
+		myStringSet.add("quote");
+		myStringSet.add("is");
+		myStringSet.add("string");
+		myStringSet.remove("is");
+		
+		for (String s : myStringSet){
+			if (myStringSet.contains(s)) continue;
+			System.out.println(s);
+		}
+		
+		
+		
+		
+		//set practice
+		//map practice
+		//interface practice
+		//queue practice
+		// stack practice
+		// array[][] practice
+		// class practice
+		
+		
+	}
+	
+	
+	
+	public static void houseColoring(){
+		int[][] priceList =
+			{{7, 5, 10},
+			 {3, 6, 1},
+			 {8, 7, 4},
+			 {6, 2, 9},
+			 {1, 4, 7},
+			 {2, 3, 6}};
+		int finalCost = finalprice(priceList);
+		System.out.println("the minimum final cost is " + finalCost);
+		maxSubSequence();
+		
+	}
+	public static int finalprice(int[][] M){
+		int finalCost = 0;
+		int r = M.length;
+		int c = M[0].length;
+		int[][] C = new int[r+1][c];
+		for (int i = 0; i < c; i++){
+			C[0][i] = 0;
+		}
+		for (int i = 1; i < r + 1; i++){
+			C[i][0] = Math.min(C[i-1][1], C[i-1][2]) + M[i-1][0];
+			C[i][1] = Math.min(C[i-1][0], C[i-1][2]) + M[i-1][1];
+			C[i][2] = Math.min(C[i-1][0], C[i-1][1]) + M[i-1][2];	
+		}
+		finalCost = Math.min(Math.min(C[r][0], C[r][1]), C[r][2]);
+		
+		System.out.println(r);
+		System.out.println(c);
+		return finalCost;
+		
+	}
+	
+	
+	
+	public static void maxSubSequence(){
+		int[] A = {-2, 11, -4, 13, -5, 2};
+		int[] B = {-15, 29, -36, 3, -22, 11, 19, -5};
+		maxContiguousSum(A);
+		maxContiguousSum(B);
+	}
+	public static void maxContiguousSum(int[] A){
+		int j = 0;
+		int start = 0, finish = 0, maxSum = 0;
+		int runningSum = A[0];
+		for (int i = 1; i < A.length; i++){
+			if (runningSum > 0){
+				runningSum += A[i];
+			} else{
+				runningSum = A[i];
+				j = i;
+			}
+			if (runningSum > maxSum){
+				maxSum = runningSum;
+				start = j;
+				finish = i;
+			}
+		}
+		System.out.println("Max Sum: " + maxSum);
+		System.out.println("Indices: i = " + start + ": j = " + finish);
+	}
+	
+	public static void KnapSackUnbounded(){
+		int[] W = {6, 3, 4, 2};
+		int[] V = {30, 14, 16, 9};
+		int M = 10;
+		int optimalValue = unboundedKnapSack(W, V, M);
+	}
+	public static int unboundedKnapSack(int[] W, int[] V, int M){
+		int wLen = W.length;
+		int [] K = new int[M+1];
+		K[0] = 0;
+		int best = 0;
+		for (int w=1; w <= M; w++){
+			for (int i=0; i < wLen; i++){
+				if (w > W[i]){
+					best = Math.max(K[w-W[i]] + V[i], best);
+				}
+				K[w] = best;
+			}		
+		System.out.println("printing knapsack");	
+			
+		}
+		return best;
+	}
+	
+
+	public static List<TreeNode> generateTrees(int n) {
+	        
+	        return genTrees(1,n);
+	}
+	        
+	public static List<TreeNode> genTrees (int start, int end){
+
+	        List<TreeNode> list = new ArrayList<TreeNode>();
+	        System.out.println("----");
+	        System.out.println(start);
+	        System.out.println(end);
+
+	        
+
+	        if(start>end)
+	        {
+	            list.add(null);
+	            return list;
+	        }
+	        
+	        if(start == end){
+	            list.add(new TreeNode(start));
+	            return list;
+	        }
+	        
+	        List<TreeNode> left,right;
+	        for(int i=start;i<=end;i++)
+	        {
+	            
+	            left = genTrees(start, i-1);
+	            System.out.println(left);
+	            right = genTrees(i+1,end);
+	            
+	            for(TreeNode lnode: left)
+	            {
+	                for(TreeNode rnode: right)
+	                {
+	                    TreeNode root = new TreeNode(i);
+	                    root.left = lnode;
+	                    root.right = rnode;
+	                    list.add(root);
+	                }
+	            }
+	                
+	        }
+	        
+	        return list;
+	    }
+
+	
+	
+	
 	
 	//public boolean isValidBST()
 	public static void main(String[] args) {
@@ -1621,12 +1831,15 @@ public class BinarySearchTreeSolution {
 		System.out.println("test merging two linked lists:");
 		testMerge2SortedLinkedLists();
 		
+		System.out.println("Test reverse string:");
 		char mystring[] = "i am coming hello world".toCharArray();
 		reverseStr(mystring, 0, mystring.length - 1);
 		System.out.println(mystring);
 		
+		System.out.println(" ----- 2nd:");
 		inverseStr(mystring);
 		System.out.println(mystring);
+		System.out.println(reverseStr2("i am coming hello world"));
 		
 		String s = "   -129939";
 		System.out.println(s + " is " + convertStr2Num(s));
@@ -1714,6 +1927,15 @@ public class BinarySearchTreeSolution {
 		testStringSplit();
 		System.out.println(Integer.MIN_VALUE);
 		System.out.println(Integer.MAX_VALUE);
+		
+		practiceJava();
+		
+		System.out.println(reverseStr2("  i am coming hello    world  !"));
+		
+		houseColoring();
+		
+		List<TreeNode> L = generateTrees(3); 
+		System.out.println(L);
 		
 	}
 

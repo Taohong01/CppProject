@@ -11,7 +11,7 @@
  * C++ Program to Implement Heap Sort
  */
 #include <iostream>
-#include <conio.h>
+//#include <conio.h>
 using namespace std;
 void max_heapify(int *a, int i, int n)
 {
@@ -56,23 +56,23 @@ void build_maxheap(int *a, int n)
 
 
 
-int main()
-{
-    int n, i, x;
-    cout<<"enter no of elements of array\n";
-    cin>>n;
-    int a[20];
-    for (i = 1; i <= n; i++)
-    {
-        cout<<"enter element"<<(i)<<endl;
-        cin>>a[i];
-    }
-    build_maxheap(a,n);
-    heapsort(a, n);
-    cout<<"sorted output\n";
-    for (i = 1; i <= n; i++)
-    {
-        cout<<a[i]<<endl;
-    }
-    getch();
-}
+//int main()
+//{
+//    int n, i;
+//    cout<<"enter no of elements of array\n";
+//    cin>>n;
+//    int a[20];
+//    for (i = 1; i <= n; i++)
+//    {
+//        cout<<"enter element"<<(i)<<endl;
+//        cin>>a[i];
+//    }
+//    build_maxheap(a,n);
+//    heapsort(a, n);
+//    cout<<"sorted output\n";
+//    for (i = 1; i <= n; i++)
+//    {
+//        cout<<a[i]<<endl;
+//    }
+//    //getch();
+//}

@@ -26,7 +26,6 @@
 
 using namespace std;
 
-
 class CartisianCoordinates{
 public:
     double x, y, z;
@@ -379,7 +378,7 @@ int main() {
     
     
     double Arr1[8] = {0.8, .05, 2.3, .8, 8.3, 1.35, 2.5, 0.8 };
-    int Arr2[8] = {1, 5, 2, 8, 8, 1, 2, 2};
+    //int Arr2[8] = {1, 5, 2, 8, 8, 1, 2, 2};
     
     //insertSort(Arr1, 8);
     quickSort2(Arr1, 0, 8-1);

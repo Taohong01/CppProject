@@ -68,16 +68,16 @@ void heapsort(){
     
 //}
 
-int main(){
-    
-    double a[10] = {1.0, 3.2, 0.5, 8.9, 0.9, 10.5, 11.5, 12, 53, 1};
-    //shellsort(a, 10);
-    quicksort(a, 0, 10);
-    for (int i = 0; i < 10; i++){
-        cout << a[i] << endl;
-    
-    
-    
-    }
-    return 0;
-}
+//int main(){
+//    
+//    double a[10] = {1.0, 3.2, 0.5, 8.9, 0.9, 10.5, 11.5, 12, 53, 1};
+//    //shellsort(a, 10);
+//    quicksort(a, 0, 10);
+//    for (int i = 0; i < 10; i++){
+//        cout << a[i] << endl;
+//    
+//    
+//    
+//    }
+//    return 0;
+//}
